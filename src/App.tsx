@@ -1,4 +1,5 @@
 import TimestampExtractor from './components/TimestampExtractor'
+import Logo from './components/Logo'
 import { useTheme } from './contexts/ThemeContext'
 import { Sun, Moon } from 'lucide-react'
 import { trackUIEvent, trackFeatureUsage } from './utils/analytics'
@@ -35,9 +36,10 @@ function App() {
           )}
         </button>
         
-        <h1 className="text-5xl md:text-6xl font-bold text-black dark:text-white mb-4 tracking-tight">
-          Easy Timestamps
-        </h1>
+        <div className="mb-6">
+          <Logo size="hero" showText={true} />
+        </div>
+        
         <p className="text-xl md:text-2xl font-normal text-neutral-600 dark:text-gray-300 mb-2">
           Free YouTube Timestamp & Chapter Generator
         </p>
