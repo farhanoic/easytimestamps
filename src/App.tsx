@@ -1,9 +1,22 @@
 import TimestampExtractor from './components/TimestampExtractor'
 import { useTheme } from './contexts/ThemeContext'
 import { Sun, Moon } from 'lucide-react'
+import { trackUIEvent, trackFeatureUsage } from './utils/analytics'
 
 function App() {
   const { theme, toggleTheme } = useTheme()
+
+  const handleThemeToggle = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light'
+    toggleTheme()
+    
+    // Track theme toggle
+    trackUIEvent('theme_changed', {
+      from_theme: theme,
+      to_theme: newTheme
+    })
+    trackFeatureUsage('theme_toggle')
+  }
 
   return (
     <div className="min-h-screen bg-neutral-50 dark:bg-gray-900 transition-colors duration-200">
@@ -11,7 +24,7 @@ function App() {
       <header className="relative text-center py-12 px-4">
         {/* Theme Toggle Button */}
         <button
-          onClick={toggleTheme}
+          onClick={handleThemeToggle}
           className="absolute top-4 right-4 p-2 rounded-lg bg-white dark:bg-gray-800 border border-neutral-200 dark:border-gray-700 hover:bg-neutral-50 dark:hover:bg-gray-700 transition-colors duration-200"
           title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
         >

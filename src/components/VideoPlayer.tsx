@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react'
 import ReactPlayer from 'react-player'
 import { Upload, Youtube, Plus } from 'lucide-react'
+import { trackVideoEvent, trackFeatureUsage, trackError } from '../utils/analytics'
 
 interface VideoPlayerProps {
   onTimeUpdate?: (seconds: number) => void
@@ -22,6 +23,14 @@ function VideoPlayer({ onTimeUpdate, onAddTimestamp }: VideoPlayerProps) {
     if (urlInput.trim()) {
       setVideoUrl(urlInput.trim())
       setIsPlaying(false)
+      
+      // Track video URL loading
+      const isYouTube = urlInput.includes('youtube.com') || urlInput.includes('youtu.be')
+      trackVideoEvent('url_loaded', {
+        video_source: isYouTube ? 'youtube' : 'other_url',
+        url_length: urlInput.length
+      })
+      trackFeatureUsage('video_url_input')
     }
   }
 
@@ -32,8 +41,20 @@ function VideoPlayer({ onTimeUpdate, onAddTimestamp }: VideoPlayerProps) {
       const fileUrl = URL.createObjectURL(file)
       setVideoUrl(fileUrl)
       setIsPlaying(false)
+      
+      // Track video file upload
+      trackVideoEvent('file_uploaded', {
+        video_source: 'file_upload',
+        file_type: file.type,
+        file_size_mb: Math.round(file.size / (1024 * 1024) * 100) / 100
+      })
+      trackFeatureUsage('video_file_upload')
+      
       // Reset the input
       event.target.value = ''
+    } else if (file) {
+      // Track invalid file upload attempts
+      trackError('invalid_file_upload', file.type)
     }
   }
 
@@ -78,6 +99,13 @@ function VideoPlayer({ onTimeUpdate, onAddTimestamp }: VideoPlayerProps) {
     if (onAddTimestamp && currentTime > 0) {
       const timeString = formatTimestamp(currentTime)
       onAddTimestamp(currentTime, timeString)
+      
+      // Track timestamp creation from video player
+      trackVideoEvent('timestamp_added_from_player', {
+        timestamp_seconds: Math.round(currentTime),
+        formatted_time: timeString
+      })
+      trackFeatureUsage('add_timestamp_from_player')
     }
   }
 
@@ -139,7 +167,10 @@ function VideoPlayer({ onTimeUpdate, onAddTimestamp }: VideoPlayerProps) {
               height="100%"
               onProgress={handleProgress}
               onDuration={handleDuration}
-              onError={(error) => console.error('Video error:', error)}
+              onError={(error) => {
+                console.error('Video error:', error)
+                trackError('video_playback_error', videoUrl)
+              }}
             />
           </div>
 

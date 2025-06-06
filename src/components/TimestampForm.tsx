@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { Plus } from 'lucide-react'
+import { trackTimestampEvent, trackFeatureUsage, trackError } from '../utils/analytics'
 
 interface Timestamp {
   startTime: string
@@ -63,16 +64,19 @@ function TimestampForm({ onAddTimestamp, timestamps = [] }: TimestampFormProps) 
     // Validate inputs
     if (!startTime.trim()) {
       setError('Please enter a start time')
+      trackError('form_validation_error', 'missing_start_time')
       return
     }
 
     if (!description.trim()) {
       setError('Please enter a description')
+      trackError('form_validation_error', 'missing_description')
       return
     }
 
     if (!validateTime(startTime)) {
       setError('Please enter start time in MM:SS or HH:MM:SS format (e.g., 1:30 or 1:30:45)')
+      trackError('form_validation_error', 'invalid_start_time_format')
       return
     }
 
@@ -80,6 +84,7 @@ function TimestampForm({ onAddTimestamp, timestamps = [] }: TimestampFormProps) 
     if (endTime.trim()) {
       if (!validateTime(endTime)) {
         setError('Please enter end time in MM:SS or HH:MM:SS format (e.g., 1:30 or 1:30:45)')
+        trackError('form_validation_error', 'invalid_end_time_format')
         return
       }
 
@@ -88,6 +93,7 @@ function TimestampForm({ onAddTimestamp, timestamps = [] }: TimestampFormProps) 
 
       if (startSeconds >= endSeconds) {
         setError('End time must be after start time')
+        trackError('form_validation_error', 'end_time_before_start_time')
         return
       }
     }
@@ -102,6 +108,14 @@ function TimestampForm({ onAddTimestamp, timestamps = [] }: TimestampFormProps) 
 
     // Add timestamp and clear form
     onAddTimestamp(newTimestamp)
+    
+    // Track timestamp creation from form
+    trackTimestampEvent('timestamp_added_from_form', {
+      has_end_time: !!endTime.trim(),
+      start_time_seconds: timeToSeconds(startTime.trim()),
+      description_length: description.trim().length
+    })
+    trackFeatureUsage('manual_timestamp_creation')
     
     // Auto-populate start time for next section
     const nextStartTime = endTime.trim() || startTime.trim()

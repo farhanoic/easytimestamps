@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Copy, Check, Edit2, Trash2, Save, X } from 'lucide-react'
+import { trackTimestampEvent, trackExportEvent, trackFeatureUsage } from '../utils/analytics'
 
 interface Timestamp {
   startTime: string
@@ -58,24 +59,47 @@ function TimestampList({ timestamps, onEditTimestamp, onDeleteTimestamp }: Times
   const copyToClipboard = () => {
     if (timestamps.length === 0) return
     
-    navigator.clipboard.writeText(formatForYouTube())
+    const formattedText = formatForYouTube()
+    navigator.clipboard.writeText(formattedText)
       .then(() => {
         setCopied(true)
         setTimeout(() => setCopied(false), 2000)
+        
+        // Track successful copy to clipboard
+        trackExportEvent('copy_to_clipboard', {
+          timestamp_count: timestamps.length,
+          total_characters: formattedText.length
+        })
+        trackFeatureUsage('copy_timestamps')
       })
-      .catch(() => alert('Failed to copy to clipboard'))
+      .catch(() => {
+        alert('Failed to copy to clipboard')
+        trackExportEvent('copy_to_clipboard_failed', {
+          timestamp_count: timestamps.length
+        })
+      })
   }
 
   // Start editing a timestamp
   const startEdit = (index: number) => {
     setEditingIndex(index)
     setEditForm({ ...timestamps[index] })
+    
+    // Track edit action start
+    trackTimestampEvent('edit_started', {
+      timestamp_index: index,
+      has_end_time: !!timestamps[index].endTime
+    })
+    trackFeatureUsage('edit_timestamp')
   }
 
   // Cancel editing
   const cancelEdit = () => {
     setEditingIndex(null)
     setEditForm(null)
+    
+    // Track edit cancellation
+    trackTimestampEvent('edit_cancelled')
   }
 
   // Save edited timestamp
@@ -98,6 +122,13 @@ function TimestampList({ timestamps, onEditTimestamp, onDeleteTimestamp }: Times
       }
       
       onEditTimestamp(editingIndex, updatedTimestamp)
+      
+      // Track successful edit save
+      trackTimestampEvent('edit_saved', {
+        timestamp_index: editingIndex,
+        has_end_time: !!editForm.endTime
+      })
+      
       setEditingIndex(null)
       setEditForm(null)
     }
@@ -106,7 +137,19 @@ function TimestampList({ timestamps, onEditTimestamp, onDeleteTimestamp }: Times
   // Delete timestamp with confirmation
   const handleDelete = (index: number) => {
     if (window.confirm('Are you sure you want to delete this timestamp?')) {
+      // Track deletion before actually deleting
+      trackTimestampEvent('timestamp_deleted', {
+        timestamp_index: index,
+        has_end_time: !!timestamps[index].endTime
+      })
+      trackFeatureUsage('delete_timestamp')
+      
       onDeleteTimestamp(index)
+    } else {
+      // Track deletion cancellation
+      trackTimestampEvent('delete_cancelled', {
+        timestamp_index: index
+      })
     }
   }
 
