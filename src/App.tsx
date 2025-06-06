@@ -38,9 +38,12 @@ function App() {
         <h1 className="text-5xl md:text-6xl font-bold text-black dark:text-white mb-4 tracking-tight">
           Easy Timestamps
         </h1>
-        <h2 className="text-xl md:text-2xl font-normal text-neutral-600 dark:text-gray-300">
-          Create timestamps for YouTube videos.
-        </h2>
+        <p className="text-xl md:text-2xl font-normal text-neutral-600 dark:text-gray-300 mb-2">
+          Free YouTube Timestamp & Chapter Generator
+        </p>
+        <p className="text-base md:text-lg text-neutral-500 dark:text-gray-400 max-w-2xl mx-auto">
+          Create professional YouTube timestamps and video chapters instantly. Perfect for content creators, educators, and video professionals.
+        </p>
       </header>
       
       {/* Main Content */}
