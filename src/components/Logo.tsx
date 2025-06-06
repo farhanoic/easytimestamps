@@ -51,8 +51,8 @@ function Logo({
       subtitle: 'text-sm'
     },
     hero: {
-      container: 'h-24',
-      image: 'h-20 md:h-24 w-auto max-w-[400px]',
+      container: 'h-32',
+      image: 'h-28 md:h-32 lg:h-36 w-auto max-w-[500px]',
       text: 'text-2xl md:text-3xl lg:text-4xl font-bold',
       spacing: 'gap-4',
       subtitle: 'text-base'
