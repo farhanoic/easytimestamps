@@ -36,8 +36,8 @@ function App() {
           )}
         </button>
         
-        <div className="mb-6">
-          <Logo size="hero" showText={true} />
+        <div className="mb-6 flex justify-center">
+          <Logo size="hero" showText={false} />
         </div>
         
         <p className="text-xl md:text-2xl font-normal text-neutral-600 dark:text-gray-300 mb-2">
