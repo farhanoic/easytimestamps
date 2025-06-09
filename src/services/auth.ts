@@ -8,7 +8,7 @@ import { subscriptionService } from './subscriptionService';
 import { securityService } from './securityService';
 
 // Configuration constants (replace with your actual values)
-const GOOGLE_CLIENT_ID = 'your-google-client-id';
+const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID;
 const GITHUB_CLIENT_ID = 'your-github-client-id';
 const API_BASE_URL = 'http://localhost:3001/api';
 
@@ -755,6 +755,17 @@ declare global {
           disableAutoSelect: () => void;
         };
       };
+    };
+  }
+}
+
+declare global {
+  interface ImportMeta {
+    env: {
+      VITE_GOOGLE_CLIENT_ID: string;
+      VITE_GITHUB_CLIENT_ID?: string;
+      VITE_API_URL?: string;
+      [key: string]: any;
     };
   }
 }
