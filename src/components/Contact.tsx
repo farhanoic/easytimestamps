@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Mail, Clock, HelpCircle, Bug, Lightbulb, Briefcase, MessageCircle, Send, Upload, X, Check, AlertCircle } from 'lucide-react';
+import { Mail, HelpCircle, Bug, Lightbulb, Briefcase, MessageCircle, Send, Upload, X, Check, AlertCircle } from 'lucide-react';
 import { trackUIEvent, trackFeatureUsage } from '../utils/analytics';
 import { useTranslation } from 'react-i18next';
+import { EmailService } from '../services/emailService';
 
 interface ContactForm {
   name: string;
@@ -93,29 +94,6 @@ const Contact: React.FC = () => {
     }
   ];
 
-  const contactMethods = [
-    {
-      title: t('contact.methods.emailSupport'),
-      description: t('contact.methods.emailSupportDescription'),
-      email: 'support@easytimestamps.com',
-      responseTime: '24-48 hours',
-      icon: <Mail className="h-6 w-6 text-blue-600 dark:text-blue-400" />
-    },
-    {
-      title: t('contact.methods.bugReports'),
-      description: t('contact.methods.bugReportsDescription'),
-      email: 'bugs@easytimestamps.com',
-      responseTime: '12-24 hours',
-      icon: <Bug className="h-6 w-6 text-red-600 dark:text-red-400" />
-    },
-    {
-      title: t('contact.methods.featureRequests'),
-      description: t('contact.methods.featureRequestsDescription'),
-      email: 'features@easytimestamps.com',
-      responseTime: '48-72 hours',
-      icon: <Lightbulb className="h-6 w-6 text-yellow-600 dark:text-yellow-400" />
-    }
-  ];
 
   const validateForm = (): boolean => {
     const newErrors: Record<string, string> = {};
@@ -185,11 +163,24 @@ const Contact: React.FC = () => {
     });
 
     try {
-      // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      
-      // In a real implementation, you would send the form data to your backend
-      console.log('Form submitted:', formData);
+      // Check if EmailJS is configured
+      if (!EmailService.isConfigured()) {
+        console.warn('EmailJS not configured, using demo mode');
+        // Fallback to demo mode with delay
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        console.log('Demo form submitted:', formData);
+      } else {
+        // Send actual email using EmailJS
+        await EmailService.sendContactForm(formData);
+        
+        // Send auto-reply to user
+        try {
+          await EmailService.sendAutoReply(formData.email, formData.name, formData.category);
+        } catch (autoReplyError) {
+          console.warn('Auto-reply failed:', autoReplyError);
+          // Don't fail the main submission for auto-reply issues
+        }
+      }
       
       const submissionTime = Date.now() - submissionStartTime;
       
@@ -386,89 +377,9 @@ const Contact: React.FC = () => {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
-          
-          {/* Contact Methods */}
-          <div className="lg:col-span-1">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-              Contact Methods
-            </h2>
-            
-            <div className="space-y-6">
-              {contactMethods.map((method, index) => (
-                <div key={index} className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-100 dark:border-gray-700">
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0">
-                      {method.icon}
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                        {method.title}
-                      </h3>
-                      <p className="text-gray-600 dark:text-gray-300 mb-3 text-sm">
-                        {method.description}
-                      </p>
-                      <div className="space-y-2">
-                        <div className="flex items-center gap-2">
-                          <Mail className="h-4 w-4 text-gray-400" />
-                          <a
-                            href={`mailto:${method.email}`}
-                            className="text-blue-600 dark:text-blue-400 hover:underline text-sm font-mono"
-                            onClick={() => {
-                              trackUIEvent('direct_email_clicked', {
-                                email_type: method.title.toLowerCase().replace(' ', '_'),
-                                from_page: 'contact',
-                                time_on_page: formStartTime ? Math.round((Date.now() - formStartTime) / 1000) : 0
-                              });
-                            }}
-                          >
-                            {method.email}
-                          </a>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <Clock className="h-4 w-4 text-gray-400" />
-                          <span className="text-gray-500 dark:text-gray-400 text-sm">
-                            Response: {method.responseTime}
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Response Time Info */}
-            <div className="mt-8 bg-gray-50 dark:bg-gray-800 rounded-xl p-6">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
-                <Clock className="h-5 w-5 text-blue-600 dark:text-blue-400" />
-                Response Times
-              </h3>
-              <div className="space-y-3 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-gray-600 dark:text-gray-300">Bug Reports:</span>
-                  <span className="text-gray-900 dark:text-white font-medium">12-24 hours</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-600 dark:text-gray-300">Technical Support:</span>
-                  <span className="text-gray-900 dark:text-white font-medium">24-48 hours</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-600 dark:text-gray-300">General Inquiries:</span>
-                  <span className="text-gray-900 dark:text-white font-medium">48-72 hours</span>
-                </div>
-                <div className="mt-4 pt-3 border-t border-gray-200 dark:border-gray-600">
-                  <p className="text-gray-500 dark:text-gray-400 text-xs">
-                    All times are in business days (Monday-Friday, 9 AM - 5 PM CET)
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Contact Form */}
-          <div className="lg:col-span-2">
-            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 p-4 sm:p-8">
+        {/* Contact Form - Full Width */}
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 p-4 sm:p-8">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
                 Send us a Message
               </h2>
@@ -745,7 +656,6 @@ const Contact: React.FC = () => {
                   </button>
                 </div>
               </form>
-            </div>
           </div>
         </div>
       </div>

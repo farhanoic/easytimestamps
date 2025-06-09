@@ -619,6 +619,9 @@ declare global {
     env: {
       VITE_GOOGLE_CLIENT_ID: string;
       VITE_API_URL?: string;
+      VITE_EMAILJS_SERVICE_ID?: string;
+      VITE_EMAILJS_TEMPLATE_ID?: string;
+      VITE_EMAILJS_PUBLIC_KEY?: string;
       [key: string]: any;
     };
   }
