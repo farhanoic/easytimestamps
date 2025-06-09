@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { ChevronDown, Users, HelpCircle, Shield, Mail, Zap, LogIn } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { trackUIEvent } from '../utils/analytics'
@@ -160,8 +161,8 @@ function Navigation() {
           }}
           onMouseLeave={handleDropdownLeave}
         >
-          <a
-            href="/features"
+          <Link
+            to="/features"
             className="w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-neutral-50 dark:hover:bg-gray-800 transition-colors duration-150"
             onClick={() => handleItemClick({ label: t('navigation.features'), href: '/features' }, 'features')}
           >
@@ -169,7 +170,7 @@ function Navigation() {
             <span className="text-sm font-medium text-neutral-900 dark:text-white">
               {t('navigation.features')}
             </span>
-          </a>
+          </Link>
           <div 
             className="relative group"
             onMouseEnter={() => {
@@ -215,30 +216,30 @@ function Navigation() {
                   }, 100)
                 }}
               >
-                <a
-                  href="/faq"
+                <Link
+                  to="/faq"
                   className="w-full flex items-center gap-3 px-3 py-2 text-left text-sm hover:bg-neutral-50 dark:hover:bg-gray-800 transition-colors duration-150"
                   onClick={() => handleItemClick({ label: t('navigation.faq'), href: '/faq' }, 'help')}
                 >
                   <HelpCircle className="h-3 w-3 text-neutral-500 dark:text-gray-400" />
                   <span className="text-neutral-900 dark:text-white">{t('navigation.faq')}</span>
-                </a>
-                <a
-                  href="/privacy"
+                </Link>
+                <Link
+                  to="/privacy"
                   className="w-full flex items-center gap-3 px-3 py-2 text-left text-sm hover:bg-neutral-50 dark:hover:bg-gray-800 transition-colors duration-150"
                   onClick={() => handleItemClick({ label: t('navigation.privacy'), href: '/privacy' }, 'help')}
                 >
                   <Shield className="h-3 w-3 text-neutral-500 dark:text-gray-400" />
                   <span className="text-neutral-900 dark:text-white">{t('navigation.privacy')}</span>
-                </a>
-                <a
-                  href="/contact"
+                </Link>
+                <Link
+                  to="/contact"
                   className="w-full flex items-center gap-3 px-3 py-2 text-left text-sm hover:bg-neutral-50 dark:hover:bg-gray-800 transition-colors duration-150"
                   onClick={() => handleItemClick({ label: t('navigation.contact'), href: '/contact' }, 'help')}
                 >
                   <Mail className="h-3 w-3 text-neutral-500 dark:text-gray-400" />
                   <span className="text-neutral-900 dark:text-white">{t('navigation.contact')}</span>
-                </a>
+                </Link>
               </div>
             )}
           </div>
@@ -251,8 +252,8 @@ function Navigation() {
             <LanguageSelector size="sm" showLabel={false} triggerOnHover={true} />
           </div>
           
-          <a
-            href="/about"
+          <Link
+            to="/about"
             className="w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-neutral-50 dark:hover:bg-gray-800 transition-colors duration-150"
             onClick={() => handleItemClick({ label: t('navigation.about'), href: '/about' }, 'about')}
           >
@@ -260,7 +261,7 @@ function Navigation() {
             <span className="text-sm font-medium text-neutral-900 dark:text-white">
               {t('navigation.about')}
             </span>
-          </a>
+          </Link>
         </div>
       )}
     </div>
@@ -346,42 +347,42 @@ function Navigation() {
                 </button>
               </div>
             )}
-            <a
-              href="/features"
+            <Link
+              to="/features"
               className="w-full flex items-center gap-3 px-3 py-2 text-left text-sm text-neutral-600 dark:text-gray-400 hover:text-neutral-900 dark:hover:text-white hover:bg-neutral-50 dark:hover:bg-gray-800 rounded-lg"
               onClick={() => handleItemClick({ label: t('navigation.features'), href: '/features' }, 'features')}
             >
               <Zap className="h-4 w-4" />
               {t('navigation.features')}
-            </a>
+            </Link>
             <div className="space-y-1">
               <div className="px-3 py-2 text-xs font-semibold text-neutral-500 dark:text-gray-400">
                 {t('navigation.help')}
               </div>
-              <a
-                href="/faq"
+              <Link
+                to="/faq"
                 className="w-full flex items-center gap-3 px-3 py-2 text-left text-sm text-neutral-600 dark:text-gray-400 hover:text-neutral-900 dark:hover:text-white hover:bg-neutral-50 dark:hover:bg-gray-800 rounded-lg ml-4"
                 onClick={() => handleItemClick({ label: t('navigation.faq'), href: '/faq' }, 'help')}
               >
                 <HelpCircle className="h-4 w-4" />
                 {t('navigation.faq')}
-              </a>
-              <a
-                href="/privacy"
+              </Link>
+              <Link
+                to="/privacy"
                 className="w-full flex items-center gap-3 px-3 py-2 text-left text-sm text-neutral-600 dark:text-gray-400 hover:text-neutral-900 dark:hover:text-white hover:bg-neutral-50 dark:hover:bg-gray-800 rounded-lg ml-4"
                 onClick={() => handleItemClick({ label: t('navigation.privacy'), href: '/privacy' }, 'help')}
               >
                 <Shield className="h-4 w-4" />
                 {t('navigation.privacy')}
-              </a>
-              <a
-                href="/contact"
+              </Link>
+              <Link
+                to="/contact"
                 className="w-full flex items-center gap-3 px-3 py-2 text-left text-sm text-neutral-600 dark:text-gray-400 hover:text-neutral-900 dark:hover:text-white hover:bg-neutral-50 dark:hover:bg-gray-800 rounded-lg ml-4"
                 onClick={() => handleItemClick({ label: t('navigation.contact'), href: '/contact' }, 'help')}
               >
                 <Mail className="h-4 w-4" />
                 {t('navigation.contact')}
-              </a>
+              </Link>
             </div>
             <div className="space-y-1">
               <div className="px-3 py-2 text-xs font-semibold text-neutral-500 dark:text-gray-400">
@@ -391,14 +392,14 @@ function Navigation() {
                 <LanguageSelector size="md" triggerOnHover={false} />
               </div>
             </div>
-            <a
-              href="/about"
+            <Link
+              to="/about"
               className="w-full flex items-center gap-3 px-3 py-2 text-left text-sm text-neutral-600 dark:text-gray-400 hover:text-neutral-900 dark:hover:text-white hover:bg-neutral-50 dark:hover:bg-gray-800 rounded-lg"
               onClick={() => handleItemClick({ label: t('navigation.about'), href: '/about' }, 'about')}
             >
               <Users className="h-4 w-4" />
               {t('navigation.about')}
-            </a>
+            </Link>
           </div>
         )}
       </div>
