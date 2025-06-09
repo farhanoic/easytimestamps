@@ -10,6 +10,9 @@ import Settings from './components/Settings'
 import Navigation from './components/Navigation'
 import Footer from './components/Footer'
 import Logo from './components/Logo'
+import AnimatedBackground from './components/AnimatedBackground'
+import GradientOverlay from './components/GradientOverlay'
+import ParticleField from './components/ParticleField'
 import { LocalizationProvider } from './components/LocalizationProvider'
 import { PrivacyCompliance } from './components/PrivacyCompliance'
 import { useTheme } from './contexts/ThemeContext'
@@ -61,8 +64,13 @@ function App() {
 
   const HomePage = () => (
     <>
+      {/* Animated Background */}
+      <GradientOverlay />
+      <ParticleField />
+      <AnimatedBackground />
+      
       {/* Header */}
-      <header className="relative text-center py-12 px-4">
+      <header className="relative text-center py-12 px-4 z-10">
         {/* Theme Toggle Button */}
         <button
           onClick={handleThemeToggle}
@@ -89,7 +97,7 @@ function App() {
       </header>
       
       {/* Main Content */}
-      <main className="max-w-6xl mx-auto px-4 pb-16">
+      <main className="relative max-w-6xl mx-auto px-4 pb-16 z-10">
         <TimestampExtractor />
       </main>
     </>

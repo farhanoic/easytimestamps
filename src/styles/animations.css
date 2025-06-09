@@ -1,0 +1,487 @@
+/* Animated Background Styles */
+.floating-shapes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+
+.shape {
+  position: absolute;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* YouTube-themed Shape Styles */
+.shape-circle {
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FF0000, #CC0000);
+}
+
+.shape-triangle {
+  width: 0;
+  height: 0;
+  background: transparent;
+  border-style: solid;
+}
+
+.shape-square {
+  background: linear-gradient(135deg, #FF0000, #DC143C);
+  border-radius: 8px;
+}
+
+.shape-diamond {
+  background: linear-gradient(135deg, #FF4500, #FF0000);
+  transform: rotate(45deg);
+  border-radius: 4px;
+}
+
+.shape-hexagon {
+  background: linear-gradient(135deg, #FF0000, #B22222);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.shape-rectangle {
+  background: linear-gradient(135deg, #FF0000, #FF4500);
+  border-radius: 6px;
+}
+
+/* YouTube Play Button Shape */
+.shape-play-button {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #FF0000, #CC0000);
+  border-radius: 50%;
+  position: relative;
+}
+
+.shape-play-button::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-40%, -50%);
+  width: 0;
+  height: 0;
+  border-left: 18px solid #FFFFFF;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
+
+/* Individual Shape Configurations */
+.shape-1 {
+  width: 80px;
+  height: 80px;
+  top: 10%;
+  left: 10%;
+  animation: float-1 8s infinite;
+}
+
+.shape-2 {
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 43px solid #FF0000;
+  top: 20%;
+  right: 15%;
+  animation: float-2 6s infinite;
+}
+
+.shape-3 {
+  width: 60px;
+  height: 60px;
+  top: 60%;
+  left: 5%;
+  animation: float-3 10s infinite;
+}
+
+.shape-4 {
+  width: 40px;
+  height: 40px;
+  top: 15%;
+  right: 5%;
+  animation: float-4 7s infinite;
+}
+
+.shape-5 {
+  width: 50px;
+  height: 50px;
+  bottom: 20%;
+  right: 20%;
+  animation: float-5 9s infinite;
+}
+
+.shape-6 {
+  width: 70px;
+  height: 60px;
+  bottom: 10%;
+  left: 20%;
+  animation: float-6 11s infinite;
+}
+
+.shape-7 {
+  width: 90px;
+  height: 30px;
+  top: 45%;
+  right: 8%;
+  animation: float-7 8s infinite;
+}
+
+.shape-8 {
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 26px solid #FF0000;
+  bottom: 15%;
+  left: 50%;
+  animation: float-8 5s infinite;
+}
+
+.shape-9 {
+  top: 30%;
+  right: 25%;
+  animation: float-play 12s infinite;
+}
+
+/* Float Animations */
+@keyframes float-1 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+@keyframes float-2 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-30px) rotate(360deg); }
+}
+
+@keyframes float-3 {
+  0%, 100% { transform: translateX(0px) rotate(0deg); }
+  50% { transform: translateX(25px) rotate(90deg); }
+}
+
+@keyframes float-4 {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-15px) scale(1.2); }
+}
+
+@keyframes float-5 {
+  0%, 100% { transform: translateY(0px) rotate(45deg); }
+  50% { transform: translateY(-25px) rotate(225deg); }
+}
+
+@keyframes float-6 {
+  0%, 100% { transform: translateX(0px) rotate(0deg); }
+  50% { transform: translateX(-20px) rotate(60deg); }
+}
+
+@keyframes float-7 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-18px) rotate(45deg); }
+}
+
+@keyframes float-8 {
+  0%, 100% { transform: translateX(0px) rotate(0deg); }
+  50% { transform: translateX(30px) rotate(120deg); }
+}
+
+@keyframes float-play {
+  0%, 100% { 
+    transform: translateY(0px) scale(1) rotate(0deg); 
+  }
+  33% { 
+    transform: translateY(-15px) scale(1.1) rotate(5deg); 
+  }
+  66% { 
+    transform: translateY(-10px) scale(0.95) rotate(-3deg); 
+  }
+}
+
+/* Gradient Overlay Styles */
+.gradient-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  mix-blend-mode: multiply;
+}
+
+.gradient-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.gradient-blob-1 {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, #FF0000, #FF4500, #DC143C);
+  top: -10%;
+  left: -10%;
+  animation: blob-float-1 15s infinite;
+}
+
+.gradient-blob-2 {
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(135deg, #CC0000, #FF0000, #B22222);
+  top: 20%;
+  right: -10%;
+  animation: blob-float-2 20s infinite;
+}
+
+.gradient-blob-3 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, #FF4500, #FF0000, #CD5C5C);
+  bottom: -5%;
+  left: 20%;
+  animation: blob-float-3 18s infinite;
+}
+
+/* Blob Animations */
+@keyframes blob-float-1 {
+  0%, 100% { 
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
+  }
+  33% { 
+    transform: translate(30px, -30px) scale(1.1) rotate(120deg);
+  }
+  66% { 
+    transform: translate(-20px, 20px) scale(0.9) rotate(240deg);
+  }
+}
+
+@keyframes blob-float-2 {
+  0%, 100% { 
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
+  }
+  50% { 
+    transform: translate(-40px, 30px) scale(1.2) rotate(180deg);
+  }
+}
+
+@keyframes blob-float-3 {
+  0%, 100% { 
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
+  }
+  25% { 
+    transform: translate(20px, -20px) scale(1.1) rotate(90deg);
+  }
+  50% { 
+    transform: translate(-10px, -40px) scale(0.8) rotate(180deg);
+  }
+  75% { 
+    transform: translate(30px, 10px) scale(1.2) rotate(270deg);
+  }
+}
+
+/* Particle Field Styles */
+.particle-field {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+.particle {
+  position: absolute;
+  background: radial-gradient(circle, rgba(255, 0, 0, 0.8) 0%, transparent 70%);
+  border-radius: 50%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Particle Configurations */
+.particle-1 {
+  width: 3px;
+  height: 3px;
+  top: 20%;
+  left: 10%;
+  animation: particle-float 8s infinite;
+}
+
+.particle-2 {
+  width: 2px;
+  height: 2px;
+  top: 60%;
+  left: 25%;
+  animation: particle-float 12s infinite reverse;
+  background: radial-gradient(circle, rgba(255, 69, 0, 0.8) 0%, transparent 70%);
+}
+
+.particle-3 {
+  width: 4px;
+  height: 4px;
+  top: 15%;
+  right: 20%;
+  animation: particle-float 10s infinite;
+  background: radial-gradient(circle, rgba(220, 20, 60, 0.8) 0%, transparent 70%);
+}
+
+.particle-4 {
+  width: 2px;
+  height: 2px;
+  bottom: 30%;
+  left: 15%;
+  animation: particle-float 15s infinite reverse;
+  background: radial-gradient(circle, rgba(255, 0, 0, 0.8) 0%, transparent 70%);
+}
+
+.particle-5 {
+  width: 3px;
+  height: 3px;
+  top: 40%;
+  right: 15%;
+  animation: particle-float 9s infinite;
+  background: radial-gradient(circle, rgba(205, 92, 92, 0.8) 0%, transparent 70%);
+}
+
+.particle-6 {
+  width: 2px;
+  height: 2px;
+  bottom: 20%;
+  right: 30%;
+  animation: particle-float 11s infinite reverse;
+  background: radial-gradient(circle, rgba(178, 34, 34, 0.8) 0%, transparent 70%);
+}
+
+/* Particle Animation */
+@keyframes particle-float {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px) scale(1);
+    opacity: 0.6;
+  }
+  25% {
+    transform: translateY(-10px) translateX(5px) scale(1.2);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-20px) translateX(-3px) scale(0.8);
+    opacity: 0.4;
+  }
+  75% {
+    transform: translateY(-5px) translateX(8px) scale(1.1);
+    opacity: 0.7;
+  }
+}
+
+/* Dark mode adjustments */
+.dark .floating-shapes {
+  opacity: 0.2;
+}
+
+.dark .shape-circle {
+  background: linear-gradient(135deg, #B22222, #8B0000);
+}
+
+.dark .shape-square {
+  background: linear-gradient(135deg, #B22222, #A52A2A);
+}
+
+.dark .shape-diamond {
+  background: linear-gradient(135deg, #CD5C5C, #B22222);
+}
+
+.dark .shape-hexagon {
+  background: linear-gradient(135deg, #8B0000, #696969);
+}
+
+.dark .shape-rectangle {
+  background: linear-gradient(135deg, #B22222, #CD5C5C);
+}
+
+.dark .shape-2 {
+  border-bottom-color: #B22222;
+}
+
+.dark .shape-8 {
+  border-bottom-color: #B22222;
+}
+
+.dark .shape-play-button {
+  background: linear-gradient(135deg, #8B0000, #696969);
+}
+
+.dark .gradient-overlay {
+  opacity: 0.05;
+  mix-blend-mode: screen;
+}
+
+.dark .gradient-blob-1 {
+  background: linear-gradient(135deg, #8B0000, #A52A2A, #B22222);
+}
+
+.dark .gradient-blob-2 {
+  background: linear-gradient(135deg, #696969, #8B0000, #A52A2A);
+}
+
+.dark .gradient-blob-3 {
+  background: linear-gradient(135deg, #CD5C5C, #B22222, #8B0000);
+}
+
+.dark .particle-field {
+  opacity: 0.4;
+}
+
+.dark .particle-1,
+.dark .particle-4 {
+  background: radial-gradient(circle, rgba(139, 0, 0, 0.6) 0%, transparent 70%);
+}
+
+.dark .particle-2,
+.dark .particle-6 {
+  background: radial-gradient(circle, rgba(178, 34, 34, 0.6) 0%, transparent 70%);
+}
+
+.dark .particle-3 {
+  background: radial-gradient(circle, rgba(165, 42, 42, 0.6) 0%, transparent 70%);
+}
+
+.dark .particle-5 {
+  background: radial-gradient(circle, rgba(105, 105, 105, 0.6) 0%, transparent 70%);
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .shape,
+  .gradient-blob,
+  .particle {
+    animation: none;
+  }
+}
+
+/* Performance optimizations for mobile */
+@media (max-width: 480px) {
+  .particle-field {
+    display: none;
+  }
+  
+  .gradient-blob {
+    filter: blur(20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .gradient-blob-1 {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .gradient-blob-2 {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .gradient-blob-3 {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .shape-6,
+  .shape-7,
+  .shape-8 {
+    display: none;
+  }
+}
