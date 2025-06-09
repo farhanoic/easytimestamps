@@ -1,0 +1,81 @@
+{
+  "common": {
+    "loading": "Φόρτωση...",
+    "error": "Σφάλμα",
+    "success": "Επιτυχία",
+    "cancel": "Ακύρωση",
+    "save": "Αποθήκευση",
+    "delete": "Διαγραφή",
+    "edit": "Επεξεργασία",
+    "close": "Κλείσιμο",
+    "back": "Πίσω",
+    "next": "Επόμενο",
+    "previous": "Προηγούμενο",
+    "search": "Αναζήτηση",
+    "filter": "Φίλτρο",
+    "clear": "Εκκαθάριση",
+    "copy": "Αντιγραφή",
+    "download": "Λήψη",
+    "upload": "Μεταφόρτωση",
+    "submit": "Υποβολή",
+    "send": "Αποστολή",
+    "yes": "Ναι",
+    "no": "Όχι",
+    "ok": "Εντάξει",
+    "required": "Απαιτείται"
+  },
+  "navigation": {
+    "features": "Χαρακτηριστικά",
+    "about": "Σχετικά",
+    "help": "Βοήθεια",
+    "contact": "Επικοινωνία",
+    "faq": "Συχνές ερωτήσεις",
+    "privacy": "Απόρρητο",
+    "terms": "Όροι υπηρεσίας",
+    "language": "Γλώσσα",
+    "theme": "Θέμα",
+    "home": "Αρχική"
+  },
+  "header": {
+    "title": "Easy Timestamps",
+    "subtitle": "Δωρεάν γεννήτρια χρονοσημάνσεων και κεφαλαίων YouTube",
+    "description": "Δημιουργήστε επαγγελματικές χρονοσημάνσεις YouTube και κεφάλαια βίντεο στιγμιαία. Ιδανικό για δημιουργούς περιεχομένου, εκπαιδευτικούς και επαγγελματίες βίντεο."
+  },
+  "tool": {
+    "uploadVideo": "Μεταφόρτωση βίντεο",
+    "pasteUrl": "Επικόλληση URL YouTube",
+    "addTimestamp": "Προσθήκη χρονοσήμανσης",
+    "generateChapters": "Δημιουργία κεφαλαίων",
+    "exportTimestamps": "Εξαγωγή χρονοσημάνσεων",
+    "copyToClipboard": "Αντιγραφή στο πρόχειρο",
+    "downloadFile": "Λήψη αρχείου",
+    "videoUrl": "URL βίντεο",
+    "videoUrlPlaceholder": "Επικολλήστε το URL του βίντεο YouTube εδώ...",
+    "timestampTime": "Χρόνος",
+    "timestampTitle": "Τίτλος",
+    "timestampDescription": "Περιγραφή",
+    "timePlaceholder": "00:00",
+    "titlePlaceholder": "Τίτλος κεφαλαίου",
+    "descriptionPlaceholder": "Προαιρετική περιγραφή",
+    "noTimestamps": "Δεν έχουν προστεθεί χρονοσημάνσεις ακόμα",
+    "addFirstTimestamp": "Προσθέστε την πρώτη σας χρονοσήμανση",
+    "enterVideoUrl": "Εισάγετε URL βίντεο",
+    "load": "Φόρτωση",
+    "addTimestampAtCurrentTime": "Προσθήκη χρονοσήμανσης στην τρέχουσα ώρα",
+    "addSection": "Προσθήκη ενότητας",
+    "exportAsText": "Εξαγωγή ως κείμενο",
+    "currentTime": "Τρέχουσα ώρα",
+    "enterDescription": "Εισαγωγή περιγραφής",
+    "addYouTubeUrl": "Προσθήκη YouTube URL",
+    "loadingVideo": "Φόρτωση βίντεο...",
+    "errorLoadingVideo": "Σφάλμα φόρτωσης βίντεο",
+    "selectFile": "Επιλογή αρχείου",
+    "dragDropFile": "Σύρσιμο και απόθεση αρχείου",
+    "supportedFormats": "Υποστηριζόμενες μορφές"
+  },
+  "language": {
+    "names": {
+      "el": "Ελληνικά"
+    }
+  }
+}

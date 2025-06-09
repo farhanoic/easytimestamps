@@ -1,0 +1,81 @@
+{
+  "common": {
+    "loading": "กำลังโหลด...",
+    "error": "ข้อผิดพลาด",
+    "success": "สำเร็จ",
+    "cancel": "ยกเลิก",
+    "save": "บันทึก",
+    "delete": "ลบ",
+    "edit": "แก้ไข",
+    "close": "ปิด",
+    "back": "กลับ",
+    "next": "ถัดไป",
+    "previous": "ก่อนหน้า",
+    "search": "ค้นหา",
+    "filter": "กรอง",
+    "clear": "ล้าง",
+    "copy": "คัดลอก",
+    "download": "ดาวน์โหลด",
+    "upload": "อัปโหลด",
+    "submit": "ส่ง",
+    "send": "ส่ง",
+    "yes": "ใช่",
+    "no": "ไม่",
+    "ok": "ตกลง",
+    "required": "จำเป็น"
+  },
+  "navigation": {
+    "features": "คุณสมบัติ",
+    "about": "เกี่ยวกับ",
+    "help": "ช่วยเหลือ",
+    "contact": "ติดต่อ",
+    "faq": "คำถามที่พบบ่อย",
+    "privacy": "ความเป็นส่วนตัว",
+    "terms": "เงื่อนไขการใช้บริการ",
+    "language": "ภาษา",
+    "theme": "ธีม",
+    "home": "หน้าแรก"
+  },
+  "header": {
+    "title": "Easy Timestamps",
+    "subtitle": "เครื่องมือสร้างไทม์สแตมป์และบทใน YouTube ฟรี",
+    "description": "สร้างไทม์สแตมป์ YouTube และบทของวิดีโอแบบมืออาชีพได้ทันที เหมาะสำหรับผู้สร้างเนื้อหา นักการศึกษา และผู้เชี่ยวชาญด้านวิดีโอ"
+  },
+  "tool": {
+    "uploadVideo": "อัปโหลดวิดีโอ",
+    "pasteUrl": "วาง URL ของ YouTube",
+    "addTimestamp": "เพิ่มไทม์สแตมป์",
+    "generateChapters": "สร้างบท",
+    "exportTimestamps": "ส่งออกไทม์สแตมป์",
+    "copyToClipboard": "คัดลอกไปยังคลิปบอร์ด",
+    "downloadFile": "ดาวน์โหลดไฟล์",
+    "videoUrl": "URL วิดีโอ",
+    "videoUrlPlaceholder": "วาง URL วิดีโอ YouTube ที่นี่...",
+    "timestampTime": "เวลา",
+    "timestampTitle": "ชื่อเรื่อง",
+    "timestampDescription": "คำอธิบาย",
+    "timePlaceholder": "00:00",
+    "titlePlaceholder": "ชื่อบท",
+    "descriptionPlaceholder": "คำอธิบายเพิ่มเติม",
+    "noTimestamps": "ยังไม่มีไทม์สแตมป์ที่เพิ่ม",
+    "addFirstTimestamp": "เพิ่มไทม์สแตมป์แรกของคุณ",
+    "enterVideoUrl": "ใส่ URL วิดีโอ",
+    "load": "โหลด",
+    "addTimestampAtCurrentTime": "เพิ่มไทม์สแตมป์ในเวลาปัจจุบัน",
+    "addSection": "เพิ่มส่วน",
+    "exportAsText": "ส่งออกเป็นข้อความ",
+    "currentTime": "เวลาปัจจุบัน",
+    "enterDescription": "ใส่คำอธิบาย",
+    "addYouTubeUrl": "เพิ่ม YouTube URL",
+    "loadingVideo": "กำลังโหลดวิดีโอ...",
+    "errorLoadingVideo": "ข้อผิดพลาดในการโหลดวิดีโอ",
+    "selectFile": "เลือกไฟล์",
+    "dragDropFile": "ลากและวางไฟล์",
+    "supportedFormats": "รูปแบบที่รองรับ"
+  },
+  "language": {
+    "names": {
+      "th": "ภาษาไทย"
+    }
+  }
+}

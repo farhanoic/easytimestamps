@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- English Home Page -->
+  <url>
+    <loc>https://easytimestamps.com/</loc>
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://easytimestamps.com/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://easytimestamps.com/es"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://easytimestamps.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://easytimestamps.com/de"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://easytimestamps.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://easytimestamps.com/ja"/>
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://easytimestamps.com/ko"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://easytimestamps.com/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://easytimestamps.com/"/>
+    <image:image>
+      <image:loc>https://easytimestamps.com/og-image.jpg</image:loc>
+      <image:title>Easy Timestamps - Free YouTube Timestamp Generator</image:title>
+      <image:caption>Create YouTube timestamps and video chapters instantly</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Spanish Home Page -->
+  <url>
+    <loc>https://easytimestamps.com/es</loc>
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://easytimestamps.com/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://easytimestamps.com/es"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://easytimestamps.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://easytimestamps.com/de"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://easytimestamps.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://easytimestamps.com/ja"/>
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://easytimestamps.com/ko"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://easytimestamps.com/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://easytimestamps.com/"/>
+    <image:image>
+      <image:loc>https://easytimestamps.com/og-image-es.jpg</image:loc>
+      <image:title>Easy Timestamps - Generador Gratuito de Marcas de Tiempo para YouTube</image:title>
+      <image:caption>Crea marcas de tiempo y capítulos para YouTube al instante</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Features Pages -->
+  <url>
+    <loc>https://easytimestamps.com/features</loc>
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://easytimestamps.com/features"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://easytimestamps.com/es/caracteristicas"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://easytimestamps.com/fr/fonctionnalites"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://easytimestamps.com/de/funktionen"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://easytimestamps.com/pt/recursos"/>
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://easytimestamps.com/ja/機能"/>
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://easytimestamps.com/ko/기능"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://easytimestamps.com/zh/功能"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://easytimestamps.com/features"/>
+  </url>
+
+  <url>
+    <loc>https://easytimestamps.com/es/caracteristicas</loc>
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://easytimestamps.com/features"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://easytimestamps.com/es/caracteristicas"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://easytimestamps.com/fr/fonctionnalites"/>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://easytimestamps.com/de/funktionen"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://easytimestamps.com/pt/recursos"/>
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://easytimestamps.com/ja/機能"/>
+    <xhtml:link rel="alternate" hreflang="ko-KR" href="https://easytimestamps.com/ko/기능"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://easytimestamps.com/zh/功能"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://easytimestamps.com/features"/>
+  </url>
+
+</urlset>

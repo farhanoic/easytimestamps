@@ -1,0 +1,81 @@
+{
+  "common": {
+    "loading": "Завантаження...",
+    "error": "Помилка",
+    "success": "Успішно",
+    "cancel": "Скасувати",
+    "save": "Зберегти",
+    "delete": "Видалити",
+    "edit": "Редагувати",
+    "close": "Закрити",
+    "back": "Назад",
+    "next": "Далі",
+    "previous": "Попередній",
+    "search": "Пошук",
+    "filter": "Фільтр",
+    "clear": "Очистити",
+    "copy": "Копіювати",
+    "download": "Завантажити",
+    "upload": "Завантажити",
+    "submit": "Надіслати",
+    "send": "Надіслати",
+    "yes": "Так",
+    "no": "Ні",
+    "ok": "Гаразд",
+    "required": "Обов'язково"
+  },
+  "navigation": {
+    "features": "Функції",
+    "about": "Про нас",
+    "help": "Допомога",
+    "contact": "Контакти",
+    "faq": "Поширені питання",
+    "privacy": "Конфіденційність",
+    "terms": "Умови використання",
+    "language": "Мова",
+    "theme": "Тема",
+    "home": "Головна"
+  },
+  "header": {
+    "title": "Easy Timestamps",
+    "subtitle": "Безкоштовний генератор часових міток і розділів YouTube",
+    "description": "Створюйте професійні часові мітки YouTube і розділи відео миттєво. Ідеально для створювачів контенту, освітян і відео-професіоналів."
+  },
+  "tool": {
+    "uploadVideo": "Завантажити відео",
+    "pasteUrl": "Вставити URL YouTube",
+    "addTimestamp": "Додати часову мітку",
+    "generateChapters": "Створити розділи",
+    "exportTimestamps": "Експортувати часові мітки",
+    "copyToClipboard": "Копіювати в буфер обміну",
+    "downloadFile": "Завантажити файл",
+    "videoUrl": "URL відео",
+    "videoUrlPlaceholder": "Вставте URL відео YouTube тут...",
+    "timestampTime": "Час",
+    "timestampTitle": "Заголовок",
+    "timestampDescription": "Опис",
+    "timePlaceholder": "00:00",
+    "titlePlaceholder": "Назва розділу",
+    "descriptionPlaceholder": "Додатковий опис",
+    "noTimestamps": "Часові мітки ще не додані",
+    "addFirstTimestamp": "Додайте вашу першу часову мітку",
+    "enterVideoUrl": "Введіть URL відео",
+    "load": "Завантажити",
+    "addTimestampAtCurrentTime": "Додати часову мітку в поточний час",
+    "addSection": "Додати розділ",
+    "exportAsText": "Експортувати як текст",
+    "currentTime": "Поточний час",
+    "enterDescription": "Введіть опис",
+    "addYouTubeUrl": "Додати YouTube URL",
+    "loadingVideo": "Завантаження відео...",
+    "errorLoadingVideo": "Помилка завантаження відео",
+    "selectFile": "Вибрати файл",
+    "dragDropFile": "Перетягніть файл",
+    "supportedFormats": "Підтримувані формати"
+  },
+  "language": {
+    "names": {
+      "uk": "Українська"
+    }
+  }
+}

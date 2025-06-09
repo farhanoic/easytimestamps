@@ -1,0 +1,81 @@
+{
+  "common": {
+    "loading": "Laden...",
+    "error": "Fout",
+    "success": "Succes",
+    "cancel": "Annuleren",
+    "save": "Opslaan",
+    "delete": "Verwijderen",
+    "edit": "Bewerken",
+    "close": "Sluiten",
+    "back": "Terug",
+    "next": "Volgende",
+    "previous": "Vorige",
+    "search": "Zoeken",
+    "filter": "Filter",
+    "clear": "Wissen",
+    "copy": "Kopiëren",
+    "download": "Downloaden",
+    "upload": "Uploaden",
+    "submit": "Versturen",
+    "send": "Verzenden",
+    "yes": "Ja",
+    "no": "Nee",
+    "ok": "OK",
+    "required": "Verplicht"
+  },
+  "navigation": {
+    "features": "Functies",
+    "about": "Over ons",
+    "help": "Help",
+    "contact": "Contact",
+    "faq": "Veelgestelde vragen",
+    "privacy": "Privacy",
+    "terms": "Servicevoorwaarden",
+    "language": "Taal",
+    "theme": "Thema",
+    "home": "Home"
+  },
+  "header": {
+    "title": "Easy Timestamps",
+    "subtitle": "Gratis YouTube tijdstempel en hoofdstuk generator",
+    "description": "Maak professionele YouTube tijdstempels en video hoofdstukken direct. Perfect voor content creators, docenten en videoprofessionals."
+  },
+  "tool": {
+    "uploadVideo": "Video uploaden",
+    "pasteUrl": "YouTube URL plakken",
+    "addTimestamp": "Tijdstempel toevoegen",
+    "generateChapters": "Hoofdstukken genereren",
+    "exportTimestamps": "Tijdstempels exporteren",
+    "copyToClipboard": "Kopiëren naar klembord",
+    "downloadFile": "Bestand downloaden",
+    "videoUrl": "Video URL",
+    "videoUrlPlaceholder": "Plak YouTube video URL hier...",
+    "timestampTime": "Tijd",
+    "timestampTitle": "Titel",
+    "timestampDescription": "Beschrijving",
+    "timePlaceholder": "00:00",
+    "titlePlaceholder": "Hoofdstuktitel",
+    "descriptionPlaceholder": "Optionele beschrijving",
+    "noTimestamps": "Nog geen tijdstempels toegevoegd",
+    "addFirstTimestamp": "Voeg uw eerste tijdstempel toe",
+    "enterVideoUrl": "Voer video-URL in",
+    "load": "Laden",
+    "addTimestampAtCurrentTime": "Tijdstempel toevoegen op huidige tijd",
+    "addSection": "Sectie toevoegen",
+    "exportAsText": "Exporteren als tekst",
+    "currentTime": "Huidige tijd",
+    "enterDescription": "Beschrijving invoeren",
+    "addYouTubeUrl": "YouTube-URL toevoegen",
+    "loadingVideo": "Video laden...",
+    "errorLoadingVideo": "Fout bij laden van video",
+    "selectFile": "Bestand selecteren",
+    "dragDropFile": "Bestand slepen en neerzetten",
+    "supportedFormats": "Ondersteunde formaten"
+  },
+  "language": {
+    "names": {
+      "nl": "Nederlands"
+    }
+  }
+}

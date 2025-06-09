@@ -1,0 +1,417 @@
+{
+  "common": {
+    "loading": "로딩 중...",
+    "error": "오류",
+    "success": "성공",
+    "cancel": "취소",
+    "save": "저장",
+    "delete": "삭제",
+    "edit": "편집",
+    "close": "닫기",
+    "back": "뒤로",
+    "next": "다음",
+    "previous": "이전",
+    "search": "검색",
+    "filter": "필터",
+    "clear": "지우기",
+    "copy": "복사",
+    "download": "다운로드",
+    "upload": "업로드",
+    "submit": "제출",
+    "send": "보내기",
+    "yes": "예",
+    "no": "아니오",
+    "ok": "확인",
+    "required": "필수",
+    "getStarted": "시작하기",
+    "learnMore": "더 알아보기",
+    "contactUs": "문의하기",
+    "tryNow": "지금 시도하기"
+  },
+  "navigation": {
+    "features": "기능",
+    "about": "정보",
+    "help": "도움말",
+    "contact": "연락처",
+    "faq": "FAQ",
+    "privacy": "개인정보보호",
+    "terms": "서비스 약관",
+    "language": "언어",
+    "theme": "테마",
+    "home": "홈"
+  },
+  "header": {
+    "title": "Easy Timestamps",
+    "subtitle": "무료 YouTube 타임스탬프 및 챕터 생성기",
+    "description": "전문적인 YouTube 타임스탬프와 비디오 챕터를 즉시 생성하세요. 콘텐츠 크리에이터, 교육자, 비디오 전문가에게 완벽합니다."
+  },
+  "tool": {
+    "uploadVideo": "비디오 업로드",
+    "pasteUrl": "YouTube URL 붙여넣기",
+    "addTimestamp": "타임스탬프 추가",
+    "generateChapters": "챕터 생성",
+    "exportTimestamps": "타임스탬프 내보내기",
+    "copyToClipboard": "클립보드에 복사",
+    "downloadFile": "파일 다운로드",
+    "videoUrl": "비디오 URL",
+    "videoUrlPlaceholder": "YouTube 비디오 URL을 여기에 붙여넣으세요...",
+    "timestampTime": "시간",
+    "timestampTitle": "제목",
+    "timestampDescription": "설명",
+    "timePlaceholder": "00:00",
+    "titlePlaceholder": "챕터 제목",
+    "descriptionPlaceholder": "선택적 설명",
+    "noTimestamps": "아직 타임스탬프가 추가되지 않았습니다",
+    "addFirstTimestamp": "첫 번째 타임스탬프를 추가하세요",
+    "enterVideoUrl": "비디오 URL 입력",
+    "load": "로드",
+    "addTimestampAtCurrentTime": "현재 시간에 타임스탬프 추가",
+    "addSection": "섹션 추가",
+    "exportAsText": "텍스트로 내보내기",
+    "currentTime": "현재 시간",
+    "enterDescription": "설명 입력",
+    "addYouTubeUrl": "YouTube URL 추가",
+    "loadingVideo": "비디오 로딩 중...",
+    "errorLoadingVideo": "비디오 로딩 오류",
+    "selectFile": "파일 선택",
+    "dragDropFile": "파일 드래그 앤 드롭",
+    "supportedFormats": "지원되는 형식",
+    "or": "[KO] or",
+    "timestampFormat": "[KO] Timestamp Format",
+    "formatSimple": "[KO] Simple (0:00)",
+    "formatDetailed": "[KO] Detailed (00:00:00)",
+    "exportFormat": "[KO] Export Format",
+    "formatText": "[KO] Plain Text",
+    "formatJson": "[KO] JSON",
+    "formatCsv": "[KO] CSV",
+    "videoLoaded": "[KO] Video loaded successfully",
+    "videoError": "[KO] Error loading video",
+    "invalidUrl": "[KO] Please enter a valid YouTube URL",
+    "timestampAdded": "[KO] Timestamp added successfully",
+    "timestampRemoved": "[KO] Timestamp removed successfully",
+    "timestampsCopied": "[KO] Timestamps copied to clipboard successfully",
+    "timestampsExported": "[KO] Timestamps exported successfully"
+  },
+  "language": {
+    "names": {
+      "ko": "한국어",
+      "en": "[KO] English",
+      "es": "[KO] Español",
+      "fr": "[KO] Français",
+      "de": "[KO] Deutsch",
+      "it": "[KO] Italiano",
+      "pt": "[KO] Português",
+      "ja": "[KO] 日本語",
+      "ru": "[KO] Русский",
+      "zh-CN": "[KO] 中文 (简体)",
+      "zh-TW": "[KO] 中文 (繁體)",
+      "ar": "[KO] العربية",
+      "bg": "[KO] Български",
+      "ca": "[KO] Català",
+      "nl": "[KO] Nederlands",
+      "el": "[KO] Ελληνικά",
+      "hi": "[KO] हिन्दी",
+      "id": "[KO] Bahasa Indonesia",
+      "ms": "[KO] Bahasa Melayu",
+      "pl": "[KO] Polski",
+      "sv": "[KO] Svenska",
+      "th": "[KO] ภาษาไทย",
+      "tr": "[KO] Türkçe",
+      "uk": "[KO] Українська",
+      "vi": "[KO] Tiếng Việt"
+    },
+    "selector": {
+      "title": "[KO] Select Language",
+      "searchPlaceholder": "[KO] Search languages...",
+      "noResults": "[KO] No languages found",
+      "current": "[KO] Current language"
+    }
+  },
+  "features": {
+    "title": "강력한 기능",
+    "subtitle": "전문적인 YouTube 타임스탬프를 빠르고 쉽게 만들 수 있는 모든 것",
+    "ctaTitle": "완벽한 타임스탬프를 만들 준비가 되셨나요?",
+    "ctaSubtitle": "YouTube 동영상에 Easy Timestamps를 신뢰하는 수천 명의 크리에이터와 함께하세요",
+    "ctaTryNow": "Easy Timestamps 사용해보기",
+    "manualTimestamps": {
+      "description": "시장의 다른 과부하된 도구들과 달리, 이것은 간단하지만 강력합니다. 수동으로 타임스탬프를 생성하여 정확성을 보장하지만, 인터페이스는 챕터 시작부터 YouTube 비디오 챕터 끝까지 50% 빠르게 생성할 수 있도록 도와줍니다.",
+      "points": {
+        "0": "간단하지만 강력한 인터페이스",
+        "1": "50% 빠른 생성",
+        "2": "정확한 챕터 제어"
+      },
+      "title": "[KO] Manual Timestamp Creation"
+    },
+    "videoIntegration": {
+      "description": "MP4 파일 업로드 및 직접 YouTube URL 로딩 지원. 원활한 재생 경험을 위한 정확한 컨트롤을 갖춘 반응형 비디오 플레이어.",
+      "points": {
+        "2": "원클릭으로 사용자 정의 챕터 추가",
+        "3": "실시간 비디오 미리보기"
+      },
+      "title": "[KO] Video Integration"
+    },
+    "instantExport": {
+      "description": "YouTube 설명 준비 형식으로 클립보드에 원클릭 복사. 비디오 설명에 완벽한 깔끔하고 전문적인 타임스탬프 레이아웃.",
+      "points": {
+        "3": "여러 내보내기 형식"
+      },
+      "title": "[KO] Instant Export"
+    },
+    "comingSoon": {
+      "description": "AI 향상 및 더 강력한 기능이 곧 출시되어 타임스탬프 생성을 더욱 효율적이고 지능적으로 만들어줍니다.",
+      "points": {
+        "3": "고급 자동화"
+      },
+      "title": "[KO] Coming Soon Features"
+    }
+  },
+  "project": {
+    "manage": "[KO] Manage Projects",
+    "projects": "[KO] Projects",
+    "save": "[KO] Save",
+    "saved": "[KO] Saved!",
+    "saveNew": "[KO] Save New",
+    "saveProject": "[KO] Save Project",
+    "projectName": "[KO] Project Name",
+    "projectNamePlaceholder": "[KO] Enter project name",
+    "load": "[KO] Load Project",
+    "new": "[KO] New Project",
+    "delete": "[KO] Delete Project",
+    "export": "[KO] Export Project",
+    "import": "[KO] Import",
+    "restore": "[KO] Restore",
+    "manager": "[KO] Project Manager",
+    "managerDescription": "[KO] Save, load, and manage your timestamp projects",
+    "totalProjects": "[KO] Projects",
+    "totalTimestamps": "[KO] Timestamps",
+    "storageUsed": "[KO] Storage Used",
+    "noProjects": "[KO] No projects yet",
+    "noProjectsDescription": "[KO] Create your first project by adding some timestamps and saving",
+    "autoSave": "[KO] Auto-save",
+    "autoSaveFound": "[KO] Auto-saved work found",
+    "autoSaveDescription": "[KO] Restore your previous session with {{count}} timestamps",
+    "confirmDelete": "[KO] Are you sure you want to delete \"{{name}}\"?",
+    "confirmNew": "[KO] Start a new project? Unsaved work will be lost.",
+    "saveInfo": "[KO] This will save {{count}} timestamps locally on your device.",
+    "errorNoName": "[KO] Please enter a project name",
+    "errorSaving": "[KO] Failed to save project",
+    "importError": "[KO] Failed to import project: "
+  },
+  "signup": {
+    "success": {
+      "title": "[KO] 🎉 Great work!",
+      "subtitle": "[KO] You just created your first timestamp project!",
+      "description": "[KO] Want to save your projects in the cloud so you can access them from any device?"
+    },
+    "storage": {
+      "title": "[KO] Running out of space?",
+      "subtitle": "[KO] You have {{count}} projects saved locally",
+      "description": "[KO] Upgrade to cloud storage for unlimited projects and access from anywhere."
+    },
+    "multiple": {
+      "title": "[KO] Working on multiple projects?",
+      "subtitle": "[KO] Keep them synced across devices",
+      "description": "[KO] Sign up to sync all your projects and never lose your work again."
+    },
+    "discover": {
+      "title": "[KO] Unlock premium features",
+      "subtitle": "[KO] Get the most out of Easy Timestamps",
+      "description": "[KO] Join thousands of creators who use Easy Timestamps Pro for their workflow."
+    },
+    "benefits": {
+      "cloudSync": "[KO] Cloud sync across all devices",
+      "backup": "[KO] Automatic backup & restore",
+      "sharing": "[KO] Share projects with team members",
+      "unlimited": "[KO] Unlimited cloud storage",
+      "access": "[KO] Access from any device",
+      "security": "[KO] Secure cloud backup",
+      "sync": "[KO] Real-time sync",
+      "collaborate": "[KO] Collaboration tools",
+      "history": "[KO] Version history",
+      "aiGeneration": "[KO] AI-powered timestamp generation",
+      "templates": "[KO] Custom templates & themes",
+      "analytics": "[KO] Project analytics & insights"
+    },
+    "socialProof": "[KO] Join 10,000+ creators already using Easy Timestamps Pro",
+    "getStarted": "[KO] Get Started - It's Free!",
+    "remindLater": "[KO] Remind me later",
+    "noThanks": "[KO] No thanks",
+    "finePrint": "[KO] No credit card required. Free plan includes 5 cloud projects."
+  },
+  "faq": {
+    "title": "[KO] Frequently Asked Questions",
+    "subtitle": "[KO] Find answers to common questions about Easy Timestamps",
+    "searchPlaceholder": "[KO] Search FAQs...",
+    "noResults": "[KO] No FAQs found matching your search",
+    "noResultsDescription": "[KO] Try different keywords or browse all categories below",
+    "categories": {
+      "gettingStarted": "[KO] Getting Started",
+      "videoSupport": "[KO] Video Support",
+      "timestampCreation": "[KO] Timestamp Creation",
+      "exportingSharing": "[KO] Exporting & Sharing",
+      "troubleshooting": "[KO] Troubleshooting"
+    },
+    "questions": {
+      "whatIs": "[KO] What is Easy Timestamps?",
+      "whatIsAnswer": "[KO] Easy Timestamps is a free tool that helps you create professional YouTube timestamps and video chapters quickly and efficiently.",
+      "howToUse": "[KO] How do I use Easy Timestamps?",
+      "howToUseAnswer": "[KO] Simply paste a YouTube URL or upload a video file, then add timestamps with titles. You can export the results in various formats.",
+      "supportedFormats": "[KO] What video formats are supported?",
+      "supportedFormatsAnswer": "[KO] We support YouTube URLs and MP4 file uploads. More formats coming soon.",
+      "freeToUse": "[KO] Is Easy Timestamps free to use?",
+      "freeToUseAnswer": "[KO] Yes! Easy Timestamps is completely free to use with no hidden fees or subscriptions.",
+      "exportFormats": "[KO] What export formats are available?",
+      "exportFormatsAnswer": "[KO] You can export timestamps in YouTube description format, JSON, CSV, and plain text formats."
+    }
+  },
+  "contact": {
+    "title": "[KO] Get in Touch",
+    "subtitle": "[KO] We're here to help! Whether you have a question, found a bug, or want to share feedback, we'd love to hear from you.",
+    "quickHelp": "[KO] Need Quick Help?",
+    "quickHelpDescription": "[KO] Many common questions are answered in our FAQ section. Check there first for instant answers!",
+    "browseFaq": "[KO] Browse FAQ",
+    "contactMethods": "[KO] Contact Methods",
+    "sendMessage": "[KO] Send us a Message",
+    "form": {
+      "name": "[KO] Name",
+      "namePlaceholder": "[KO] Your full name",
+      "email": "[KO] Email",
+      "emailPlaceholder": "[KO] your.email@example.com",
+      "category": "[KO] Category",
+      "categoryPlaceholder": "[KO] Select a category",
+      "subject": "[KO] Subject",
+      "subjectPlaceholder": "[KO] Brief description of your inquiry",
+      "message": "[KO] Message",
+      "messagePlaceholder": "[KO] Please provide as much detail as possible...",
+      "attachment": "[KO] Attachment (Optional)",
+      "attachmentDescription": "[KO] Images or PDF, up to 5MB",
+      "chooseFile": "[KO] Choose a file",
+      "dragDrop": "[KO] or drag and drop",
+      "sendMessage": "[KO] Send Message",
+      "sending": "[KO] Sending...",
+      "messageSent": "[KO] Message Sent!",
+      "messageSentDescription": "[KO] Thanks for reaching out. We'll get back to you soon!",
+      "sendFailed": "[KO] Send Failed",
+      "sendFailedDescription": "[KO] Something went wrong. Please try again or email us directly.",
+      "tryEasyTimestamps": "[KO] Try Easy Timestamps now",
+      "backToTool": "[KO] Back to Easy Timestamps"
+    },
+    "categories": {
+      "technical": "[KO] Technical Support",
+      "technicalDescription": "[KO] Tool not working, loading issues, browser compatibility",
+      "bug": "[KO] Bug Report",
+      "bugDescription": "[KO] Something is broken or not working as expected",
+      "feature": "[KO] Feature Request",
+      "featureDescription": "[KO] Suggestions for new features or improvements",
+      "business": "[KO] Business Inquiry",
+      "businessDescription": "[KO] Partnerships, collaborations, or commercial questions",
+      "general": "[KO] General Question",
+      "generalDescription": "[KO] How-to questions, usage help, or general inquiries"
+    },
+    "methods": {
+      "emailSupport": "[KO] Email Support",
+      "emailSupportDescription": "[KO] Get help with any questions or issues",
+      "bugReports": "[KO] Bug Reports",
+      "bugReportsDescription": "[KO] Report issues or unexpected behavior",
+      "featureRequests": "[KO] Feature Requests",
+      "featureRequestsDescription": "[KO] Suggest new features or improvements"
+    },
+    "responseTimes": "[KO] Response Times",
+    "businessHours": "[KO] All times are in business days (Monday-Friday, 9 AM - 5 PM CET)",
+    "privacy": {
+      "title": "[KO] Your Privacy Matters",
+      "points": [
+        "We only use your information to respond to your inquiry",
+        "Contact details are not shared with third parties",
+        "Messages are securely stored and deleted after resolution",
+        "See our Privacy Policy for complete details"
+      ]
+    }
+  },
+  "privacy": {
+    "gdpr": {
+      "title": "[KO] Your Privacy Rights",
+      "description": "[KO] We respect your privacy. This website uses cookies and processes personal data to improve your experience. You have the right to access, correct, or delete your data at any time.",
+      "accept": "[KO] Accept All",
+      "decline": "[KO] Necessary Only",
+      "learnMore": "[KO] Privacy Policy"
+    },
+    "ccpa": {
+      "title": "[KO] California Privacy Rights",
+      "description": "[KO] We may collect and share personal information. California residents have the right to know what personal information is collected and to request deletion.",
+      "accept": "[KO] Continue",
+      "optOut": "[KO] Do Not Sell My Info",
+      "learnMore": "[KO] Learn More"
+    },
+    "cookies": {
+      "title": "[KO] Cookie Notice",
+      "description": "[KO] This website uses cookies to enhance your browsing experience and provide personalized content.",
+      "accept": "[KO] Accept",
+      "decline": "[KO] Decline",
+      "learnMore": "[KO] Cookie Policy"
+    }
+  },
+  "errors": {
+    "general": "[KO] Something went wrong",
+    "network": "[KO] Network error. Please check your connection.",
+    "fileSize": "[KO] File size must be less than 5MB",
+    "fileType": "[KO] Only images and PDF files are allowed",
+    "required": "[KO] This field is required",
+    "invalidEmail": "[KO] Please enter a valid email address",
+    "invalidUrl": "[KO] Please enter a valid URL",
+    "invalidTime": "[KO] Please enter a valid time format",
+    "minLength": "[KO] Must be at least {{min}} characters long",
+    "maxLength": "[KO] Must be no more than {{max}} characters long"
+  },
+  "validation": {
+    "nameRequired": "[KO] Name is required",
+    "emailRequired": "[KO] Email is required",
+    "categoryRequired": "[KO] Please select a category",
+    "subjectRequired": "[KO] Subject is required",
+    "messageRequired": "[KO] Message is required",
+    "messageMinLength": "[KO] Message must be at least 10 characters long"
+  },
+  "formatting": {
+    "date": {
+      "format": "[KO] MM/DD/YYYY",
+      "placeholder": "[KO] MM/DD/YYYY"
+    },
+    "time": {
+      "format": "[KO] 12h",
+      "placeholder": "[KO] 00:00 AM/PM"
+    },
+    "number": {
+      "decimal": "[KO] .",
+      "thousands": "[KO] ,",
+      "example": "[KO] 1,000.50"
+    },
+    "phone": {
+      "format": "[KO] (XXX) XXX-XXXX",
+      "placeholder": "[KO] (555) 123-4567"
+    },
+    "address": {
+      "order": [
+        "street",
+        "city",
+        "state",
+        "zip",
+        "country"
+      ]
+    }
+  },
+  "time": {
+    "formats": {
+      "ago": "[KO] {{time}} ago",
+      "in": "[KO] in {{time}}",
+      "justNow": "[KO] just now",
+      "seconds": "[KO] {{count}} second",
+      "seconds_other": "[KO] {{count}} seconds",
+      "minutes": "[KO] {{count}} minute",
+      "minutes_other": "[KO] {{count}} minutes",
+      "hours": "[KO] {{count}} hour",
+      "hours_other": "[KO] {{count}} hours",
+      "days": "[KO] {{count}} day",
+      "days_other": "[KO] {{count}} days"
+    }
+  }
+}

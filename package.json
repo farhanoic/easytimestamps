@@ -7,7 +7,14 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "translation:check": "node scripts/translation-qa.js",
+    "translation:export": "node scripts/translation-qa.js --export",
+    "translation:ci": "node scripts/translation-qa.js && exit 0",
+    "translation:apply": "node scripts/apply-localization.js",
+    "translation:sync": "node scripts/copy-translation-structure.js",
+    "translation:update": "node scripts/update-all-translations.js",
+    "translation:final-check": "node scripts/final-localization-check.js"
   },
   "keywords": [
     "youtube",
@@ -20,10 +27,15 @@
   "dependencies": {
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "i18next": "^25.2.1",
+    "i18next-browser-languagedetector": "^8.1.0",
+    "i18next-http-backend": "^3.0.2",
     "lucide-react": "^0.513.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-player": "^2.16.0"
+    "react-i18next": "^15.5.2",
+    "react-player": "^2.16.0",
+    "react-router-dom": "^7.6.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

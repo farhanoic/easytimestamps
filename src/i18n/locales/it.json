@@ -1,0 +1,81 @@
+{
+  "common": {
+    "loading": "Caricamento...",
+    "error": "Errore",
+    "success": "Successo",
+    "cancel": "Annulla",
+    "save": "Salva",
+    "delete": "Elimina",
+    "edit": "Modifica",
+    "close": "Chiudi",
+    "back": "Indietro",
+    "next": "Avanti",
+    "previous": "Precedente",
+    "search": "Cerca",
+    "filter": "Filtro",
+    "clear": "Cancella",
+    "copy": "Copia",
+    "download": "Scarica",
+    "upload": "Carica",
+    "submit": "Invia",
+    "send": "Invia",
+    "yes": "Sì",
+    "no": "No",
+    "ok": "OK",
+    "required": "Obbligatorio"
+  },
+  "navigation": {
+    "features": "Caratteristiche",
+    "about": "Informazioni",
+    "help": "Aiuto",
+    "contact": "Contatto",
+    "faq": "FAQ",
+    "privacy": "Privacy",
+    "terms": "Termini di Servizio",
+    "language": "Lingua",
+    "theme": "Tema",
+    "home": "Casa"
+  },
+  "header": {
+    "title": "Easy Timestamps",
+    "subtitle": "Generatore gratuito di timestamp e capitoli per YouTube",
+    "description": "Crea timestamp professionali di YouTube e capitoli video istantaneamente. Perfetto per creatori di contenuti, educatori e professionisti video."
+  },
+  "tool": {
+    "uploadVideo": "Carica video",
+    "pasteUrl": "Incolla URL YouTube",
+    "addTimestamp": "Aggiungi timestamp",
+    "generateChapters": "Genera capitoli",
+    "exportTimestamps": "Esporta timestamp",
+    "copyToClipboard": "Copia negli appunti",
+    "downloadFile": "Scarica file",
+    "videoUrl": "URL video",
+    "videoUrlPlaceholder": "Incolla l'URL del video YouTube qui...",
+    "timestampTime": "Tempo",
+    "timestampTitle": "Titolo",
+    "timestampDescription": "Descrizione",
+    "timePlaceholder": "00:00",
+    "titlePlaceholder": "Titolo del capitolo",
+    "descriptionPlaceholder": "Descrizione opzionale",
+    "noTimestamps": "Nessun timestamp aggiunto ancora",
+    "addFirstTimestamp": "Aggiungi il tuo primo timestamp",
+    "enterVideoUrl": "Inserisci URL del video",
+    "load": "Carica",
+    "addTimestampAtCurrentTime": "Aggiungi timestamp al tempo corrente",
+    "addSection": "Aggiungi sezione",
+    "exportAsText": "Esporta come testo",
+    "currentTime": "Tempo corrente",
+    "enterDescription": "Inserisci descrizione",
+    "addYouTubeUrl": "Aggiungi URL YouTube",
+    "loadingVideo": "Caricamento video...",
+    "errorLoadingVideo": "Errore nel caricamento del video",
+    "selectFile": "Seleziona file",
+    "dragDropFile": "Trascina e rilascia file",
+    "supportedFormats": "Formati supportati"
+  },
+  "language": {
+    "names": {
+      "it": "Italiano"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "common": {
+    "loading": "Memuat...",
+    "error": "Kesalahan",
+    "success": "Berhasil",
+    "cancel": "Batal",
+    "save": "Simpan",
+    "delete": "Hapus",
+    "edit": "Edit",
+    "close": "Tutup",
+    "back": "Kembali",
+    "next": "Selanjutnya",
+    "previous": "Sebelumnya",
+    "search": "Cari",
+    "filter": "Filter",
+    "clear": "Hapus",
+    "copy": "Salin",
+    "download": "Unduh",
+    "upload": "Unggah",
+    "submit": "Kirim",
+    "send": "Kirim",
+    "yes": "Ya",
+    "no": "Tidak",
+    "ok": "OK",
+    "required": "Wajib"
+  },
+  "navigation": {
+    "features": "Fitur",
+    "about": "Tentang",
+    "help": "Bantuan",
+    "contact": "Kontak",
+    "faq": "FAQ",
+    "privacy": "Privasi",
+    "terms": "Syarat Layanan",
+    "language": "Bahasa",
+    "theme": "Tema",
+    "home": "Beranda"
+  },
+  "header": {
+    "title": "Easy Timestamps",
+    "subtitle": "Generator Timestamp & Bab YouTube Gratis",
+    "description": "Buat timestamp YouTube profesional dan bab video secara instan. Sempurna untuk kreator konten, pendidik, dan profesional video."
+  },
+  "tool": {
+    "uploadVideo": "Unggah Video",
+    "pasteUrl": "Tempel URL YouTube",
+    "addTimestamp": "Tambah Timestamp",
+    "generateChapters": "Buat Bab",
+    "exportTimestamps": "Ekspor Timestamp",
+    "copyToClipboard": "Salin ke Clipboard",
+    "downloadFile": "Unduh File",
+    "videoUrl": "URL Video",
+    "videoUrlPlaceholder": "Tempel URL video YouTube di sini...",
+    "timestampTime": "Waktu",
+    "timestampTitle": "Judul",
+    "timestampDescription": "Deskripsi",
+    "timePlaceholder": "00:00",
+    "titlePlaceholder": "Judul bab",
+    "descriptionPlaceholder": "Deskripsi opsional",
+    "noTimestamps": "Belum ada timestamp yang ditambahkan",
+    "addFirstTimestamp": "Tambahkan timestamp pertama Anda",
+    "enterVideoUrl": "Masukkan URL video",
+    "load": "Muat",
+    "addTimestampAtCurrentTime": "Tambah timestamp pada waktu saat ini",
+    "addSection": "Tambah bagian",
+    "exportAsText": "Ekspor sebagai teks",
+    "currentTime": "Waktu saat ini",
+    "enterDescription": "Masukkan deskripsi",
+    "addYouTubeUrl": "Tambah URL YouTube",
+    "loadingVideo": "Memuat video...",
+    "errorLoadingVideo": "Kesalahan memuat video",
+    "selectFile": "Pilih file",
+    "dragDropFile": "Seret dan lepas file",
+    "supportedFormats": "Format yang didukung"
+  },
+  "language": {
+    "names": {
+      "id": "Bahasa Indonesia"
+    }
+  }
+}

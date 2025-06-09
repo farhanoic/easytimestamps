@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Copy, Check, Edit2, Trash2, Save, X } from 'lucide-react'
 import { trackTimestampEvent, trackExportEvent, trackFeatureUsage } from '../utils/analytics'
+import { useStats } from '../hooks/useStats'
 
 interface Timestamp {
   startTime: string
@@ -19,37 +20,36 @@ function TimestampList({ timestamps, onEditTimestamp, onDeleteTimestamp }: Times
   const [copied, setCopied] = useState(false)
   const [editingIndex, setEditingIndex] = useState<number | null>(null)
   const [editForm, setEditForm] = useState<Timestamp | null>(null)
+  const { incrementTimestamps } = useStats()
   
   // Format time to HH:MM:SS
-  const formatToHHMMSS = (timeStr: string): string => {
-    if (!timeStr) return '00:00:00'
-    
-    const parts = timeStr.split(':')
-    
-    if (parts.length === 2) {
-      // MM:SS format - add hour
-      return `00:${parts[0].padStart(2, '0')}:${parts[1].padStart(2, '0')}`
-    } else if (parts.length === 3) {
-      // HH:MM:SS format - ensure padding
-      return `${parts[0].padStart(2, '0')}:${parts[1].padStart(2, '0')}:${parts[2].padStart(2, '0')}`
-    } else if (parts.length === 1) {
-      // SS format - add hour and minute
-      return `00:00:${parts[0].padStart(2, '0')}`
-    }
-    
-    return timeStr // fallback
-  }
+  // const formatToHHMMSS = (timeStr: string): string => {
+  //   if (!timeStr) return '00:00:00'
+  //   
+  //   const parts = timeStr.split(':')
+  //   
+  //   if (parts.length === 2) {
+  //     // MM:SS format - add hour
+  //     return `00:${parts[0].padStart(2, '0')}:${parts[1].padStart(2, '0')}`
+  //   } else if (parts.length === 3) {
+  //     // HH:MM:SS format - ensure padding
+  //     return `${parts[0].padStart(2, '0')}:${parts[1].padStart(2, '0')}:${parts[2].padStart(2, '0')}`
+  //   } else if (parts.length === 1) {
+  //     // SS format - add hour and minute
+  //     return `00:00:${parts[0].padStart(2, '0')}`
+  //   }
+  //   
+  //   return timeStr // fallback
+  // }
   
   // Format timestamps for YouTube
   const formatForYouTube = () => {
     return timestamps
       .map(ts => {
-        const formattedStartTime = formatToHHMMSS(ts.startTime)
         if (ts.endTime) {
-          const formattedEndTime = formatToHHMMSS(ts.endTime)
-          return `${formattedStartTime} - ${formattedEndTime} | ${ts.description}`
+          return `${ts.startTime} - ${ts.endTime} | ${ts.description}`
         } else {
-          return `${formattedStartTime} | ${ts.description}`
+          return `${ts.startTime} | ${ts.description}`
         }
       })
       .join('\n')
@@ -71,6 +71,9 @@ function TimestampList({ timestamps, onEditTimestamp, onDeleteTimestamp }: Times
           total_characters: formattedText.length
         })
         trackFeatureUsage('copy_timestamps')
+        
+        // Update real-time stats when timestamps are exported/used
+        incrementTimestamps(timestamps.length)
       })
       .catch(() => {
         alert('Failed to copy to clipboard')
@@ -254,8 +257,8 @@ function TimestampList({ timestamps, onEditTimestamp, onDeleteTimestamp }: Times
                   <div className="flex items-center justify-between">
                     <div className="flex-1">
                       <div className="font-mono text-sm text-blue-600 dark:text-blue-400 mb-1">
-                        {formatToHHMMSS(timestamp.startTime)}
-                        {timestamp.endTime && ` - ${formatToHHMMSS(timestamp.endTime)}`}
+                        {timestamp.startTime}
+                        {timestamp.endTime && ` - ${timestamp.endTime}`}
                       </div>
                       <div className="text-neutral-700 dark:text-gray-200">
                         {timestamp.description}

@@ -1,0 +1,417 @@
+{
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "success": "Sucesso",
+    "cancel": "Cancelar",
+    "save": "Salvar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "close": "Fechar",
+    "back": "Voltar",
+    "next": "Próximo",
+    "previous": "Anterior",
+    "search": "Pesquisar",
+    "filter": "Filtrar",
+    "clear": "Limpar",
+    "copy": "Copiar",
+    "download": "Baixar",
+    "upload": "Enviar",
+    "submit": "Enviar",
+    "send": "Enviar",
+    "yes": "Sim",
+    "no": "Não",
+    "ok": "OK",
+    "required": "Obrigatório",
+    "getStarted": "Começar",
+    "learnMore": "Saber Mais",
+    "contactUs": "Entre em Contato",
+    "tryNow": "Experimentar Agora"
+  },
+  "navigation": {
+    "features": "Recursos",
+    "about": "Sobre",
+    "help": "Ajuda",
+    "contact": "Contato",
+    "faq": "FAQ",
+    "privacy": "Privacidade",
+    "terms": "Termos de Serviço",
+    "language": "Idioma",
+    "theme": "Tema",
+    "home": "Início"
+  },
+  "header": {
+    "title": "Easy Timestamps",
+    "subtitle": "Gerador gratuito de timestamps e capítulos para YouTube",
+    "description": "Crie timestamps profissionais do YouTube e capítulos de vídeo instantaneamente. Perfeito para criadores de conteúdo, educadores e profissionais de vídeo."
+  },
+  "tool": {
+    "uploadVideo": "Enviar vídeo",
+    "pasteUrl": "Colar URL do YouTube",
+    "addTimestamp": "Adicionar timestamp",
+    "generateChapters": "Gerar capítulos",
+    "exportTimestamps": "Exportar timestamps",
+    "copyToClipboard": "Copiar para área de transferência",
+    "downloadFile": "Baixar arquivo",
+    "videoUrl": "URL do vídeo",
+    "videoUrlPlaceholder": "Cole a URL do vídeo do YouTube aqui...",
+    "timestampTime": "Tempo",
+    "timestampTitle": "Título",
+    "timestampDescription": "Descrição",
+    "timePlaceholder": "00:00",
+    "titlePlaceholder": "Título do capítulo",
+    "descriptionPlaceholder": "Descrição opcional",
+    "noTimestamps": "Nenhum timestamp adicionado ainda",
+    "addFirstTimestamp": "Adicione seu primeiro timestamp",
+    "enterVideoUrl": "Insira a URL do vídeo",
+    "load": "Carregar",
+    "addTimestampAtCurrentTime": "Adicionar timestamp no tempo atual",
+    "addSection": "Adicionar seção",
+    "exportAsText": "Exportar como texto",
+    "currentTime": "Tempo atual",
+    "enterDescription": "Insira a descrição",
+    "addYouTubeUrl": "Adicionar URL do YouTube",
+    "loadingVideo": "Carregando vídeo...",
+    "errorLoadingVideo": "Erro ao carregar vídeo",
+    "selectFile": "Selecionar arquivo",
+    "dragDropFile": "Arrastar e soltar arquivo",
+    "supportedFormats": "Formatos suportados",
+    "or": "[PT] or",
+    "timestampFormat": "[PT] Timestamp Format",
+    "formatSimple": "[PT] Simple (0:00)",
+    "formatDetailed": "[PT] Detailed (00:00:00)",
+    "exportFormat": "[PT] Export Format",
+    "formatText": "[PT] Plain Text",
+    "formatJson": "[PT] JSON",
+    "formatCsv": "[PT] CSV",
+    "videoLoaded": "[PT] Video loaded successfully",
+    "videoError": "[PT] Error loading video",
+    "invalidUrl": "[PT] Please enter a valid YouTube URL",
+    "timestampAdded": "[PT] Timestamp added successfully",
+    "timestampRemoved": "[PT] Timestamp removed successfully",
+    "timestampsCopied": "[PT] Timestamps copied to clipboard successfully",
+    "timestampsExported": "[PT] Timestamps exported successfully"
+  },
+  "language": {
+    "names": {
+      "pt": "Português",
+      "en": "[PT] English",
+      "es": "[PT] Español",
+      "fr": "[PT] Français",
+      "de": "[PT] Deutsch",
+      "it": "[PT] Italiano",
+      "ja": "[PT] 日本語",
+      "ru": "[PT] Русский",
+      "ko": "[PT] 한국어",
+      "zh-CN": "[PT] 中文 (简体)",
+      "zh-TW": "[PT] 中文 (繁體)",
+      "ar": "[PT] العربية",
+      "bg": "[PT] Български",
+      "ca": "[PT] Català",
+      "nl": "[PT] Nederlands",
+      "el": "[PT] Ελληνικά",
+      "hi": "[PT] हिन्दी",
+      "id": "[PT] Bahasa Indonesia",
+      "ms": "[PT] Bahasa Melayu",
+      "pl": "[PT] Polski",
+      "sv": "[PT] Svenska",
+      "th": "[PT] ภาษาไทย",
+      "tr": "[PT] Türkçe",
+      "uk": "[PT] Українська",
+      "vi": "[PT] Tiếng Việt"
+    },
+    "selector": {
+      "title": "[PT] Select Language",
+      "searchPlaceholder": "[PT] Search languages...",
+      "noResults": "[PT] No languages found",
+      "current": "[PT] Current language"
+    }
+  },
+  "features": {
+    "title": "Recursos Poderosos para",
+    "subtitle": "Tudo que você precisa para criar timestamps profissionais do YouTube rápida e facilmente",
+    "ctaTitle": "Pronto para Criar Timestamps Perfeitos?",
+    "ctaSubtitle": "Junte-se a milhares de criadores que confiam no Easy Timestamps para seus vídeos do YouTube",
+    "ctaTryNow": "Experimentar Easy Timestamps",
+    "manualTimestamps": {
+      "description": "Ao contrário de outras ferramentas sobrecarregadas no mercado, esta é simples mas poderosa. Ajuda você a criar timestamps manualmente o que garante precisão, mas a interface ajuda você a criá-los 50% mais rápido, com controles desde o início do capítulo até o final do capítulo do vídeo do YouTube.",
+      "points": {
+        "0": "Interface simples mas poderosa",
+        "1": "Criação 50% mais rápida",
+        "2": "Controles precisos de capítulos"
+      },
+      "title": "[PT] Manual Timestamp Creation"
+    },
+    "videoIntegration": {
+      "description": "Suporte para uploads de arquivos MP4 e carregamento direto de URL do YouTube. Player de vídeo responsivo com controles precisos para uma experiência de reprodução fluida.",
+      "points": {
+        "2": "Um clique para adicionar capítulos personalizados",
+        "3": "Pré-visualização de vídeo em tempo real"
+      },
+      "title": "[PT] Video Integration"
+    },
+    "instantExport": {
+      "description": "Cópia com um clique para a área de transferência no formato pronto para descrição do YouTube. Layout de timestamp limpo e profissional perfeito para descrições de vídeo.",
+      "points": {
+        "3": "Múltiplos formatos de exportação"
+      },
+      "title": "[PT] Instant Export"
+    },
+    "comingSoon": {
+      "description": "Melhoria de IA e mais recursos poderosos em breve para tornar sua criação de timestamps ainda mais eficiente e inteligente.",
+      "points": {
+        "3": "Automação avançada"
+      },
+      "title": "[PT] Coming Soon Features"
+    }
+  },
+  "project": {
+    "manage": "[PT] Manage Projects",
+    "projects": "[PT] Projects",
+    "save": "[PT] Save",
+    "saved": "[PT] Saved!",
+    "saveNew": "[PT] Save New",
+    "saveProject": "[PT] Save Project",
+    "projectName": "[PT] Project Name",
+    "projectNamePlaceholder": "[PT] Enter project name",
+    "load": "[PT] Load Project",
+    "new": "[PT] New Project",
+    "delete": "[PT] Delete Project",
+    "export": "[PT] Export Project",
+    "import": "[PT] Import",
+    "restore": "[PT] Restore",
+    "manager": "[PT] Project Manager",
+    "managerDescription": "[PT] Save, load, and manage your timestamp projects",
+    "totalProjects": "[PT] Projects",
+    "totalTimestamps": "[PT] Timestamps",
+    "storageUsed": "[PT] Storage Used",
+    "noProjects": "[PT] No projects yet",
+    "noProjectsDescription": "[PT] Create your first project by adding some timestamps and saving",
+    "autoSave": "[PT] Auto-save",
+    "autoSaveFound": "[PT] Auto-saved work found",
+    "autoSaveDescription": "[PT] Restore your previous session with {{count}} timestamps",
+    "confirmDelete": "[PT] Are you sure you want to delete \"{{name}}\"?",
+    "confirmNew": "[PT] Start a new project? Unsaved work will be lost.",
+    "saveInfo": "[PT] This will save {{count}} timestamps locally on your device.",
+    "errorNoName": "[PT] Please enter a project name",
+    "errorSaving": "[PT] Failed to save project",
+    "importError": "[PT] Failed to import project: "
+  },
+  "signup": {
+    "success": {
+      "title": "[PT] 🎉 Great work!",
+      "subtitle": "[PT] You just created your first timestamp project!",
+      "description": "[PT] Want to save your projects in the cloud so you can access them from any device?"
+    },
+    "storage": {
+      "title": "[PT] Running out of space?",
+      "subtitle": "[PT] You have {{count}} projects saved locally",
+      "description": "[PT] Upgrade to cloud storage for unlimited projects and access from anywhere."
+    },
+    "multiple": {
+      "title": "[PT] Working on multiple projects?",
+      "subtitle": "[PT] Keep them synced across devices",
+      "description": "[PT] Sign up to sync all your projects and never lose your work again."
+    },
+    "discover": {
+      "title": "[PT] Unlock premium features",
+      "subtitle": "[PT] Get the most out of Easy Timestamps",
+      "description": "[PT] Join thousands of creators who use Easy Timestamps Pro for their workflow."
+    },
+    "benefits": {
+      "cloudSync": "[PT] Cloud sync across all devices",
+      "backup": "[PT] Automatic backup & restore",
+      "sharing": "[PT] Share projects with team members",
+      "unlimited": "[PT] Unlimited cloud storage",
+      "access": "[PT] Access from any device",
+      "security": "[PT] Secure cloud backup",
+      "sync": "[PT] Real-time sync",
+      "collaborate": "[PT] Collaboration tools",
+      "history": "[PT] Version history",
+      "aiGeneration": "[PT] AI-powered timestamp generation",
+      "templates": "[PT] Custom templates & themes",
+      "analytics": "[PT] Project analytics & insights"
+    },
+    "socialProof": "[PT] Join 10,000+ creators already using Easy Timestamps Pro",
+    "getStarted": "[PT] Get Started - It's Free!",
+    "remindLater": "[PT] Remind me later",
+    "noThanks": "[PT] No thanks",
+    "finePrint": "[PT] No credit card required. Free plan includes 5 cloud projects."
+  },
+  "faq": {
+    "title": "[PT] Frequently Asked Questions",
+    "subtitle": "[PT] Find answers to common questions about Easy Timestamps",
+    "searchPlaceholder": "[PT] Search FAQs...",
+    "noResults": "[PT] No FAQs found matching your search",
+    "noResultsDescription": "[PT] Try different keywords or browse all categories below",
+    "categories": {
+      "gettingStarted": "[PT] Getting Started",
+      "videoSupport": "[PT] Video Support",
+      "timestampCreation": "[PT] Timestamp Creation",
+      "exportingSharing": "[PT] Exporting & Sharing",
+      "troubleshooting": "[PT] Troubleshooting"
+    },
+    "questions": {
+      "whatIs": "[PT] What is Easy Timestamps?",
+      "whatIsAnswer": "[PT] Easy Timestamps is a free tool that helps you create professional YouTube timestamps and video chapters quickly and efficiently.",
+      "howToUse": "[PT] How do I use Easy Timestamps?",
+      "howToUseAnswer": "[PT] Simply paste a YouTube URL or upload a video file, then add timestamps with titles. You can export the results in various formats.",
+      "supportedFormats": "[PT] What video formats are supported?",
+      "supportedFormatsAnswer": "[PT] We support YouTube URLs and MP4 file uploads. More formats coming soon.",
+      "freeToUse": "[PT] Is Easy Timestamps free to use?",
+      "freeToUseAnswer": "[PT] Yes! Easy Timestamps is completely free to use with no hidden fees or subscriptions.",
+      "exportFormats": "[PT] What export formats are available?",
+      "exportFormatsAnswer": "[PT] You can export timestamps in YouTube description format, JSON, CSV, and plain text formats."
+    }
+  },
+  "contact": {
+    "title": "[PT] Get in Touch",
+    "subtitle": "[PT] We're here to help! Whether you have a question, found a bug, or want to share feedback, we'd love to hear from you.",
+    "quickHelp": "[PT] Need Quick Help?",
+    "quickHelpDescription": "[PT] Many common questions are answered in our FAQ section. Check there first for instant answers!",
+    "browseFaq": "[PT] Browse FAQ",
+    "contactMethods": "[PT] Contact Methods",
+    "sendMessage": "[PT] Send us a Message",
+    "form": {
+      "name": "[PT] Name",
+      "namePlaceholder": "[PT] Your full name",
+      "email": "[PT] Email",
+      "emailPlaceholder": "[PT] your.email@example.com",
+      "category": "[PT] Category",
+      "categoryPlaceholder": "[PT] Select a category",
+      "subject": "[PT] Subject",
+      "subjectPlaceholder": "[PT] Brief description of your inquiry",
+      "message": "[PT] Message",
+      "messagePlaceholder": "[PT] Please provide as much detail as possible...",
+      "attachment": "[PT] Attachment (Optional)",
+      "attachmentDescription": "[PT] Images or PDF, up to 5MB",
+      "chooseFile": "[PT] Choose a file",
+      "dragDrop": "[PT] or drag and drop",
+      "sendMessage": "[PT] Send Message",
+      "sending": "[PT] Sending...",
+      "messageSent": "[PT] Message Sent!",
+      "messageSentDescription": "[PT] Thanks for reaching out. We'll get back to you soon!",
+      "sendFailed": "[PT] Send Failed",
+      "sendFailedDescription": "[PT] Something went wrong. Please try again or email us directly.",
+      "tryEasyTimestamps": "[PT] Try Easy Timestamps now",
+      "backToTool": "[PT] Back to Easy Timestamps"
+    },
+    "categories": {
+      "technical": "[PT] Technical Support",
+      "technicalDescription": "[PT] Tool not working, loading issues, browser compatibility",
+      "bug": "[PT] Bug Report",
+      "bugDescription": "[PT] Something is broken or not working as expected",
+      "feature": "[PT] Feature Request",
+      "featureDescription": "[PT] Suggestions for new features or improvements",
+      "business": "[PT] Business Inquiry",
+      "businessDescription": "[PT] Partnerships, collaborations, or commercial questions",
+      "general": "[PT] General Question",
+      "generalDescription": "[PT] How-to questions, usage help, or general inquiries"
+    },
+    "methods": {
+      "emailSupport": "[PT] Email Support",
+      "emailSupportDescription": "[PT] Get help with any questions or issues",
+      "bugReports": "[PT] Bug Reports",
+      "bugReportsDescription": "[PT] Report issues or unexpected behavior",
+      "featureRequests": "[PT] Feature Requests",
+      "featureRequestsDescription": "[PT] Suggest new features or improvements"
+    },
+    "responseTimes": "[PT] Response Times",
+    "businessHours": "[PT] All times are in business days (Monday-Friday, 9 AM - 5 PM CET)",
+    "privacy": {
+      "title": "[PT] Your Privacy Matters",
+      "points": [
+        "We only use your information to respond to your inquiry",
+        "Contact details are not shared with third parties",
+        "Messages are securely stored and deleted after resolution",
+        "See our Privacy Policy for complete details"
+      ]
+    }
+  },
+  "privacy": {
+    "gdpr": {
+      "title": "[PT] Your Privacy Rights",
+      "description": "[PT] We respect your privacy. This website uses cookies and processes personal data to improve your experience. You have the right to access, correct, or delete your data at any time.",
+      "accept": "[PT] Accept All",
+      "decline": "[PT] Necessary Only",
+      "learnMore": "[PT] Privacy Policy"
+    },
+    "ccpa": {
+      "title": "[PT] California Privacy Rights",
+      "description": "[PT] We may collect and share personal information. California residents have the right to know what personal information is collected and to request deletion.",
+      "accept": "[PT] Continue",
+      "optOut": "[PT] Do Not Sell My Info",
+      "learnMore": "[PT] Learn More"
+    },
+    "cookies": {
+      "title": "[PT] Cookie Notice",
+      "description": "[PT] This website uses cookies to enhance your browsing experience and provide personalized content.",
+      "accept": "[PT] Accept",
+      "decline": "[PT] Decline",
+      "learnMore": "[PT] Cookie Policy"
+    }
+  },
+  "errors": {
+    "general": "[PT] Something went wrong",
+    "network": "[PT] Network error. Please check your connection.",
+    "fileSize": "[PT] File size must be less than 5MB",
+    "fileType": "[PT] Only images and PDF files are allowed",
+    "required": "[PT] This field is required",
+    "invalidEmail": "[PT] Please enter a valid email address",
+    "invalidUrl": "[PT] Please enter a valid URL",
+    "invalidTime": "[PT] Please enter a valid time format",
+    "minLength": "[PT] Must be at least {{min}} characters long",
+    "maxLength": "[PT] Must be no more than {{max}} characters long"
+  },
+  "validation": {
+    "nameRequired": "[PT] Name is required",
+    "emailRequired": "[PT] Email is required",
+    "categoryRequired": "[PT] Please select a category",
+    "subjectRequired": "[PT] Subject is required",
+    "messageRequired": "[PT] Message is required",
+    "messageMinLength": "[PT] Message must be at least 10 characters long"
+  },
+  "formatting": {
+    "date": {
+      "format": "[PT] MM/DD/YYYY",
+      "placeholder": "[PT] MM/DD/YYYY"
+    },
+    "time": {
+      "format": "[PT] 12h",
+      "placeholder": "[PT] 00:00 AM/PM"
+    },
+    "number": {
+      "decimal": "[PT] .",
+      "thousands": "[PT] ,",
+      "example": "[PT] 1,000.50"
+    },
+    "phone": {
+      "format": "[PT] (XXX) XXX-XXXX",
+      "placeholder": "[PT] (555) 123-4567"
+    },
+    "address": {
+      "order": [
+        "street",
+        "city",
+        "state",
+        "zip",
+        "country"
+      ]
+    }
+  },
+  "time": {
+    "formats": {
+      "ago": "[PT] {{time}} ago",
+      "in": "[PT] in {{time}}",
+      "justNow": "[PT] just now",
+      "seconds": "[PT] {{count}} second",
+      "seconds_other": "[PT] {{count}} seconds",
+      "minutes": "[PT] {{count}} minute",
+      "minutes_other": "[PT] {{count}} minutes",
+      "hours": "[PT] {{count}} hour",
+      "hours_other": "[PT] {{count}} hours",
+      "days": "[PT] {{count}} day",
+      "days_other": "[PT] {{count}} days"
+    }
+  }
+}

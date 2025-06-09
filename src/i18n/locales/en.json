@@ -1,0 +1,443 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "filter": "Filter",
+    "clear": "Clear",
+    "copy": "Copy",
+    "download": "Download",
+    "upload": "Upload",
+    "submit": "Submit",
+    "send": "Send",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "required": "Required"
+  },
+  "navigation": {
+    "features": "Features",
+    "about": "About",
+    "help": "Help",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "language": "Language",
+    "theme": "Theme",
+    "home": "Home"
+  },
+  "header": {
+    "title": "Easy Timestamps",
+    "subtitle": "Free YouTube Timestamp & Chapter Generator",
+    "description": "Create professional YouTube timestamps and video chapters instantly. Perfect for content creators, educators, and video professionals."
+  },
+  "tool": {
+    "uploadVideo": "Upload Video",
+    "enterVideoUrl": "Enter video URL",
+    "load": "Load",
+    "addTimestampAtCurrentTime": "Add Timestamp at Current Time",
+    "addSection": "Add Section",
+    "exportAsText": "Export as Text",
+    "copyToClipboard": "Copy to Clipboard",
+    "enterDescription": "Enter description",
+    "currentTime": "Current Time",
+    "or": "or",
+    "pasteUrl": "Paste YouTube URL",
+    "addTimestamp": "Add Timestamp",
+    "generateChapters": "Generate Chapters",
+    "exportTimestamps": "Export Timestamps",
+    "downloadFile": "Download File",
+    "videoUrl": "Video URL",
+    "videoUrlPlaceholder": "Enter video URL",
+    "timestampTime": "Time",
+    "timestampTitle": "Title",
+    "timestampDescription": "Description",
+    "timePlaceholder": "00:00:00",
+    "titlePlaceholder": "Enter description",
+    "descriptionPlaceholder": "Enter description",
+    "noTimestamps": "No timestamps added yet",
+    "addFirstTimestamp": "Add your first timestamp",
+    "timestampFormat": "Timestamp Format",
+    "formatSimple": "Simple (0:00)",
+    "formatDetailed": "Detailed (00:00:00)",
+    "exportFormat": "Export Format",
+    "formatText": "Plain Text",
+    "formatJson": "JSON",
+    "formatCsv": "CSV",
+    "videoLoaded": "Video loaded successfully",
+    "videoError": "Error loading video",
+    "invalidUrl": "Please enter a valid YouTube URL",
+    "timestampAdded": "Timestamp added successfully",
+    "timestampRemoved": "Timestamp removed successfully",
+    "timestampsCopied": "Timestamps copied to clipboard successfully",
+    "timestampsExported": "Timestamps exported successfully",
+    "addYouTubeUrl": "Add a YouTube URL or upload an MP4 file to get started",
+    "loadingVideo": "Loading video...",
+    "errorLoadingVideo": "Error loading video. Please check the URL and try again.",
+    "selectFile": "Select File",
+    "dragDropFile": "Drag and drop a video file here",
+    "supportedFormats": "Supported formats: MP4, YouTube URLs",
+    "or": "or",
+    "getStartedText": "Add a YouTube URL or upload a video file to get started",
+    "uploadAnyVideo": "Upload any video file and we'll try to play it. If it doesn't work, try converting to MP4 format.",
+    "quickTest": "Quick Test:",
+    "tryYouTubeVideo": "Try with a YouTube video",
+    "youtubeVideos": "YouTube videos (youtube.com, youtu.be)",
+    "vimeoVideos": "Vimeo videos (vimeo.com)",
+    "mostVideoFiles": "Most video files - MP4, WebM, MOV, etc."
+  },
+  "project": {
+    "manage": "Manage Projects",
+    "projects": "Projects",
+    "save": "Save",
+    "saved": "Saved!",
+    "saveNew": "Save New",
+    "saveProject": "Save Project",
+    "projectName": "Project Name",
+    "projectNamePlaceholder": "Enter project name",
+    "load": "Load Project",
+    "new": "New Project",
+    "delete": "Delete Project",
+    "export": "Export Project",
+    "import": "Import",
+    "restore": "Restore",
+    "manager": "Project Manager",
+    "managerDescription": "Save, load, and manage your timestamp projects",
+    "totalProjects": "Projects",
+    "totalTimestamps": "Timestamps",
+    "storageUsed": "Storage Used",
+    "noProjects": "No projects yet",
+    "noProjectsDescription": "Create your first project by adding some timestamps and saving",
+    "autoSave": "Auto-save",
+    "autoSaveFound": "Auto-saved work found",
+    "autoSaveDescription": "Restore your previous session with {{count}} timestamps",
+    "confirmDelete": "Are you sure you want to delete \"{{name}}\"?",
+    "confirmNew": "Start a new project? Unsaved work will be lost.",
+    "saveInfo": "This will save {{count}} timestamps locally on your device.",
+    "errorNoName": "Please enter a project name",
+    "errorSaving": "Failed to save project",
+    "importError": "Failed to import project: "
+  },
+  "signup": {
+    "success": {
+      "title": "🎉 Great work!",
+      "subtitle": "You just created your first timestamp project!",
+      "description": "Want to save your projects in the cloud so you can access them from any device?"
+    },
+    "storage": {
+      "title": "Running out of space?",
+      "subtitle": "You have {{count}} projects saved locally",
+      "description": "Upgrade to cloud storage for unlimited projects and access from anywhere."
+    },
+    "multiple": {
+      "title": "Working on multiple projects?",
+      "subtitle": "Keep them synced across devices",
+      "description": "Sign up to sync all your projects and never lose your work again."
+    },
+    "discover": {
+      "title": "Unlock premium features",
+      "subtitle": "Get the most out of Easy Timestamps",
+      "description": "Join thousands of creators who use Easy Timestamps Pro for their workflow."
+    },
+    "benefits": {
+      "cloudSync": "Cloud sync across all devices",
+      "backup": "Automatic backup & restore",
+      "sharing": "Share projects with team members",
+      "unlimited": "Unlimited cloud storage",
+      "access": "Access from any device",
+      "security": "Secure cloud backup",
+      "sync": "Real-time sync",
+      "collaborate": "Collaboration tools",
+      "history": "Version history",
+      "aiGeneration": "AI-powered timestamp generation",
+      "templates": "Custom templates & themes",
+      "analytics": "Project analytics & insights"
+    },
+    "socialProof": "Join 10,000+ creators already using Easy Timestamps Pro",
+    "getStarted": "Get Started - It's Free!",
+    "remindLater": "Remind me later",
+    "noThanks": "No thanks",
+    "finePrint": "No credit card required. Free plan includes 5 cloud projects."
+  },
+  "features": {
+    "title": "Powerful Features for",
+    "subtitle": "Everything you need to create professional YouTube timestamps quickly and effortlessly",
+    "ctaTitle": "Ready to Create Perfect Timestamps?",
+    "ctaSubtitle": "Join thousands of creators who trust Easy Timestamps for their YouTube videos",
+    "ctaTryNow": "Try Easy Timestamps",
+    "manualTimestamps": {
+      "title": "Manual Timestamp Creation",
+      "description": "Unlike other bloated tools in the market, this one is simple yet powerful. It helps you create timestamps manually which ensures precision, yet the interface helps you create it 50% faster, with controls from start of the chapter to end of the YouTube video's chapter.",
+      "points": [
+        "Simple yet powerful interface",
+        "50% faster creation", 
+        "Precise chapter controls"
+      ]
+    },
+    "videoIntegration": {
+      "title": "Video Integration",
+      "description": "Support for MP4 file uploads and direct YouTube URL loading. Responsive video player with precise controls for seamless playback experience.",
+      "points": [
+        "MP4 file uploads",
+        "YouTube URL loading",
+        "One click add custom chapters",
+        "Real-time video preview"
+      ]
+    },
+    "instantExport": {
+      "title": "Instant Export",
+      "description": "One-click copy to clipboard in YouTube description ready format. Clean, professional timestamp layout perfect for video descriptions.",
+      "points": [
+        "One-click copy",
+        "YouTube ready",
+        "Professional layout",
+        "Multiple export formats"
+      ]
+    },
+    "comingSoon": {
+      "title": "Coming Soon Features",
+      "description": "AI Enhancement and more powerful features coming soon to make your timestamp creation even more efficient and intelligent.",
+      "points": [
+        "AI Enhancement",
+        "More features coming",
+        "Enhanced experience",
+        "Advanced automation"
+      ]
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about Easy Timestamps",
+    "searchPlaceholder": "Search FAQs...",
+    "noResults": "No FAQs found matching your search",
+    "noResultsDescription": "Try different keywords or browse all categories below",
+    "categories": {
+      "gettingStarted": "Getting Started",
+      "videoSupport": "Video Support",
+      "timestampCreation": "Timestamp Creation",
+      "exportingSharing": "Exporting & Sharing",
+      "troubleshooting": "Troubleshooting"
+    },
+    "questions": {
+      "whatIs": "What is Easy Timestamps?",
+      "whatIsAnswer": "Easy Timestamps is a free tool that helps you create professional YouTube timestamps and video chapters quickly and efficiently.",
+      "howToUse": "How do I use Easy Timestamps?",
+      "howToUseAnswer": "Simply paste a YouTube URL or upload a video file, then add timestamps with titles. You can export the results in various formats.",
+      "supportedFormats": "What video formats are supported?",
+      "supportedFormatsAnswer": "We support YouTube URLs and MP4 file uploads. More formats coming soon.",
+      "freeToUse": "Is Easy Timestamps free to use?",
+      "freeToUseAnswer": "Yes! Easy Timestamps is completely free to use with no hidden fees or subscriptions.",
+      "exportFormats": "What export formats are available?",
+      "exportFormatsAnswer": "You can export timestamps in YouTube description format, JSON, CSV, and plain text formats."
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We're here to help! Whether you have a question, found a bug, or want to share feedback, we'd love to hear from you.",
+    "quickHelp": "Need Quick Help?",
+    "quickHelpDescription": "Many common questions are answered in our FAQ section. Check there first for instant answers!",
+    "browseFaq": "Browse FAQ",
+    "contactMethods": "Contact Methods",
+    "sendMessage": "Send us a Message",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email",
+      "emailPlaceholder": "your.email@example.com",
+      "category": "Category",
+      "categoryPlaceholder": "Select a category",
+      "subject": "Subject",
+      "subjectPlaceholder": "Brief description of your inquiry",
+      "message": "Message",
+      "messagePlaceholder": "Please provide as much detail as possible...",
+      "attachment": "Attachment (Optional)",
+      "attachmentDescription": "Images or PDF, up to 5MB",
+      "chooseFile": "Choose a file",
+      "dragDrop": "or drag and drop",
+      "sendMessage": "Send Message",
+      "sending": "Sending...",
+      "messageSent": "Message Sent!",
+      "messageSentDescription": "Thanks for reaching out. We'll get back to you soon!",
+      "sendFailed": "Send Failed",
+      "sendFailedDescription": "Something went wrong. Please try again or email us directly.",
+      "tryEasyTimestamps": "Try Easy Timestamps now",
+      "backToTool": "Back to Easy Timestamps"
+    },
+    "categories": {
+      "technical": "Technical Support",
+      "technicalDescription": "Tool not working, loading issues, browser compatibility",
+      "bug": "Bug Report",
+      "bugDescription": "Something is broken or not working as expected",
+      "feature": "Feature Request",
+      "featureDescription": "Suggestions for new features or improvements",
+      "business": "Business Inquiry",
+      "businessDescription": "Partnerships, collaborations, or commercial questions",
+      "general": "General Question",
+      "generalDescription": "How-to questions, usage help, or general inquiries"
+    },
+    "methods": {
+      "emailSupport": "Email Support",
+      "emailSupportDescription": "Get help with any questions or issues",
+      "bugReports": "Bug Reports",
+      "bugReportsDescription": "Report issues or unexpected behavior",
+      "featureRequests": "Feature Requests",
+      "featureRequestsDescription": "Suggest new features or improvements"
+    },
+    "responseTimes": "Response Times",
+    "businessHours": "All times are in business days (Monday-Friday, 9 AM - 5 PM CET)",
+    "privacy": {
+      "title": "Your Privacy Matters",
+      "points": [
+        "We only use your information to respond to your inquiry",
+        "Contact details are not shared with third parties",
+        "Messages are securely stored and deleted after resolution",
+        "See our Privacy Policy for complete details"
+      ]
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated",
+    "tableOfContents": "Table of Contents",
+    "sections": {
+      "introduction": "Introduction",
+      "informationCollection": "Information We Collect",
+      "informationUse": "How We Use Information",
+      "informationSharing": "Information Sharing",
+      "dataSecurity": "Data Security",
+      "userRights": "Your Rights",
+      "cookies": "Cookies and Tracking",
+      "thirdPartyServices": "Third-Party Services",
+      "dataRetention": "Data Retention",
+      "internationalTransfers": "International Transfers",
+      "childrenPrivacy": "Children's Privacy",
+      "policyChanges": "Policy Changes",
+      "contact": "Contact Information"
+    }
+  },
+  "language": {
+    "selector": {
+      "title": "Select Language",
+      "searchPlaceholder": "Search languages...",
+      "noResults": "No languages found",
+      "current": "Current language"
+    },
+    "names": {
+      "en": "English",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch",
+      "it": "Italiano",
+      "pt": "Português",
+      "ja": "日本語",
+      "ru": "Русский",
+      "ko": "한국어",
+      "zh-CN": "中文 (简体)",
+      "zh-TW": "中文 (繁體)",
+      "ar": "العربية",
+      "bg": "Български",
+      "ca": "Català",
+      "nl": "Nederlands",
+      "el": "Ελληνικά",
+      "hi": "हिन्दी",
+      "id": "Bahasa Indonesia",
+      "ms": "Bahasa Melayu",
+      "pl": "Polski",
+      "sv": "Svenska",
+      "th": "ภาษาไทย",
+      "tr": "Türkçe",
+      "uk": "Українська",
+      "vi": "Tiếng Việt"
+    }
+  },
+  "errors": {
+    "general": "Something went wrong",
+    "network": "Network error. Please check your connection.",
+    "fileSize": "File size must be less than 5MB",
+    "fileType": "Only images and PDF files are allowed",
+    "required": "This field is required",
+    "invalidEmail": "Please enter a valid email address",
+    "invalidUrl": "Please enter a valid URL",
+    "invalidTime": "Please enter a valid time format",
+    "minLength": "Must be at least {{min}} characters long",
+    "maxLength": "Must be no more than {{max}} characters long"
+  },
+  "validation": {
+    "nameRequired": "Name is required",
+    "emailRequired": "Email is required",
+    "categoryRequired": "Please select a category",
+    "subjectRequired": "Subject is required",
+    "messageRequired": "Message is required",
+    "messageMinLength": "Message must be at least 10 characters long"
+  },
+  "privacy": {
+    "gdpr": {
+      "title": "Your Privacy Rights",
+      "description": "We respect your privacy. This website uses cookies and processes personal data to improve your experience. You have the right to access, correct, or delete your data at any time.",
+      "accept": "Accept All",
+      "decline": "Necessary Only",
+      "learnMore": "Privacy Policy"
+    },
+    "ccpa": {
+      "title": "California Privacy Rights",
+      "description": "We may collect and share personal information. California residents have the right to know what personal information is collected and to request deletion.",
+      "accept": "Continue",
+      "optOut": "Do Not Sell My Info",
+      "learnMore": "Learn More"
+    },
+    "cookies": {
+      "title": "Cookie Notice",
+      "description": "This website uses cookies to enhance your browsing experience and provide personalized content.",
+      "accept": "Accept",
+      "decline": "Decline",
+      "learnMore": "Cookie Policy"
+    }
+  },
+  "formatting": {
+    "date": {
+      "format": "MM/DD/YYYY",
+      "placeholder": "MM/DD/YYYY"
+    },
+    "time": {
+      "format": "12h",
+      "placeholder": "00:00 AM/PM"
+    },
+    "number": {
+      "decimal": ".",
+      "thousands": ",",
+      "example": "1,000.50"
+    },
+    "phone": {
+      "format": "(XXX) XXX-XXXX",
+      "placeholder": "(555) 123-4567"
+    },
+    "address": {
+      "order": ["street", "city", "state", "zip", "country"]
+    }
+  },
+  "time": {
+    "formats": {
+      "ago": "{{time}} ago",
+      "in": "in {{time}}",
+      "justNow": "just now",
+      "seconds": "{{count}} second",
+      "seconds_other": "{{count}} seconds",
+      "minutes": "{{count}} minute",
+      "minutes_other": "{{count}} minutes",
+      "hours": "{{count}} hour",
+      "hours_other": "{{count}} hours",
+      "days": "{{count}} day",
+      "days_other": "{{count}} days"
+    }
+  }
+}

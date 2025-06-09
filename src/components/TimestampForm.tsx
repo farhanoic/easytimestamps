@@ -24,7 +24,20 @@ function TimestampForm({ onAddTimestamp, timestamps = [] }: TimestampFormProps) 
   const getNextStartTime = useCallback(() => {
     if (timestamps.length === 0) return ''
     const lastTimestamp = timestamps[timestamps.length - 1]
-    return lastTimestamp.endTime || lastTimestamp.startTime
+    
+    // If timestamp has endTime, use it
+    if (lastTimestamp.endTime) {
+      return lastTimestamp.endTime
+    }
+    
+    // If timestamp is a range format (e.g., "0:04 - 0:06"), extract the end time
+    if (lastTimestamp.startTime.includes(' - ')) {
+      const parts = lastTimestamp.startTime.split(' - ')
+      return parts[1] // Return the end time part
+    }
+    
+    // Otherwise use the startTime
+    return lastTimestamp.startTime
   }, [timestamps])
 
   // Auto-populate start time when timestamps change

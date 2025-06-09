@@ -1,0 +1,81 @@
+{
+  "common": {
+    "loading": "載入中...",
+    "error": "錯誤",
+    "success": "成功",
+    "cancel": "取消",
+    "save": "儲存",
+    "delete": "刪除",
+    "edit": "編輯",
+    "close": "關閉",
+    "back": "返回",
+    "next": "下一步",
+    "previous": "上一步",
+    "search": "搜尋",
+    "filter": "篩選",
+    "clear": "清除",
+    "copy": "複製",
+    "download": "下載",
+    "upload": "上傳",
+    "submit": "提交",
+    "send": "發送",
+    "yes": "是",
+    "no": "否",
+    "ok": "確定",
+    "required": "必填"
+  },
+  "navigation": {
+    "features": "功能",
+    "about": "關於",
+    "help": "說明",
+    "contact": "聯絡我們",
+    "faq": "常見問題",
+    "privacy": "隱私政策",
+    "terms": "服務條款",
+    "language": "語言",
+    "theme": "主題",
+    "home": "首頁"
+  },
+  "header": {
+    "title": "Easy Timestamps",
+    "subtitle": "免費的YouTube時間戳記和章節產生器",
+    "description": "即時建立專業的YouTube時間戳記和影片章節。非常適合內容創作者、教育工作者和影片專業人士。"
+  },
+  "tool": {
+    "uploadVideo": "上傳影片",
+    "pasteUrl": "貼上YouTube網址",
+    "addTimestamp": "新增時間戳記",
+    "generateChapters": "產生章節",
+    "exportTimestamps": "匯出時間戳記",
+    "copyToClipboard": "複製到剪貼簿",
+    "downloadFile": "下載檔案",
+    "videoUrl": "影片網址",
+    "videoUrlPlaceholder": "在此貼上YouTube影片網址...",
+    "timestampTime": "時間",
+    "timestampTitle": "標題",
+    "timestampDescription": "描述",
+    "timePlaceholder": "00:00",
+    "titlePlaceholder": "章節標題",
+    "descriptionPlaceholder": "選擇性描述",
+    "noTimestamps": "尚未新增時間戳記",
+    "addFirstTimestamp": "新增您的第一個時間戳記",
+    "enterVideoUrl": "輸入影片網址",
+    "load": "載入",
+    "addTimestampAtCurrentTime": "在目前時間新增時間戳記",
+    "addSection": "新增段落",
+    "exportAsText": "匯出為文字",
+    "currentTime": "目前時間",
+    "enterDescription": "輸入描述",
+    "addYouTubeUrl": "新增YouTube網址",
+    "loadingVideo": "正在載入影片...",
+    "errorLoadingVideo": "影片載入錯誤",
+    "selectFile": "選擇檔案",
+    "dragDropFile": "拖放檔案",
+    "supportedFormats": "支援的格式"
+  },
+  "language": {
+    "names": {
+      "zh-TW": "中文 (繁體)"
+    }
+  }
+}

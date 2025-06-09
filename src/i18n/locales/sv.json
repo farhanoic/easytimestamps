@@ -1,0 +1,81 @@
+{
+  "common": {
+    "loading": "Laddar...",
+    "error": "Fel",
+    "success": "Framgång",
+    "cancel": "Avbryt",
+    "save": "Spara",
+    "delete": "Ta bort",
+    "edit": "Redigera",
+    "close": "Stäng",
+    "back": "Tillbaka",
+    "next": "Nästa",
+    "previous": "Föregående",
+    "search": "Sök",
+    "filter": "Filter",
+    "clear": "Rensa",
+    "copy": "Kopiera",
+    "download": "Ladda ner",
+    "upload": "Ladda upp",
+    "submit": "Skicka",
+    "send": "Skicka",
+    "yes": "Ja",
+    "no": "Nej",
+    "ok": "OK",
+    "required": "Obligatorisk"
+  },
+  "navigation": {
+    "features": "Funktioner",
+    "about": "Om oss",
+    "help": "Hjälp",
+    "contact": "Kontakt",
+    "faq": "Vanliga frågor",
+    "privacy": "Sekretess",
+    "terms": "Användarvillkor",
+    "language": "Språk",
+    "theme": "Tema",
+    "home": "Hem"
+  },
+  "header": {
+    "title": "Easy Timestamps",
+    "subtitle": "Gratis YouTube tidsstämpel och kapitelgenerator",
+    "description": "Skapa professionella YouTube-tidsstämplar och videokapitel direkt. Perfekt för innehållsskapare, lärare och videoprofessionella."
+  },
+  "tool": {
+    "uploadVideo": "Ladda upp video",
+    "pasteUrl": "Klistra in YouTube-URL",
+    "addTimestamp": "Lägg till tidsstämpel",
+    "generateChapters": "Generera kapitel",
+    "exportTimestamps": "Exportera tidsstämplar",
+    "copyToClipboard": "Kopiera till urklipp",
+    "downloadFile": "Ladda ner fil",
+    "videoUrl": "Video-URL",
+    "videoUrlPlaceholder": "Klistra in YouTube-video-URL här...",
+    "timestampTime": "Tid",
+    "timestampTitle": "Titel",
+    "timestampDescription": "Beskrivning",
+    "timePlaceholder": "00:00",
+    "titlePlaceholder": "Kapiteltitel",
+    "descriptionPlaceholder": "Valfri beskrivning",
+    "noTimestamps": "Inga tidsstämplar tillagda ännu",
+    "addFirstTimestamp": "Lägg till din första tidsstämpel",
+    "enterVideoUrl": "Ange video-URL",
+    "load": "Ladda",
+    "addTimestampAtCurrentTime": "Lägg till tidsstämpel vid aktuell tid",
+    "addSection": "Lägg till avsnitt",
+    "exportAsText": "Exportera som text",
+    "currentTime": "Aktuell tid",
+    "enterDescription": "Ange beskrivning",
+    "addYouTubeUrl": "Lägg till YouTube-URL",
+    "loadingVideo": "Laddar video...",
+    "errorLoadingVideo": "Fel vid videoladdning",
+    "selectFile": "Välj fil",
+    "dragDropFile": "Dra och släpp fil",
+    "supportedFormats": "Format som stöds"
+  },
+  "language": {
+    "names": {
+      "sv": "Svenska"
+    }
+  }
+}

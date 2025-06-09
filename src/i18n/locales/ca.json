@@ -1,0 +1,81 @@
+{
+  "common": {
+    "loading": "Carregant...",
+    "error": "Error",
+    "success": "Èxit",
+    "cancel": "Cancel·lar",
+    "save": "Desar",
+    "delete": "Esborrar",
+    "edit": "Editar",
+    "close": "Tancar",
+    "back": "Enrere",
+    "next": "Següent",
+    "previous": "Anterior",
+    "search": "Cercar",
+    "filter": "Filtre",
+    "clear": "Netejar",
+    "copy": "Copiar",
+    "download": "Descarregar",
+    "upload": "Pujar",
+    "submit": "Enviar",
+    "send": "Enviar",
+    "yes": "Sí",
+    "no": "No",
+    "ok": "D'acord",
+    "required": "Obligatori"
+  },
+  "navigation": {
+    "features": "Característiques",
+    "about": "Sobre nosaltres",
+    "help": "Ajuda",
+    "contact": "Contacte",
+    "faq": "Preguntes freqüents",
+    "privacy": "Privacitat",
+    "terms": "Termes de servei",
+    "language": "Idioma",
+    "theme": "Tema",
+    "home": "Inici"
+  },
+  "header": {
+    "title": "Easy Timestamps",
+    "subtitle": "Generador gratuït de marques de temps i capítols per a YouTube",
+    "description": "Creeu marques de temps professionals de YouTube i capítols de vídeo a l'instant. Perfecte per a creadors de contingut, educadors i professionals de vídeo."
+  },
+  "tool": {
+    "uploadVideo": "Pujar vídeo",
+    "pasteUrl": "Enganxar URL de YouTube",
+    "addTimestamp": "Afegir marca de temps",
+    "generateChapters": "Generar capítols",
+    "exportTimestamps": "Exportar marques de temps",
+    "copyToClipboard": "Copiar al porta-retalls",
+    "downloadFile": "Descarregar fitxer",
+    "videoUrl": "URL del vídeo",
+    "videoUrlPlaceholder": "Enganxeu l'URL del vídeo de YouTube aquí...",
+    "timestampTime": "Temps",
+    "timestampTitle": "Títol",
+    "timestampDescription": "Descripció",
+    "timePlaceholder": "00:00",
+    "titlePlaceholder": "Títol del capítol",
+    "descriptionPlaceholder": "Descripció opcional",
+    "noTimestamps": "Encara no s'han afegit marques de temps",
+    "addFirstTimestamp": "Afegiu la vostra primera marca de temps",
+    "enterVideoUrl": "Introduïu l'URL del vídeo",
+    "load": "Carregar",
+    "addTimestampAtCurrentTime": "Afegir marca de temps al temps actual",
+    "addSection": "Afegir secció",
+    "exportAsText": "Exportar com a text",
+    "currentTime": "Temps actual",
+    "enterDescription": "Introduïu la descripció",
+    "addYouTubeUrl": "Afegir URL de YouTube",
+    "loadingVideo": "Carregant vídeo...",
+    "errorLoadingVideo": "Error en carregar el vídeo",
+    "selectFile": "Seleccionar fitxer",
+    "dragDropFile": "Arrossegar i deixar anar fitxer",
+    "supportedFormats": "Formats compatibles"
+  },
+  "language": {
+    "names": {
+      "ca": "Català"
+    }
+  }
+}

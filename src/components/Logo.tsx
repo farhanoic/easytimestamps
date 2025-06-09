@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { useTheme } from '../contexts/ThemeContext'
 import { trackUIEvent } from '../utils/analytics'
 
@@ -8,6 +9,7 @@ interface LogoProps {
   className?: string
   onClick?: () => void
   variant?: 'default' | 'minimal' | 'compact'
+  disableClick?: boolean
 }
 
 function Logo({ 
@@ -15,9 +17,11 @@ function Logo({
   showText = true, 
   className = '', 
   onClick,
-  variant = 'default'
+  variant = 'default',
+  disableClick = false
 }: LogoProps) {
   const { theme } = useTheme()
+  const navigate = useNavigate()
   const [imageError, setImageError] = useState(false)
 
   // Enhanced size configurations with responsive design
@@ -70,10 +74,16 @@ function Logo({
   const hasLogo = !imageError
 
   const handleClick = () => {
+    // Always navigate to home page when logo is clicked
+    navigate('/')
+    
+    // Execute custom onClick if provided
     if (onClick) {
       onClick()
-      trackUIEvent('logo_clicked', { size, theme, variant })
     }
+    
+    // Track the logo click
+    trackUIEvent('logo_clicked', { size, theme, variant })
   }
 
   const handleImageError = () => {
@@ -83,13 +93,9 @@ function Logo({
 
   // Enhanced styling with hover effects and responsiveness
   const baseClasses = `flex items-center ${config.spacing} ${config.container} ${className}`
-  const clickableClasses = onClick 
-    ? 'cursor-pointer group transition-all duration-200 hover:scale-105 active:scale-95' 
-    : ''
+  const clickableClasses = disableClick ? '' : 'cursor-pointer group transition-all duration-200 hover:scale-105 active:scale-95'
   
-  const imageClasses = `${config.image} object-contain transition-all duration-200 ${
-    onClick ? 'group-hover:brightness-110 group-hover:contrast-110' : ''
-  }`
+  const imageClasses = `${config.image} object-contain transition-all duration-200 ${disableClick ? '' : 'group-hover:brightness-110 group-hover:contrast-110'}`
 
   // Variant-specific styling
   const getVariantStyles = () => {
@@ -103,19 +109,8 @@ function Logo({
     }
   }
 
-  return (
-    <div 
-      className={`${baseClasses} ${clickableClasses} ${getVariantStyles()}`}
-      onClick={handleClick}
-      role={onClick ? 'button' : undefined}
-      tabIndex={onClick ? 0 : undefined}
-      onKeyDown={onClick ? (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault()
-          handleClick()
-        }
-      } : undefined}
-    >
+  const logoElement = (
+    <div className={`${baseClasses} ${clickableClasses} ${getVariantStyles()}`}>
       {/* Logo Image */}
       {hasLogo ? (
         <img
@@ -128,7 +123,7 @@ function Logo({
         />
       ) : (
         // Fallback design when logo files aren't available or fail to load
-        <div className={`${config.image.replace('w-auto', 'w-12')} flex items-center justify-center rounded-xl bg-gradient-to-br from-red-500 via-red-600 to-red-700 text-white font-bold flex-shrink-0 shadow-lg ${onClick ? 'group-hover:shadow-xl group-hover:from-red-400 group-hover:via-red-500 group-hover:to-red-600' : ''} transition-all duration-200`}>
+        <div className={`${config.image.replace('w-auto', 'w-12')} flex items-center justify-center rounded-xl bg-gradient-to-br from-red-500 via-red-600 to-red-700 text-white font-bold flex-shrink-0 shadow-lg ${disableClick ? '' : 'group-hover:shadow-xl group-hover:from-red-400 group-hover:via-red-500 group-hover:to-red-600'} transition-all duration-200`}>
           <span className={size === 'xs' ? 'text-xs' : size === 'small' ? 'text-sm' : 'text-lg'}>
             ET
           </span>
@@ -138,16 +133,38 @@ function Logo({
       {/* Logo Text - Only show if showText is true and not in compact variant */}
       {showText && variant !== 'compact' && (
         <div className="flex flex-col min-w-0">
-          <span className={`${config.text} text-neutral-900 dark:text-white tracking-tight leading-tight transition-colors duration-200 ${onClick ? 'group-hover:text-red-600 dark:group-hover:text-red-400' : ''}`}>
+          <span className={`${config.text} text-neutral-900 dark:text-white tracking-tight leading-tight transition-colors duration-200 ${disableClick ? '' : 'group-hover:text-red-600 dark:group-hover:text-red-400'}`}>
             Easy Timestamps
           </span>
           {(size === 'hero' || size === 'large') && (
-            <span className={`${config.subtitle} text-neutral-600 dark:text-gray-400 font-medium -mt-1 transition-colors duration-200 ${onClick ? 'group-hover:text-red-500 dark:group-hover:text-red-300' : ''}`}>
+            <span className={`${config.subtitle} text-neutral-600 dark:text-gray-400 font-medium -mt-1 transition-colors duration-200 ${disableClick ? '' : 'group-hover:text-red-500 dark:group-hover:text-red-300'}`}>
               YouTube Timestamp Generator
             </span>
           )}
         </div>
       )}
+    </div>
+  )
+
+  if (disableClick) {
+    return logoElement
+  }
+
+  return (
+    <div 
+      onClick={handleClick}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault()
+          handleClick()
+        }
+      }}
+      title="Go to home page"
+      className="inline-block"
+    >
+      {logoElement}
     </div>
   )
 }

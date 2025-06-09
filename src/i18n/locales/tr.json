@@ -1,0 +1,81 @@
+{
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Hata",
+    "success": "Başarılı",
+    "cancel": "İptal",
+    "save": "Kaydet",
+    "delete": "Sil",
+    "edit": "Düzenle",
+    "close": "Kapat",
+    "back": "Geri",
+    "next": "İleri",
+    "previous": "Önceki",
+    "search": "Ara",
+    "filter": "Filtre",
+    "clear": "Temizle",
+    "copy": "Kopyala",
+    "download": "İndir",
+    "upload": "Yükle",
+    "submit": "Gönder",
+    "send": "Gönder",
+    "yes": "Evet",
+    "no": "Hayır",
+    "ok": "Tamam",
+    "required": "Gerekli"
+  },
+  "navigation": {
+    "features": "Özellikler",
+    "about": "Hakkında",
+    "help": "Yardım",
+    "contact": "İletişim",
+    "faq": "Sık Sorulan Sorular",
+    "privacy": "Gizlilik",
+    "terms": "Hizmet Şartları",
+    "language": "Dil",
+    "theme": "Tema",
+    "home": "Ana Sayfa"
+  },
+  "header": {
+    "title": "Easy Timestamps",
+    "subtitle": "Ücretsiz YouTube Zaman Damgası ve Bölüm Oluşturucu",
+    "description": "Profesyonel YouTube zaman damgaları ve video bölümleri anında oluşturun. İçerik oluşturucular, eğitmenler ve video profesyonelleri için mükemmel."
+  },
+  "tool": {
+    "uploadVideo": "Video Yükle",
+    "pasteUrl": "YouTube URL'sini Yapıştır",
+    "addTimestamp": "Zaman Damgası Ekle",
+    "generateChapters": "Bölüm Oluştur",
+    "exportTimestamps": "Zaman Damgalarını Dışa Aktar",
+    "copyToClipboard": "Panoya Kopyala",
+    "downloadFile": "Dosyayı İndir",
+    "videoUrl": "Video URL'si",
+    "videoUrlPlaceholder": "YouTube video URL'sini buraya yapıştırın...",
+    "timestampTime": "Zaman",
+    "timestampTitle": "Başlık",
+    "timestampDescription": "Açıklama",
+    "timePlaceholder": "00:00",
+    "titlePlaceholder": "Bölüm başlığı",
+    "descriptionPlaceholder": "İsteğe bağlı açıklama",
+    "noTimestamps": "Henüz zaman damgası eklenmedi",
+    "addFirstTimestamp": "İlk zaman damganızı ekleyin",
+    "enterVideoUrl": "Video URL'sini girin",
+    "load": "Yükle",
+    "addTimestampAtCurrentTime": "Mevcut zamanda zaman damgası ekle",
+    "addSection": "Bölüm ekle",
+    "exportAsText": "Metin olarak dışa aktar",
+    "currentTime": "Mevcut zaman",
+    "enterDescription": "Açıklama girin",
+    "addYouTubeUrl": "YouTube URL'si ekle",
+    "loadingVideo": "Video yükleniyor...",
+    "errorLoadingVideo": "Video yükleme hatası",
+    "selectFile": "Dosya seç",
+    "dragDropFile": "Dosyayı sürükle ve bırak",
+    "supportedFormats": "Desteklenen formatlar"
+  },
+  "language": {
+    "names": {
+      "tr": "Türkçe"
+    }
+  }
+}

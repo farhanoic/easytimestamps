@@ -1,0 +1,81 @@
+{
+  "common": {
+    "loading": "Загрузка...",
+    "error": "Ошибка",
+    "success": "Успешно",
+    "cancel": "Отмена",
+    "save": "Сохранить",
+    "delete": "Удалить",
+    "edit": "Редактировать",
+    "close": "Закрыть",
+    "back": "Назад",
+    "next": "Далее",
+    "previous": "Предыдущий",
+    "search": "Поиск",
+    "filter": "Фильтр",
+    "clear": "Очистить",
+    "copy": "Копировать",
+    "download": "Скачать",
+    "upload": "Загрузить",
+    "submit": "Отправить",
+    "send": "Отправить",
+    "yes": "Да",
+    "no": "Нет",
+    "ok": "OK",
+    "required": "Обязательно"
+  },
+  "navigation": {
+    "features": "Функции",
+    "about": "О нас",
+    "help": "Помощь",
+    "contact": "Контакты",
+    "faq": "FAQ",
+    "privacy": "Конфиденциальность",
+    "terms": "Условия использования",
+    "language": "Язык",
+    "theme": "Тема",
+    "home": "Главная"
+  },
+  "header": {
+    "title": "Easy Timestamps",
+    "subtitle": "Бесплатный генератор временных меток и глав для YouTube",
+    "description": "Создавайте профессиональные временные метки YouTube и главы видео мгновенно. Идеально для создателей контента, преподавателей и видео-профессионалов."
+  },
+  "tool": {
+    "uploadVideo": "Загрузить видео",
+    "pasteUrl": "Вставить URL YouTube",
+    "addTimestamp": "Добавить временную метку",
+    "generateChapters": "Создать главы",
+    "exportTimestamps": "Экспортировать временные метки",
+    "copyToClipboard": "Копировать в буфер обмена",
+    "downloadFile": "Скачать файл",
+    "videoUrl": "URL видео",
+    "videoUrlPlaceholder": "Вставьте URL видео YouTube здесь...",
+    "timestampTime": "Время",
+    "timestampTitle": "Заголовок",
+    "timestampDescription": "Описание",
+    "timePlaceholder": "00:00",
+    "titlePlaceholder": "Название главы",
+    "descriptionPlaceholder": "Дополнительное описание",
+    "noTimestamps": "Временные метки еще не добавлены",
+    "addFirstTimestamp": "Добавьте вашу первую временную метку",
+    "enterVideoUrl": "Введите URL видео",
+    "load": "Загрузить",
+    "addTimestampAtCurrentTime": "Добавить временную метку в текущее время",
+    "addSection": "Добавить раздел",
+    "exportAsText": "Экспортировать как текст",
+    "currentTime": "Текущее время",
+    "enterDescription": "Введите описание",
+    "addYouTubeUrl": "Добавить YouTube URL",
+    "loadingVideo": "Загрузка видео...",
+    "errorLoadingVideo": "Ошибка загрузки видео",
+    "selectFile": "Выбрать файл",
+    "dragDropFile": "Перетащите файл",
+    "supportedFormats": "Поддерживаемые форматы"
+  },
+  "language": {
+    "names": {
+      "ru": "Русский"
+    }
+  }
+}

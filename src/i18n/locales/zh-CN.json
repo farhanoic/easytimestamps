@@ -1,0 +1,417 @@
+{
+  "common": {
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "cancel": "取消",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "close": "关闭",
+    "back": "返回",
+    "next": "下一步",
+    "previous": "上一步",
+    "search": "搜索",
+    "filter": "筛选",
+    "clear": "清除",
+    "copy": "复制",
+    "download": "下载",
+    "upload": "上传",
+    "submit": "提交",
+    "send": "发送",
+    "yes": "是",
+    "no": "否",
+    "ok": "确定",
+    "required": "必填",
+    "getStarted": "开始",
+    "learnMore": "了解更多",
+    "contactUs": "联系我们",
+    "tryNow": "立即试用"
+  },
+  "navigation": {
+    "features": "功能",
+    "about": "关于",
+    "help": "帮助",
+    "contact": "联系我们",
+    "faq": "常见问题",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "language": "语言",
+    "theme": "主题",
+    "home": "首页"
+  },
+  "header": {
+    "title": "Easy Timestamps",
+    "subtitle": "免费的YouTube时间戳和章节生成器",
+    "description": "即时创建专业的YouTube时间戳和视频章节。非常适合内容创作者、教育工作者和视频专业人士。"
+  },
+  "tool": {
+    "uploadVideo": "上传视频",
+    "pasteUrl": "粘贴YouTube网址",
+    "addTimestamp": "添加时间戳",
+    "generateChapters": "生成章节",
+    "exportTimestamps": "导出时间戳",
+    "copyToClipboard": "复制到剪贴板",
+    "downloadFile": "下载文件",
+    "videoUrl": "视频网址",
+    "videoUrlPlaceholder": "在此粘贴YouTube视频网址...",
+    "timestampTime": "时间",
+    "timestampTitle": "标题",
+    "timestampDescription": "描述",
+    "timePlaceholder": "00:00",
+    "titlePlaceholder": "章节标题",
+    "descriptionPlaceholder": "可选描述",
+    "noTimestamps": "尚未添加时间戳",
+    "addFirstTimestamp": "添加您的第一个时间戳",
+    "enterVideoUrl": "输入视频网址",
+    "load": "加载",
+    "addTimestampAtCurrentTime": "在当前时间添加时间戳",
+    "addSection": "添加部分",
+    "exportAsText": "导出为文本",
+    "currentTime": "当前时间",
+    "enterDescription": "输入描述",
+    "addYouTubeUrl": "添加YouTube网址",
+    "loadingVideo": "正在加载视频...",
+    "errorLoadingVideo": "视频加载错误",
+    "selectFile": "选择文件",
+    "dragDropFile": "拖放文件",
+    "supportedFormats": "支持的格式",
+    "or": "[ZH-CN] or",
+    "timestampFormat": "[ZH-CN] Timestamp Format",
+    "formatSimple": "[ZH-CN] Simple (0:00)",
+    "formatDetailed": "[ZH-CN] Detailed (00:00:00)",
+    "exportFormat": "[ZH-CN] Export Format",
+    "formatText": "[ZH-CN] Plain Text",
+    "formatJson": "[ZH-CN] JSON",
+    "formatCsv": "[ZH-CN] CSV",
+    "videoLoaded": "[ZH-CN] Video loaded successfully",
+    "videoError": "[ZH-CN] Error loading video",
+    "invalidUrl": "[ZH-CN] Please enter a valid YouTube URL",
+    "timestampAdded": "[ZH-CN] Timestamp added successfully",
+    "timestampRemoved": "[ZH-CN] Timestamp removed successfully",
+    "timestampsCopied": "[ZH-CN] Timestamps copied to clipboard successfully",
+    "timestampsExported": "[ZH-CN] Timestamps exported successfully"
+  },
+  "language": {
+    "names": {
+      "zh-CN": "中文 (简体)",
+      "en": "[ZH-CN] English",
+      "es": "[ZH-CN] Español",
+      "fr": "[ZH-CN] Français",
+      "de": "[ZH-CN] Deutsch",
+      "it": "[ZH-CN] Italiano",
+      "pt": "[ZH-CN] Português",
+      "ja": "[ZH-CN] 日本語",
+      "ru": "[ZH-CN] Русский",
+      "ko": "[ZH-CN] 한국어",
+      "zh-TW": "[ZH-CN] 中文 (繁體)",
+      "ar": "[ZH-CN] العربية",
+      "bg": "[ZH-CN] Български",
+      "ca": "[ZH-CN] Català",
+      "nl": "[ZH-CN] Nederlands",
+      "el": "[ZH-CN] Ελληνικά",
+      "hi": "[ZH-CN] हिन्दी",
+      "id": "[ZH-CN] Bahasa Indonesia",
+      "ms": "[ZH-CN] Bahasa Melayu",
+      "pl": "[ZH-CN] Polski",
+      "sv": "[ZH-CN] Svenska",
+      "th": "[ZH-CN] ภาษาไทย",
+      "tr": "[ZH-CN] Türkçe",
+      "uk": "[ZH-CN] Українська",
+      "vi": "[ZH-CN] Tiếng Việt"
+    },
+    "selector": {
+      "title": "[ZH-CN] Select Language",
+      "searchPlaceholder": "[ZH-CN] Search languages...",
+      "noResults": "[ZH-CN] No languages found",
+      "current": "[ZH-CN] Current language"
+    }
+  },
+  "features": {
+    "title": "强大功能",
+    "subtitle": "快速轻松创建专业YouTube时间戳所需的一切",
+    "ctaTitle": "准备好创建完美的时间戳了吗？",
+    "ctaSubtitle": "加入数千名信任Easy Timestamps制作YouTube视频的创作者",
+    "ctaTryNow": "试用Easy Timestamps",
+    "manualTimestamps": {
+      "description": "与市场上其他臃肿的工具不同，这个工具简单而强大。它帮助您手动创建时间戳以确保精确性，但界面帮助您比平时快50%地创建它们，具有从章节开始到YouTube视频章节结束的控件。",
+      "points": {
+        "0": "简单而强大的界面",
+        "1": "50%更快的创建",
+        "2": "精确的章节控制"
+      },
+      "title": "[ZH-CN] Manual Timestamp Creation"
+    },
+    "videoIntegration": {
+      "description": "支持MP4文件上传和直接YouTube URL加载。具有精确控制的响应式视频播放器，提供无缝播放体验。",
+      "points": {
+        "2": "一键添加自定义章节",
+        "3": "实时视频预览"
+      },
+      "title": "[ZH-CN] Video Integration"
+    },
+    "instantExport": {
+      "description": "一键复制到剪贴板，采用YouTube描述就绪格式。干净、专业的时间戳布局，非常适合视频描述。",
+      "points": {
+        "3": "多种导出格式"
+      },
+      "title": "[ZH-CN] Instant Export"
+    },
+    "comingSoon": {
+      "description": "AI增强和更多强大功能即将推出，让您的时间戳创建更加高效和智能。",
+      "points": {
+        "3": "高级自动化"
+      },
+      "title": "[ZH-CN] Coming Soon Features"
+    }
+  },
+  "project": {
+    "manage": "[ZH-CN] Manage Projects",
+    "projects": "[ZH-CN] Projects",
+    "save": "[ZH-CN] Save",
+    "saved": "[ZH-CN] Saved!",
+    "saveNew": "[ZH-CN] Save New",
+    "saveProject": "[ZH-CN] Save Project",
+    "projectName": "[ZH-CN] Project Name",
+    "projectNamePlaceholder": "[ZH-CN] Enter project name",
+    "load": "[ZH-CN] Load Project",
+    "new": "[ZH-CN] New Project",
+    "delete": "[ZH-CN] Delete Project",
+    "export": "[ZH-CN] Export Project",
+    "import": "[ZH-CN] Import",
+    "restore": "[ZH-CN] Restore",
+    "manager": "[ZH-CN] Project Manager",
+    "managerDescription": "[ZH-CN] Save, load, and manage your timestamp projects",
+    "totalProjects": "[ZH-CN] Projects",
+    "totalTimestamps": "[ZH-CN] Timestamps",
+    "storageUsed": "[ZH-CN] Storage Used",
+    "noProjects": "[ZH-CN] No projects yet",
+    "noProjectsDescription": "[ZH-CN] Create your first project by adding some timestamps and saving",
+    "autoSave": "[ZH-CN] Auto-save",
+    "autoSaveFound": "[ZH-CN] Auto-saved work found",
+    "autoSaveDescription": "[ZH-CN] Restore your previous session with {{count}} timestamps",
+    "confirmDelete": "[ZH-CN] Are you sure you want to delete \"{{name}}\"?",
+    "confirmNew": "[ZH-CN] Start a new project? Unsaved work will be lost.",
+    "saveInfo": "[ZH-CN] This will save {{count}} timestamps locally on your device.",
+    "errorNoName": "[ZH-CN] Please enter a project name",
+    "errorSaving": "[ZH-CN] Failed to save project",
+    "importError": "[ZH-CN] Failed to import project: "
+  },
+  "signup": {
+    "success": {
+      "title": "[ZH-CN] 🎉 Great work!",
+      "subtitle": "[ZH-CN] You just created your first timestamp project!",
+      "description": "[ZH-CN] Want to save your projects in the cloud so you can access them from any device?"
+    },
+    "storage": {
+      "title": "[ZH-CN] Running out of space?",
+      "subtitle": "[ZH-CN] You have {{count}} projects saved locally",
+      "description": "[ZH-CN] Upgrade to cloud storage for unlimited projects and access from anywhere."
+    },
+    "multiple": {
+      "title": "[ZH-CN] Working on multiple projects?",
+      "subtitle": "[ZH-CN] Keep them synced across devices",
+      "description": "[ZH-CN] Sign up to sync all your projects and never lose your work again."
+    },
+    "discover": {
+      "title": "[ZH-CN] Unlock premium features",
+      "subtitle": "[ZH-CN] Get the most out of Easy Timestamps",
+      "description": "[ZH-CN] Join thousands of creators who use Easy Timestamps Pro for their workflow."
+    },
+    "benefits": {
+      "cloudSync": "[ZH-CN] Cloud sync across all devices",
+      "backup": "[ZH-CN] Automatic backup & restore",
+      "sharing": "[ZH-CN] Share projects with team members",
+      "unlimited": "[ZH-CN] Unlimited cloud storage",
+      "access": "[ZH-CN] Access from any device",
+      "security": "[ZH-CN] Secure cloud backup",
+      "sync": "[ZH-CN] Real-time sync",
+      "collaborate": "[ZH-CN] Collaboration tools",
+      "history": "[ZH-CN] Version history",
+      "aiGeneration": "[ZH-CN] AI-powered timestamp generation",
+      "templates": "[ZH-CN] Custom templates & themes",
+      "analytics": "[ZH-CN] Project analytics & insights"
+    },
+    "socialProof": "[ZH-CN] Join 10,000+ creators already using Easy Timestamps Pro",
+    "getStarted": "[ZH-CN] Get Started - It's Free!",
+    "remindLater": "[ZH-CN] Remind me later",
+    "noThanks": "[ZH-CN] No thanks",
+    "finePrint": "[ZH-CN] No credit card required. Free plan includes 5 cloud projects."
+  },
+  "faq": {
+    "title": "[ZH-CN] Frequently Asked Questions",
+    "subtitle": "[ZH-CN] Find answers to common questions about Easy Timestamps",
+    "searchPlaceholder": "[ZH-CN] Search FAQs...",
+    "noResults": "[ZH-CN] No FAQs found matching your search",
+    "noResultsDescription": "[ZH-CN] Try different keywords or browse all categories below",
+    "categories": {
+      "gettingStarted": "[ZH-CN] Getting Started",
+      "videoSupport": "[ZH-CN] Video Support",
+      "timestampCreation": "[ZH-CN] Timestamp Creation",
+      "exportingSharing": "[ZH-CN] Exporting & Sharing",
+      "troubleshooting": "[ZH-CN] Troubleshooting"
+    },
+    "questions": {
+      "whatIs": "[ZH-CN] What is Easy Timestamps?",
+      "whatIsAnswer": "[ZH-CN] Easy Timestamps is a free tool that helps you create professional YouTube timestamps and video chapters quickly and efficiently.",
+      "howToUse": "[ZH-CN] How do I use Easy Timestamps?",
+      "howToUseAnswer": "[ZH-CN] Simply paste a YouTube URL or upload a video file, then add timestamps with titles. You can export the results in various formats.",
+      "supportedFormats": "[ZH-CN] What video formats are supported?",
+      "supportedFormatsAnswer": "[ZH-CN] We support YouTube URLs and MP4 file uploads. More formats coming soon.",
+      "freeToUse": "[ZH-CN] Is Easy Timestamps free to use?",
+      "freeToUseAnswer": "[ZH-CN] Yes! Easy Timestamps is completely free to use with no hidden fees or subscriptions.",
+      "exportFormats": "[ZH-CN] What export formats are available?",
+      "exportFormatsAnswer": "[ZH-CN] You can export timestamps in YouTube description format, JSON, CSV, and plain text formats."
+    }
+  },
+  "contact": {
+    "title": "[ZH-CN] Get in Touch",
+    "subtitle": "[ZH-CN] We're here to help! Whether you have a question, found a bug, or want to share feedback, we'd love to hear from you.",
+    "quickHelp": "[ZH-CN] Need Quick Help?",
+    "quickHelpDescription": "[ZH-CN] Many common questions are answered in our FAQ section. Check there first for instant answers!",
+    "browseFaq": "[ZH-CN] Browse FAQ",
+    "contactMethods": "[ZH-CN] Contact Methods",
+    "sendMessage": "[ZH-CN] Send us a Message",
+    "form": {
+      "name": "[ZH-CN] Name",
+      "namePlaceholder": "[ZH-CN] Your full name",
+      "email": "[ZH-CN] Email",
+      "emailPlaceholder": "[ZH-CN] your.email@example.com",
+      "category": "[ZH-CN] Category",
+      "categoryPlaceholder": "[ZH-CN] Select a category",
+      "subject": "[ZH-CN] Subject",
+      "subjectPlaceholder": "[ZH-CN] Brief description of your inquiry",
+      "message": "[ZH-CN] Message",
+      "messagePlaceholder": "[ZH-CN] Please provide as much detail as possible...",
+      "attachment": "[ZH-CN] Attachment (Optional)",
+      "attachmentDescription": "[ZH-CN] Images or PDF, up to 5MB",
+      "chooseFile": "[ZH-CN] Choose a file",
+      "dragDrop": "[ZH-CN] or drag and drop",
+      "sendMessage": "[ZH-CN] Send Message",
+      "sending": "[ZH-CN] Sending...",
+      "messageSent": "[ZH-CN] Message Sent!",
+      "messageSentDescription": "[ZH-CN] Thanks for reaching out. We'll get back to you soon!",
+      "sendFailed": "[ZH-CN] Send Failed",
+      "sendFailedDescription": "[ZH-CN] Something went wrong. Please try again or email us directly.",
+      "tryEasyTimestamps": "[ZH-CN] Try Easy Timestamps now",
+      "backToTool": "[ZH-CN] Back to Easy Timestamps"
+    },
+    "categories": {
+      "technical": "[ZH-CN] Technical Support",
+      "technicalDescription": "[ZH-CN] Tool not working, loading issues, browser compatibility",
+      "bug": "[ZH-CN] Bug Report",
+      "bugDescription": "[ZH-CN] Something is broken or not working as expected",
+      "feature": "[ZH-CN] Feature Request",
+      "featureDescription": "[ZH-CN] Suggestions for new features or improvements",
+      "business": "[ZH-CN] Business Inquiry",
+      "businessDescription": "[ZH-CN] Partnerships, collaborations, or commercial questions",
+      "general": "[ZH-CN] General Question",
+      "generalDescription": "[ZH-CN] How-to questions, usage help, or general inquiries"
+    },
+    "methods": {
+      "emailSupport": "[ZH-CN] Email Support",
+      "emailSupportDescription": "[ZH-CN] Get help with any questions or issues",
+      "bugReports": "[ZH-CN] Bug Reports",
+      "bugReportsDescription": "[ZH-CN] Report issues or unexpected behavior",
+      "featureRequests": "[ZH-CN] Feature Requests",
+      "featureRequestsDescription": "[ZH-CN] Suggest new features or improvements"
+    },
+    "responseTimes": "[ZH-CN] Response Times",
+    "businessHours": "[ZH-CN] All times are in business days (Monday-Friday, 9 AM - 5 PM CET)",
+    "privacy": {
+      "title": "[ZH-CN] Your Privacy Matters",
+      "points": [
+        "We only use your information to respond to your inquiry",
+        "Contact details are not shared with third parties",
+        "Messages are securely stored and deleted after resolution",
+        "See our Privacy Policy for complete details"
+      ]
+    }
+  },
+  "privacy": {
+    "gdpr": {
+      "title": "[ZH-CN] Your Privacy Rights",
+      "description": "[ZH-CN] We respect your privacy. This website uses cookies and processes personal data to improve your experience. You have the right to access, correct, or delete your data at any time.",
+      "accept": "[ZH-CN] Accept All",
+      "decline": "[ZH-CN] Necessary Only",
+      "learnMore": "[ZH-CN] Privacy Policy"
+    },
+    "ccpa": {
+      "title": "[ZH-CN] California Privacy Rights",
+      "description": "[ZH-CN] We may collect and share personal information. California residents have the right to know what personal information is collected and to request deletion.",
+      "accept": "[ZH-CN] Continue",
+      "optOut": "[ZH-CN] Do Not Sell My Info",
+      "learnMore": "[ZH-CN] Learn More"
+    },
+    "cookies": {
+      "title": "[ZH-CN] Cookie Notice",
+      "description": "[ZH-CN] This website uses cookies to enhance your browsing experience and provide personalized content.",
+      "accept": "[ZH-CN] Accept",
+      "decline": "[ZH-CN] Decline",
+      "learnMore": "[ZH-CN] Cookie Policy"
+    }
+  },
+  "errors": {
+    "general": "[ZH-CN] Something went wrong",
+    "network": "[ZH-CN] Network error. Please check your connection.",
+    "fileSize": "[ZH-CN] File size must be less than 5MB",
+    "fileType": "[ZH-CN] Only images and PDF files are allowed",
+    "required": "[ZH-CN] This field is required",
+    "invalidEmail": "[ZH-CN] Please enter a valid email address",
+    "invalidUrl": "[ZH-CN] Please enter a valid URL",
+    "invalidTime": "[ZH-CN] Please enter a valid time format",
+    "minLength": "[ZH-CN] Must be at least {{min}} characters long",
+    "maxLength": "[ZH-CN] Must be no more than {{max}} characters long"
+  },
+  "validation": {
+    "nameRequired": "[ZH-CN] Name is required",
+    "emailRequired": "[ZH-CN] Email is required",
+    "categoryRequired": "[ZH-CN] Please select a category",
+    "subjectRequired": "[ZH-CN] Subject is required",
+    "messageRequired": "[ZH-CN] Message is required",
+    "messageMinLength": "[ZH-CN] Message must be at least 10 characters long"
+  },
+  "formatting": {
+    "date": {
+      "format": "[ZH-CN] MM/DD/YYYY",
+      "placeholder": "[ZH-CN] MM/DD/YYYY"
+    },
+    "time": {
+      "format": "[ZH-CN] 12h",
+      "placeholder": "[ZH-CN] 00:00 AM/PM"
+    },
+    "number": {
+      "decimal": "[ZH-CN] .",
+      "thousands": "[ZH-CN] ,",
+      "example": "[ZH-CN] 1,000.50"
+    },
+    "phone": {
+      "format": "[ZH-CN] (XXX) XXX-XXXX",
+      "placeholder": "[ZH-CN] (555) 123-4567"
+    },
+    "address": {
+      "order": [
+        "street",
+        "city",
+        "state",
+        "zip",
+        "country"
+      ]
+    }
+  },
+  "time": {
+    "formats": {
+      "ago": "[ZH-CN] {{time}} ago",
+      "in": "[ZH-CN] in {{time}}",
+      "justNow": "[ZH-CN] just now",
+      "seconds": "[ZH-CN] {{count}} second",
+      "seconds_other": "[ZH-CN] {{count}} seconds",
+      "minutes": "[ZH-CN] {{count}} minute",
+      "minutes_other": "[ZH-CN] {{count}} minutes",
+      "hours": "[ZH-CN] {{count}} hour",
+      "hours_other": "[ZH-CN] {{count}} hours",
+      "days": "[ZH-CN] {{count}} day",
+      "days_other": "[ZH-CN] {{count}} days"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "common": {
+    "loading": "Đang tải...",
+    "error": "Lỗi",
+    "success": "Thành công",
+    "cancel": "Hủy",
+    "save": "Lưu",
+    "delete": "Xóa",
+    "edit": "Chỉnh sửa",
+    "close": "Đóng",
+    "back": "Quay lại",
+    "next": "Tiếp theo",
+    "previous": "Trước đó",
+    "search": "Tìm kiếm",
+    "filter": "Bộ lọc",
+    "clear": "Xóa",
+    "copy": "Sao chép",
+    "download": "Tải xuống",
+    "upload": "Tải lên",
+    "submit": "Gửi",
+    "send": "Gửi",
+    "yes": "Có",
+    "no": "Không",
+    "ok": "OK",
+    "required": "Bắt buộc"
+  },
+  "navigation": {
+    "features": "Tính năng",
+    "about": "Giới thiệu",
+    "help": "Trợ giúp",
+    "contact": "Liên hệ",
+    "faq": "Câu hỏi thường gặp",
+    "privacy": "Quyền riêng tư",
+    "terms": "Điều khoản dịch vụ",
+    "language": "Ngôn ngữ",
+    "theme": "Chủ đề",
+    "home": "Trang chủ"
+  },
+  "header": {
+    "title": "Easy Timestamps",
+    "subtitle": "Trình tạo dấu thời gian và chương YouTube miễn phí",
+    "description": "Tạo dấu thời gian YouTube chuyên nghiệp và chương video ngay lập tức. Hoàn hảo cho người tạo nội dung, giáo viên và chuyên gia video."
+  },
+  "tool": {
+    "uploadVideo": "Tải lên video",
+    "pasteUrl": "Dán URL YouTube",
+    "addTimestamp": "Thêm dấu thời gian",
+    "generateChapters": "Tạo chương",
+    "exportTimestamps": "Xuất dấu thời gian",
+    "copyToClipboard": "Sao chép vào clipboard",
+    "downloadFile": "Tải xuống tệp",
+    "videoUrl": "URL video",
+    "videoUrlPlaceholder": "Dán URL video YouTube vào đây...",
+    "timestampTime": "Thời gian",
+    "timestampTitle": "Tiêu đề",
+    "timestampDescription": "Mô tả",
+    "timePlaceholder": "00:00",
+    "titlePlaceholder": "Tiêu đề chương",
+    "descriptionPlaceholder": "Mô tả tùy chọn",
+    "noTimestamps": "Chưa có dấu thời gian nào được thêm",
+    "addFirstTimestamp": "Thêm dấu thời gian đầu tiên của bạn",
+    "enterVideoUrl": "Nhập URL video",
+    "load": "Tải",
+    "addTimestampAtCurrentTime": "Thêm dấu thời gian tại thời điểm hiện tại",
+    "addSection": "Thêm phần",
+    "exportAsText": "Xuất dưới dạng văn bản",
+    "currentTime": "Thời gian hiện tại",
+    "enterDescription": "Nhập mô tả",
+    "addYouTubeUrl": "Thêm URL YouTube",
+    "loadingVideo": "Đang tải video...",
+    "errorLoadingVideo": "Lỗi tải video",
+    "selectFile": "Chọn tệp",
+    "dragDropFile": "Kéo và thả tệp",
+    "supportedFormats": "Định dạng được hỗ trợ"
+  },
+  "language": {
+    "names": {
+      "vi": "Tiếng Việt"
+    }
+  }
+}

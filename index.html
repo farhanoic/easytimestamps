@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
+    
     <!-- SEO Meta Tags -->
     <title>Easy Timestamps - Free YouTube Timestamp & Chapter Generator Tool</title>
     <meta name="description" content="Create YouTube timestamps and video chapters instantly. Free online tool to generate timestamps for YouTube videos with copy-to-clipboard functionality. Perfect for content creators and educators." />
@@ -33,7 +34,8 @@
     <meta property="twitter:image" content="https://www.easytimestamps.com/og-image.jpg" />
     
     <!-- Favicon and App Icons -->
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="shortcut icon" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png" />
@@ -49,14 +51,27 @@
     <meta name="theme-color" content="#1f2937" />
     <meta name="format-detection" content="telephone=no" />
     
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GCXFS9LKWX"></script>
+    <!-- Google tag (gtag.js) with enhanced error handling -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-GCXFS9LKWX');
+
+      // Load Google Analytics with fallback
+      (function() {
+        try {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-GCXFS9LKWX';
+          script.onerror = function() {
+            console.warn('Google Analytics failed to load - continuing without analytics');
+          };
+          document.head.appendChild(script);
+        } catch (e) {
+          console.warn('Failed to initialize Google Analytics:', e);
+        }
+      })();
     </script>
     
     <!-- Structured Data (JSON-LD) -->

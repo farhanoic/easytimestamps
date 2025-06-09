@@ -1,0 +1,258 @@
+/* RTL (Right-to-Left) Layout Support */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.rtl .ltr-content {
+  direction: ltr;
+  text-align: left;
+}
+
+/* Navigation adjustments for RTL */
+.rtl .nav-menu {
+  flex-direction: row-reverse;
+}
+
+.rtl .nav-item {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+.rtl .nav-item:last-child {
+  margin-right: 0;
+}
+
+/* Button icon spacing for RTL */
+.rtl .btn-icon-left {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+.rtl .btn-icon-right {
+  margin-right: 0.5rem;
+  margin-left: 0;
+}
+
+/* Form field adjustments */
+.rtl .form-field {
+  text-align: right;
+}
+
+.rtl .form-label {
+  text-align: right;
+}
+
+.rtl .form-input {
+  padding-left: 0.75rem;
+  padding-right: 2.5rem;
+}
+
+.rtl .form-input-icon {
+  left: 0.75rem;
+  right: auto;
+}
+
+/* Dropdown menus */
+.rtl .dropdown-menu {
+  left: auto;
+  right: 0;
+  text-align: right;
+}
+
+.rtl .dropdown-item {
+  text-align: right;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Modal positioning */
+.rtl .modal-content {
+  text-align: right;
+}
+
+.rtl .modal-header {
+  flex-direction: row-reverse;
+}
+
+.rtl .modal-close {
+  left: 1rem;
+  right: auto;
+}
+
+/* Timestamp list adjustments */
+.rtl .timestamp-item {
+  flex-direction: row-reverse;
+}
+
+.rtl .timestamp-time {
+  margin-left: 1rem;
+  margin-right: 0;
+}
+
+.rtl .timestamp-actions {
+  flex-direction: row-reverse;
+}
+
+.rtl .timestamp-action-btn {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+.rtl .timestamp-action-btn:first-child {
+  margin-left: 0;
+}
+
+/* Video controls for RTL */
+.rtl .video-controls {
+  flex-direction: row-reverse;
+}
+
+.rtl .video-progress {
+  direction: ltr; /* Keep progress bar LTR for consistency */
+}
+
+/* Tool section layouts */
+.rtl .tool-section {
+  text-align: right;
+}
+
+.rtl .tool-buttons {
+  flex-direction: row-reverse;
+}
+
+.rtl .tool-button {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+.rtl .tool-button:first-child {
+  margin-left: 0;
+}
+
+/* Footer adjustments */
+.rtl .footer-content {
+  flex-direction: row-reverse;
+}
+
+.rtl .footer-links {
+  margin-left: 0;
+  margin-right: 2rem;
+}
+
+.rtl .footer-social {
+  flex-direction: row-reverse;
+}
+
+.rtl .footer-social-link {
+  margin-left: 1rem;
+  margin-right: 0;
+}
+
+.rtl .footer-social-link:first-child {
+  margin-left: 0;
+}
+
+/* Language selector specific RTL adjustments */
+.rtl .language-selector {
+  flex-direction: row-reverse;
+}
+
+.rtl .language-flag {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+.rtl .language-name {
+  text-align: right;
+}
+
+/* Logo positioning for RTL */
+.rtl .logo-container {
+  flex-direction: row-reverse;
+}
+
+.rtl .logo-text {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+/* About page RTL adjustments */
+.rtl .about-hero {
+  flex-direction: row-reverse;
+}
+
+.rtl .about-content {
+  text-align: right;
+  margin-left: 0;
+  margin-right: 2rem;
+}
+
+.rtl .about-image {
+  margin-right: 0;
+  margin-left: 2rem;
+}
+
+/* Contact form RTL */
+.rtl .contact-form {
+  text-align: right;
+}
+
+.rtl .contact-field-group {
+  flex-direction: row-reverse;
+}
+
+/* Features page RTL */
+.rtl .feature-item {
+  text-align: right;
+}
+
+.rtl .feature-icon {
+  margin-left: 1rem;
+  margin-right: 0;
+}
+
+/* Responsive RTL adjustments */
+@media (max-width: 768px) {
+  .rtl .nav-menu {
+    flex-direction: column;
+  }
+  
+  .rtl .nav-item {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .rtl .about-hero {
+    flex-direction: column;
+  }
+  
+  .rtl .about-content {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .rtl .about-image {
+    margin-left: 0;
+  }
+}
+
+/* Ensure Arabic numerals remain LTR */
+.rtl .numeric-content {
+  direction: ltr;
+  display: inline-block;
+}
+
+/* Time displays should remain LTR for consistency */
+.rtl .time-display,
+.rtl .timestamp-time-value,
+.rtl .video-time {
+  direction: ltr;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* URL inputs should remain LTR */
+.rtl .url-input {
+  direction: ltr;
+  text-align: left;
+}

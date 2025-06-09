@@ -1,0 +1,234 @@
+{
+  "common": {
+    "loading": "جاري التحميل...",
+    "error": "خطأ",
+    "success": "نجح",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "delete": "حذف",
+    "edit": "تحرير",
+    "close": "إغلاق",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق",
+    "search": "بحث",
+    "filter": "تصفية",
+    "clear": "مسح",
+    "copy": "نسخ",
+    "download": "تحميل",
+    "upload": "رفع",
+    "submit": "إرسال",
+    "send": "إرسال",
+    "yes": "نعم",
+    "no": "لا",
+    "ok": "موافق",
+    "required": "مطلوب"
+  },
+  "navigation": {
+    "features": "الميزات",
+    "about": "حول",
+    "help": "مساعدة",
+    "contact": "اتصل بنا",
+    "faq": "الأسئلة الشائعة",
+    "privacy": "سياسة الخصوصية",
+    "terms": "شروط الخدمة",
+    "language": "اللغة",
+    "theme": "السمة",
+    "home": "الرئيسية"
+  },
+  "header": {
+    "title": "Easy Timestamps",
+    "subtitle": "مولد مجاني للطوابع الزمنية وفصول اليوتيوب",
+    "description": "إنشاء طوابع زمنية وفصول احترافية لليوتيوب فوراً. مثالي لمنشئي المحتوى والمعلمين ومحترفي الفيديو."
+  },
+  "tool": {
+    "uploadVideo": "رفع فيديو",
+    "pasteUrl": "لصق رابط اليوتيوب",
+    "addTimestamp": "إضافة طابع زمني",
+    "generateChapters": "إنشاء فصول",
+    "exportTimestamps": "تصدير الطوابع الزمنية",
+    "copyToClipboard": "نسخ إلى الحافظة",
+    "downloadFile": "تحميل الملف",
+    "videoUrl": "رابط الفيديو",
+    "videoUrlPlaceholder": "الصق رابط فيديو اليوتيوب هنا...",
+    "timestampTime": "الوقت",
+    "timestampTitle": "العنوان",
+    "timestampDescription": "الوصف",
+    "timePlaceholder": "00:00",
+    "titlePlaceholder": "عنوان الفصل",
+    "descriptionPlaceholder": "وصف اختياري",
+    "noTimestamps": "لم يتم إضافة طوابع زمنية بعد",
+    "addFirstTimestamp": "أضف أول طابع زمني",
+    "timestampFormat": "تنسيق الطابع الزمني",
+    "formatSimple": "بسيط (0:00)",
+    "formatDetailed": "مفصل (00:00:00)",
+    "exportFormat": "تنسيق التصدير",
+    "formatText": "نص خام",
+    "formatJson": "JSON",
+    "formatCsv": "CSV",
+    "videoLoaded": "تم تحميل الفيديو بنجاح",
+    "videoError": "خطأ في تحميل الفيديو",
+    "invalidUrl": "يرجى إدخال رابط يوتيوب صحيح",
+    "timestampAdded": "تمت إضافة الطابع الزمني",
+    "timestampRemoved": "تم حذف الطابع الزمني",
+    "timestampsCopied": "تم نسخ الطوابع الزمنية إلى الحافظة",
+    "timestampsExported": "تم تصدير الطوابع الزمنية",
+    "enterVideoUrl": "أدخل رابط الفيديو",
+    "load": "تحميل",
+    "addTimestampAtCurrentTime": "إضافة طابع زمني في الوقت الحالي",
+    "addSection": "إضافة قسم",
+    "exportAsText": "تصدير كنص",
+    "currentTime": "الوقت الحالي",
+    "enterDescription": "أدخل الوصف",
+    "addYouTubeUrl": "إضافة رابط YouTube",
+    "loadingVideo": "جاري تحميل الفيديو...",
+    "errorLoadingVideo": "خطأ في تحميل الفيديو",
+    "selectFile": "اختيار ملف",
+    "dragDropFile": "سحب وإفلات الملف",
+    "supportedFormats": "التنسيقات المدعومة"
+  },
+  "features": {
+    "title": "الميزات",
+    "subtitle": "كل ما تحتاجه لإنشاء طوابع زمنية احترافية للفيديو",
+    "manualTimestamps": {
+      "title": "إنشاء يدوي للطوابع الزمنية",
+      "description": "على عكس الأدوات المعقدة الأخرى، يركز Easy Timestamps على ما يهم - إنشاء طوابع زمنية دقيقة واحترافية بسرعة وكفاءة.",
+      "points": [
+        "واجهة بسيطة وبديهية",
+        "التحقق من الطوابع الزمنية في الوقت الفعلي",
+        "إضافة فصل مخصص من الفيديو بنقرة واحدة"
+      ]
+    },
+    "videoIntegration": {
+      "title": "تكامل الفيديو",
+      "description": "اعمل بسلاسة مع محتوى الفيديو لإنشاء فصول مؤقتة بدقة.",
+      "points": [
+        "دعم روابط اليوتيوب",
+        "رفع ملفات MP4",
+        "معاينة الفيديو في الوقت الفعلي",
+        "ميزة النقر للطابع الزمني"
+      ]
+    },
+    "instantExport": {
+      "title": "تصدير فوري",
+      "description": "صدّر طوابعك الزمنية في تنسيقات متعددة لأي منصة أو حالة استخدام.",
+      "points": [
+        "تنسيق وصف اليوتيوب",
+        "JSON للمطورين",
+        "CSV لجداول البيانات",
+        "نص خام للمرونة"
+      ]
+    },
+    "comingSoon": {
+      "title": "ميزات قادمة",
+      "description": "تحسينات بالذكاء الاصطناعي والمزيد من الميزات قريباً",
+      "points": [
+        "إنشاء طوابع زمنية بالذكاء الاصطناعي",
+        "اكتشاف تلقائي للفصول",
+        "معالجة دفعية",
+        "خيارات تصدير متقدمة"
+      ]
+    }
+  },
+  "faq": {
+    "title": "الأسئلة الشائعة",
+    "subtitle": "ابحث عن إجابات للأسئلة الشائعة حول Easy Timestamps",
+    "searchPlaceholder": "البحث في الأسئلة الشائعة...",
+    "noResults": "لم يتم العثور على أسئلة شائعة تطابق بحثك",
+    "noResultsDescription": "جرب كلمات مفتاحية مختلفة أو تصفح جميع الفئات أدناه"
+  },
+  "contact": {
+    "title": "تواصل معنا",
+    "subtitle": "نحن هنا للمساعدة! سواء كان لديك سؤال أو وجدت خطأ أو تريد مشاركة تعليقات، نود أن نسمع منك.",
+    "quickHelp": "تحتاج مساعدة سريعة؟",
+    "quickHelpDescription": "يتم الإجابة على العديد من الأسئلة الشائعة في قسم الأسئلة الشائعة. تحقق هناك أولاً للحصول على إجابات فورية!",
+    "browseFaq": "تصفح الأسئلة الشائعة",
+    "contactMethods": "طرق التواصل",
+    "sendMessage": "أرسل لنا رسالة",
+    "form": {
+      "name": "الاسم",
+      "namePlaceholder": "اسمك الكامل",
+      "email": "البريد الإلكتروني",
+      "emailPlaceholder": "your.email@example.com",
+      "category": "الفئة",
+      "categoryPlaceholder": "اختر فئة",
+      "subject": "الموضوع",
+      "subjectPlaceholder": "وصف مختصر لاستفسارك",
+      "message": "الرسالة",
+      "messagePlaceholder": "يرجى تقديم أكبر قدر من التفاصيل...",
+      "attachment": "مرفق (اختياري)",
+      "attachmentDescription": "صور أو PDF، حتى 5 ميجابايت",
+      "chooseFile": "اختر ملف",
+      "dragDrop": "أو اسحب وأفلت",
+      "sendMessage": "إرسال الرسالة",
+      "sending": "جاري الإرسال...",
+      "messageSent": "تم إرسال الرسالة!",
+      "messageSentDescription": "شكراً لتواصلك معنا. سنرد عليك قريباً!",
+      "sendFailed": "فشل الإرسال",
+      "sendFailedDescription": "حدث خطأ ما. يرجى المحاولة مرة أخرى أو مراسلتنا مباشرة."
+    }
+  },
+  "language": {
+    "selector": {
+      "title": "اختيار اللغة",
+      "searchPlaceholder": "البحث عن اللغات...",
+      "noResults": "لم يتم العثور على لغات",
+      "current": "اللغة الحالية"
+    }
+  },
+  "privacy": {
+    "gdpr": {
+      "title": "حقوق الخصوصية",
+      "description": "نحن نحترم خصوصيتكم. يستخدم هذا الموقع ملفات تعريف الارتباط ويعالج البيانات الشخصية لتحسين تجربتكم. لديكم الحق في الوصول إلى بياناتكم أو تصحيحها أو حذفها في أي وقت.",
+      "accept": "قبول الكل",
+      "decline": "الضروري فقط",
+      "learnMore": "سياسة الخصوصية"
+    },
+    "ccpa": {
+      "title": "حقوق الخصوصية",
+      "description": "قد نجمع ونشارك المعلومات الشخصية. لديكم الحق في معرفة المعلومات الشخصية التي يتم جمعها وطلب حذفها.",
+      "accept": "متابعة",
+      "optOut": "لا تبيعوا معلوماتي",
+      "learnMore": "اعرف المزيد"
+    },
+    "cookies": {
+      "title": "إشعار ملفات تعريف الارتباط",
+      "description": "يستخدم هذا الموقع ملفات تعريف الارتباط لتحسين تجربة التصفح وتقديم محتوى مخصص.",
+      "accept": "قبول",
+      "decline": "رفض",
+      "learnMore": "سياسة ملفات تعريف الارتباط"
+    }
+  },
+  "formatting": {
+    "date": {
+      "format": "DD/MM/YYYY",
+      "placeholder": "يوم/شهر/سنة"
+    },
+    "time": {
+      "format": "12h",
+      "placeholder": "00:00 ص/م"
+    },
+    "number": {
+      "decimal": ".",
+      "thousands": ",",
+      "example": "1,000.50"
+    },
+    "phone": {
+      "format": "+966 XX XXX XXXX",
+      "placeholder": "+966 50 123 4567"
+    },
+    "address": {
+      "order": ["street", "district", "city", "zip", "country"]
+    }
+  },
+  "errors": {
+    "general": "حدث خطأ ما",
+    "network": "خطأ في الشبكة. يرجى التحقق من اتصالك.",
+    "fileSize": "يجب أن يكون حجم الملف أقل من 5 ميجابايت",
+    "fileType": "فقط الصور وملفات PDF مسموحة",
+    "required": "هذا الحقل مطلوب",
+    "invalidEmail": "يرجى إدخال عنوان بريد إلكتروني صحيح",
+    "invalidUrl": "يرجى إدخال رابط صحيح",
+    "invalidTime": "يرجى إدخال تنسيق وقت صحيح"
+  }
+}

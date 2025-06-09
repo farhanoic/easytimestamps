@@ -1,0 +1,81 @@
+{
+  "common": {
+    "loading": "Ładowanie...",
+    "error": "Błąd",
+    "success": "Sukces",
+    "cancel": "Anuluj",
+    "save": "Zapisz",
+    "delete": "Usuń",
+    "edit": "Edytuj",
+    "close": "Zamknij",
+    "back": "Wstecz",
+    "next": "Dalej",
+    "previous": "Poprzedni",
+    "search": "Szukaj",
+    "filter": "Filtr",
+    "clear": "Wyczyść",
+    "copy": "Kopiuj",
+    "download": "Pobierz",
+    "upload": "Prześlij",
+    "submit": "Wyślij",
+    "send": "Wyślij",
+    "yes": "Tak",
+    "no": "Nie",
+    "ok": "OK",
+    "required": "Wymagane"
+  },
+  "navigation": {
+    "features": "Funkcje",
+    "about": "O nas",
+    "help": "Pomoc",
+    "contact": "Kontakt",
+    "faq": "FAQ",
+    "privacy": "Prywatność",
+    "terms": "Warunki usługi",
+    "language": "Język",
+    "theme": "Motyw",
+    "home": "Strona główna"
+  },
+  "header": {
+    "title": "Easy Timestamps",
+    "subtitle": "Darmowy generator znaczników czasu i rozdziałów YouTube",
+    "description": "Twórz profesjonalne znaczniki czasu YouTube i rozdziały wideo natychmiast. Idealny dla twórców treści, nauczycieli i profesjonalistów wideo."
+  },
+  "tool": {
+    "uploadVideo": "Prześlij wideo",
+    "pasteUrl": "Wklej URL YouTube",
+    "addTimestamp": "Dodaj znacznik czasu",
+    "generateChapters": "Generuj rozdziały",
+    "exportTimestamps": "Eksportuj znaczniki czasu",
+    "copyToClipboard": "Kopiuj do schowka",
+    "downloadFile": "Pobierz plik",
+    "videoUrl": "URL wideo",
+    "videoUrlPlaceholder": "Wklej URL wideo YouTube tutaj...",
+    "timestampTime": "Czas",
+    "timestampTitle": "Tytuł",
+    "timestampDescription": "Opis",
+    "timePlaceholder": "00:00",
+    "titlePlaceholder": "Tytuł rozdziału",
+    "descriptionPlaceholder": "Opcjonalny opis",
+    "noTimestamps": "Nie dodano jeszcze znaczników czasu",
+    "addFirstTimestamp": "Dodaj swój pierwszy znacznik czasu",
+    "enterVideoUrl": "Wprowadź URL wideo",
+    "load": "Załaduj",
+    "addTimestampAtCurrentTime": "Dodaj znacznik czasu w bieżącym czasie",
+    "addSection": "Dodaj sekcję",
+    "exportAsText": "Eksportuj jako tekst",
+    "currentTime": "Bieżący czas",
+    "enterDescription": "Wprowadź opis",
+    "addYouTubeUrl": "Dodaj URL YouTube",
+    "loadingVideo": "Ładowanie wideo...",
+    "errorLoadingVideo": "Błąd ładowania wideo",
+    "selectFile": "Wybierz plik",
+    "dragDropFile": "Przeciągnij i upuść plik",
+    "supportedFormats": "Obsługiwane formaty"
+  },
+  "language": {
+    "names": {
+      "pl": "Polski"
+    }
+  }
+}

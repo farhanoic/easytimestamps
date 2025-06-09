@@ -1,0 +1,417 @@
+{
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "success": "成功",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "delete": "削除",
+    "edit": "編集",
+    "close": "閉じる",
+    "back": "戻る",
+    "next": "次へ",
+    "previous": "前へ",
+    "search": "検索",
+    "filter": "フィルタ",
+    "clear": "クリア",
+    "copy": "コピー",
+    "download": "ダウンロード",
+    "upload": "アップロード",
+    "submit": "送信",
+    "send": "送信",
+    "yes": "はい",
+    "no": "いいえ",
+    "ok": "OK",
+    "required": "必須",
+    "getStarted": "始める",
+    "learnMore": "もっと詳しく",
+    "contactUs": "お問い合わせ",
+    "tryNow": "今すぐ試す"
+  },
+  "navigation": {
+    "features": "機能",
+    "about": "について",
+    "help": "ヘルプ",
+    "contact": "お問い合わせ",
+    "faq": "FAQ",
+    "privacy": "プライバシー",
+    "terms": "利用規約",
+    "language": "言語",
+    "theme": "テーマ",
+    "home": "ホーム"
+  },
+  "header": {
+    "title": "Easy Timestamps",
+    "subtitle": "無料のYouTubeタイムスタンプ＆チャプタージェネレーター",
+    "description": "プロフェッショナルなYouTubeタイムスタンプとビデオチャプターを瞬時に作成します。コンテンツクリエイター、教育者、ビデオプロフェッショナルに最適です。"
+  },
+  "tool": {
+    "uploadVideo": "動画をアップロード",
+    "pasteUrl": "YouTube URLを貼り付け",
+    "addTimestamp": "タイムスタンプを追加",
+    "generateChapters": "チャプターを生成",
+    "exportTimestamps": "タイムスタンプをエクスポート",
+    "copyToClipboard": "クリップボードにコピー",
+    "downloadFile": "ファイルをダウンロード",
+    "videoUrl": "動画URL",
+    "videoUrlPlaceholder": "YouTube動画のURLをここに貼り付けてください...",
+    "timestampTime": "時間",
+    "timestampTitle": "タイトル",
+    "timestampDescription": "説明",
+    "timePlaceholder": "00:00",
+    "titlePlaceholder": "チャプタータイトル",
+    "descriptionPlaceholder": "オプションの説明",
+    "noTimestamps": "まだタイムスタンプが追加されていません",
+    "addFirstTimestamp": "最初のタイムスタンプを追加してください",
+    "enterVideoUrl": "動画URLを入力してください",
+    "load": "読み込む",
+    "addTimestampAtCurrentTime": "現在の時間でタイムスタンプを追加",
+    "addSection": "セクションを追加",
+    "exportAsText": "テキストとしてエクスポート",
+    "currentTime": "現在の時間",
+    "enterDescription": "説明を入力してください",
+    "addYouTubeUrl": "YouTube URLを追加",
+    "loadingVideo": "動画を読み込み中...",
+    "errorLoadingVideo": "動画の読み込みに失敗しました",
+    "selectFile": "ファイルを選択",
+    "dragDropFile": "ファイルをここにドラッグ＆ドロップ",
+    "supportedFormats": "サポートされている形式",
+    "or": "[JA] or",
+    "timestampFormat": "[JA] Timestamp Format",
+    "formatSimple": "[JA] Simple (0:00)",
+    "formatDetailed": "[JA] Detailed (00:00:00)",
+    "exportFormat": "[JA] Export Format",
+    "formatText": "[JA] Plain Text",
+    "formatJson": "[JA] JSON",
+    "formatCsv": "[JA] CSV",
+    "videoLoaded": "[JA] Video loaded successfully",
+    "videoError": "[JA] Error loading video",
+    "invalidUrl": "[JA] Please enter a valid YouTube URL",
+    "timestampAdded": "[JA] Timestamp added successfully",
+    "timestampRemoved": "[JA] Timestamp removed successfully",
+    "timestampsCopied": "[JA] Timestamps copied to clipboard successfully",
+    "timestampsExported": "[JA] Timestamps exported successfully"
+  },
+  "language": {
+    "names": {
+      "ja": "日本語",
+      "en": "[JA] English",
+      "es": "[JA] Español",
+      "fr": "[JA] Français",
+      "de": "[JA] Deutsch",
+      "it": "[JA] Italiano",
+      "pt": "[JA] Português",
+      "ru": "[JA] Русский",
+      "ko": "[JA] 한국어",
+      "zh-CN": "[JA] 中文 (简体)",
+      "zh-TW": "[JA] 中文 (繁體)",
+      "ar": "[JA] العربية",
+      "bg": "[JA] Български",
+      "ca": "[JA] Català",
+      "nl": "[JA] Nederlands",
+      "el": "[JA] Ελληνικά",
+      "hi": "[JA] हिन्दी",
+      "id": "[JA] Bahasa Indonesia",
+      "ms": "[JA] Bahasa Melayu",
+      "pl": "[JA] Polski",
+      "sv": "[JA] Svenska",
+      "th": "[JA] ภาษาไทย",
+      "tr": "[JA] Türkçe",
+      "uk": "[JA] Українська",
+      "vi": "[JA] Tiếng Việt"
+    },
+    "selector": {
+      "title": "[JA] Select Language",
+      "searchPlaceholder": "[JA] Search languages...",
+      "noResults": "[JA] No languages found",
+      "current": "[JA] Current language"
+    }
+  },
+  "features": {
+    "title": "強力な機能",
+    "subtitle": "プロフェッショナルなYouTubeタイムスタンプを素早く簡単に作成するために必要なすべて",
+    "ctaTitle": "完璧なタイムスタンプを作成する準備はできましたか？",
+    "ctaSubtitle": "YouTubeビデオにEasy Timestampsを信頼する何千ものクリエイターに参加しましょう",
+    "ctaTryNow": "Easy Timestampsを試す",
+    "manualTimestamps": {
+      "description": "市場にある他の肥大化したツールとは異なり、これはシンプルでありながら強力です。手動でタイムスタンプを作成することで精度を保証しますが、インターフェイスはチャプターの開始からYouTubeビデオのチャプターの終了まで、50%高速に作成できるようサポートします。",
+      "points": {
+        "0": "シンプルでありながら強力なインターフェース",
+        "1": "50%高速な作成",
+        "2": "正確なチャプター制御"
+      },
+      "title": "[JA] Manual Timestamp Creation"
+    },
+    "videoIntegration": {
+      "description": "MP4ファイルのアップロードと直接的なYouTube URLの読み込みをサポート。シームレスな再生体験のための正確な制御を備えた応答性の高いビデオプレーヤー。",
+      "points": {
+        "2": "カスタムチャプターをワンクリックで追加",
+        "3": "リアルタイムビデオプレビュー"
+      },
+      "title": "[JA] Video Integration"
+    },
+    "instantExport": {
+      "description": "YouTube説明用フォーマットでクリップボードにワンクリックコピー。ビデオ説明に最適なクリーンでプロフェッショナルなタイムスタンプレイアウト。",
+      "points": {
+        "3": "複数のエクスポート形式"
+      },
+      "title": "[JA] Instant Export"
+    },
+    "comingSoon": {
+      "description": "AI強化とより強力な機能が間もなく登場し、タイムスタンプ作成をさらに効率的でインテリジェントにします。",
+      "points": {
+        "3": "高度な自動化"
+      },
+      "title": "[JA] Coming Soon Features"
+    }
+  },
+  "project": {
+    "manage": "[JA] Manage Projects",
+    "projects": "[JA] Projects",
+    "save": "[JA] Save",
+    "saved": "[JA] Saved!",
+    "saveNew": "[JA] Save New",
+    "saveProject": "[JA] Save Project",
+    "projectName": "[JA] Project Name",
+    "projectNamePlaceholder": "[JA] Enter project name",
+    "load": "[JA] Load Project",
+    "new": "[JA] New Project",
+    "delete": "[JA] Delete Project",
+    "export": "[JA] Export Project",
+    "import": "[JA] Import",
+    "restore": "[JA] Restore",
+    "manager": "[JA] Project Manager",
+    "managerDescription": "[JA] Save, load, and manage your timestamp projects",
+    "totalProjects": "[JA] Projects",
+    "totalTimestamps": "[JA] Timestamps",
+    "storageUsed": "[JA] Storage Used",
+    "noProjects": "[JA] No projects yet",
+    "noProjectsDescription": "[JA] Create your first project by adding some timestamps and saving",
+    "autoSave": "[JA] Auto-save",
+    "autoSaveFound": "[JA] Auto-saved work found",
+    "autoSaveDescription": "[JA] Restore your previous session with {{count}} timestamps",
+    "confirmDelete": "[JA] Are you sure you want to delete \"{{name}}\"?",
+    "confirmNew": "[JA] Start a new project? Unsaved work will be lost.",
+    "saveInfo": "[JA] This will save {{count}} timestamps locally on your device.",
+    "errorNoName": "[JA] Please enter a project name",
+    "errorSaving": "[JA] Failed to save project",
+    "importError": "[JA] Failed to import project: "
+  },
+  "signup": {
+    "success": {
+      "title": "[JA] 🎉 Great work!",
+      "subtitle": "[JA] You just created your first timestamp project!",
+      "description": "[JA] Want to save your projects in the cloud so you can access them from any device?"
+    },
+    "storage": {
+      "title": "[JA] Running out of space?",
+      "subtitle": "[JA] You have {{count}} projects saved locally",
+      "description": "[JA] Upgrade to cloud storage for unlimited projects and access from anywhere."
+    },
+    "multiple": {
+      "title": "[JA] Working on multiple projects?",
+      "subtitle": "[JA] Keep them synced across devices",
+      "description": "[JA] Sign up to sync all your projects and never lose your work again."
+    },
+    "discover": {
+      "title": "[JA] Unlock premium features",
+      "subtitle": "[JA] Get the most out of Easy Timestamps",
+      "description": "[JA] Join thousands of creators who use Easy Timestamps Pro for their workflow."
+    },
+    "benefits": {
+      "cloudSync": "[JA] Cloud sync across all devices",
+      "backup": "[JA] Automatic backup & restore",
+      "sharing": "[JA] Share projects with team members",
+      "unlimited": "[JA] Unlimited cloud storage",
+      "access": "[JA] Access from any device",
+      "security": "[JA] Secure cloud backup",
+      "sync": "[JA] Real-time sync",
+      "collaborate": "[JA] Collaboration tools",
+      "history": "[JA] Version history",
+      "aiGeneration": "[JA] AI-powered timestamp generation",
+      "templates": "[JA] Custom templates & themes",
+      "analytics": "[JA] Project analytics & insights"
+    },
+    "socialProof": "[JA] Join 10,000+ creators already using Easy Timestamps Pro",
+    "getStarted": "[JA] Get Started - It's Free!",
+    "remindLater": "[JA] Remind me later",
+    "noThanks": "[JA] No thanks",
+    "finePrint": "[JA] No credit card required. Free plan includes 5 cloud projects."
+  },
+  "faq": {
+    "title": "[JA] Frequently Asked Questions",
+    "subtitle": "[JA] Find answers to common questions about Easy Timestamps",
+    "searchPlaceholder": "[JA] Search FAQs...",
+    "noResults": "[JA] No FAQs found matching your search",
+    "noResultsDescription": "[JA] Try different keywords or browse all categories below",
+    "categories": {
+      "gettingStarted": "[JA] Getting Started",
+      "videoSupport": "[JA] Video Support",
+      "timestampCreation": "[JA] Timestamp Creation",
+      "exportingSharing": "[JA] Exporting & Sharing",
+      "troubleshooting": "[JA] Troubleshooting"
+    },
+    "questions": {
+      "whatIs": "[JA] What is Easy Timestamps?",
+      "whatIsAnswer": "[JA] Easy Timestamps is a free tool that helps you create professional YouTube timestamps and video chapters quickly and efficiently.",
+      "howToUse": "[JA] How do I use Easy Timestamps?",
+      "howToUseAnswer": "[JA] Simply paste a YouTube URL or upload a video file, then add timestamps with titles. You can export the results in various formats.",
+      "supportedFormats": "[JA] What video formats are supported?",
+      "supportedFormatsAnswer": "[JA] We support YouTube URLs and MP4 file uploads. More formats coming soon.",
+      "freeToUse": "[JA] Is Easy Timestamps free to use?",
+      "freeToUseAnswer": "[JA] Yes! Easy Timestamps is completely free to use with no hidden fees or subscriptions.",
+      "exportFormats": "[JA] What export formats are available?",
+      "exportFormatsAnswer": "[JA] You can export timestamps in YouTube description format, JSON, CSV, and plain text formats."
+    }
+  },
+  "contact": {
+    "title": "[JA] Get in Touch",
+    "subtitle": "[JA] We're here to help! Whether you have a question, found a bug, or want to share feedback, we'd love to hear from you.",
+    "quickHelp": "[JA] Need Quick Help?",
+    "quickHelpDescription": "[JA] Many common questions are answered in our FAQ section. Check there first for instant answers!",
+    "browseFaq": "[JA] Browse FAQ",
+    "contactMethods": "[JA] Contact Methods",
+    "sendMessage": "[JA] Send us a Message",
+    "form": {
+      "name": "[JA] Name",
+      "namePlaceholder": "[JA] Your full name",
+      "email": "[JA] Email",
+      "emailPlaceholder": "[JA] your.email@example.com",
+      "category": "[JA] Category",
+      "categoryPlaceholder": "[JA] Select a category",
+      "subject": "[JA] Subject",
+      "subjectPlaceholder": "[JA] Brief description of your inquiry",
+      "message": "[JA] Message",
+      "messagePlaceholder": "[JA] Please provide as much detail as possible...",
+      "attachment": "[JA] Attachment (Optional)",
+      "attachmentDescription": "[JA] Images or PDF, up to 5MB",
+      "chooseFile": "[JA] Choose a file",
+      "dragDrop": "[JA] or drag and drop",
+      "sendMessage": "[JA] Send Message",
+      "sending": "[JA] Sending...",
+      "messageSent": "[JA] Message Sent!",
+      "messageSentDescription": "[JA] Thanks for reaching out. We'll get back to you soon!",
+      "sendFailed": "[JA] Send Failed",
+      "sendFailedDescription": "[JA] Something went wrong. Please try again or email us directly.",
+      "tryEasyTimestamps": "[JA] Try Easy Timestamps now",
+      "backToTool": "[JA] Back to Easy Timestamps"
+    },
+    "categories": {
+      "technical": "[JA] Technical Support",
+      "technicalDescription": "[JA] Tool not working, loading issues, browser compatibility",
+      "bug": "[JA] Bug Report",
+      "bugDescription": "[JA] Something is broken or not working as expected",
+      "feature": "[JA] Feature Request",
+      "featureDescription": "[JA] Suggestions for new features or improvements",
+      "business": "[JA] Business Inquiry",
+      "businessDescription": "[JA] Partnerships, collaborations, or commercial questions",
+      "general": "[JA] General Question",
+      "generalDescription": "[JA] How-to questions, usage help, or general inquiries"
+    },
+    "methods": {
+      "emailSupport": "[JA] Email Support",
+      "emailSupportDescription": "[JA] Get help with any questions or issues",
+      "bugReports": "[JA] Bug Reports",
+      "bugReportsDescription": "[JA] Report issues or unexpected behavior",
+      "featureRequests": "[JA] Feature Requests",
+      "featureRequestsDescription": "[JA] Suggest new features or improvements"
+    },
+    "responseTimes": "[JA] Response Times",
+    "businessHours": "[JA] All times are in business days (Monday-Friday, 9 AM - 5 PM CET)",
+    "privacy": {
+      "title": "[JA] Your Privacy Matters",
+      "points": [
+        "We only use your information to respond to your inquiry",
+        "Contact details are not shared with third parties",
+        "Messages are securely stored and deleted after resolution",
+        "See our Privacy Policy for complete details"
+      ]
+    }
+  },
+  "privacy": {
+    "gdpr": {
+      "title": "[JA] Your Privacy Rights",
+      "description": "[JA] We respect your privacy. This website uses cookies and processes personal data to improve your experience. You have the right to access, correct, or delete your data at any time.",
+      "accept": "[JA] Accept All",
+      "decline": "[JA] Necessary Only",
+      "learnMore": "[JA] Privacy Policy"
+    },
+    "ccpa": {
+      "title": "[JA] California Privacy Rights",
+      "description": "[JA] We may collect and share personal information. California residents have the right to know what personal information is collected and to request deletion.",
+      "accept": "[JA] Continue",
+      "optOut": "[JA] Do Not Sell My Info",
+      "learnMore": "[JA] Learn More"
+    },
+    "cookies": {
+      "title": "[JA] Cookie Notice",
+      "description": "[JA] This website uses cookies to enhance your browsing experience and provide personalized content.",
+      "accept": "[JA] Accept",
+      "decline": "[JA] Decline",
+      "learnMore": "[JA] Cookie Policy"
+    }
+  },
+  "errors": {
+    "general": "[JA] Something went wrong",
+    "network": "[JA] Network error. Please check your connection.",
+    "fileSize": "[JA] File size must be less than 5MB",
+    "fileType": "[JA] Only images and PDF files are allowed",
+    "required": "[JA] This field is required",
+    "invalidEmail": "[JA] Please enter a valid email address",
+    "invalidUrl": "[JA] Please enter a valid URL",
+    "invalidTime": "[JA] Please enter a valid time format",
+    "minLength": "[JA] Must be at least {{min}} characters long",
+    "maxLength": "[JA] Must be no more than {{max}} characters long"
+  },
+  "validation": {
+    "nameRequired": "[JA] Name is required",
+    "emailRequired": "[JA] Email is required",
+    "categoryRequired": "[JA] Please select a category",
+    "subjectRequired": "[JA] Subject is required",
+    "messageRequired": "[JA] Message is required",
+    "messageMinLength": "[JA] Message must be at least 10 characters long"
+  },
+  "formatting": {
+    "date": {
+      "format": "[JA] MM/DD/YYYY",
+      "placeholder": "[JA] MM/DD/YYYY"
+    },
+    "time": {
+      "format": "[JA] 12h",
+      "placeholder": "[JA] 00:00 AM/PM"
+    },
+    "number": {
+      "decimal": "[JA] .",
+      "thousands": "[JA] ,",
+      "example": "[JA] 1,000.50"
+    },
+    "phone": {
+      "format": "[JA] (XXX) XXX-XXXX",
+      "placeholder": "[JA] (555) 123-4567"
+    },
+    "address": {
+      "order": [
+        "street",
+        "city",
+        "state",
+        "zip",
+        "country"
+      ]
+    }
+  },
+  "time": {
+    "formats": {
+      "ago": "[JA] {{time}} ago",
+      "in": "[JA] in {{time}}",
+      "justNow": "[JA] just now",
+      "seconds": "[JA] {{count}} second",
+      "seconds_other": "[JA] {{count}} seconds",
+      "minutes": "[JA] {{count}} minute",
+      "minutes_other": "[JA] {{count}} minutes",
+      "hours": "[JA] {{count}} hour",
+      "hours_other": "[JA] {{count}} hours",
+      "days": "[JA] {{count}} day",
+      "days_other": "[JA] {{count}} days"
+    }
+  }
+}

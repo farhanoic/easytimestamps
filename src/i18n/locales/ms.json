@@ -1,0 +1,81 @@
+{
+  "common": {
+    "loading": "Memuatkan...",
+    "error": "Ralat",
+    "success": "Berjaya",
+    "cancel": "Batal",
+    "save": "Simpan",
+    "delete": "Padam",
+    "edit": "Edit",
+    "close": "Tutup",
+    "back": "Kembali",
+    "next": "Seterusnya",
+    "previous": "Sebelumnya",
+    "search": "Cari",
+    "filter": "Penapis",
+    "clear": "Kosongkan",
+    "copy": "Salin",
+    "download": "Muat turun",
+    "upload": "Muat naik",
+    "submit": "Hantar",
+    "send": "Hantar",
+    "yes": "Ya",
+    "no": "Tidak",
+    "ok": "OK",
+    "required": "Diperlukan"
+  },
+  "navigation": {
+    "features": "Ciri-ciri",
+    "about": "Mengenai",
+    "help": "Bantuan",
+    "contact": "Hubungi",
+    "faq": "Soalan Lazim",
+    "privacy": "Privasi",
+    "terms": "Terma Perkhidmatan",
+    "language": "Bahasa",
+    "theme": "Tema",
+    "home": "Utama"
+  },
+  "header": {
+    "title": "Easy Timestamps",
+    "subtitle": "Penjana Cap Masa & Bab YouTube Percuma",
+    "description": "Cipta cap masa YouTube profesional dan bab video dengan segera. Sesuai untuk pencipta kandungan, pendidik, dan profesional video."
+  },
+  "tool": {
+    "uploadVideo": "Muat naik Video",
+    "pasteUrl": "Tampal URL YouTube",
+    "addTimestamp": "Tambah Cap Masa",
+    "generateChapters": "Jana Bab",
+    "exportTimestamps": "Eksport Cap Masa",
+    "copyToClipboard": "Salin ke Papan Klip",
+    "downloadFile": "Muat turun Fail",
+    "videoUrl": "URL Video",
+    "videoUrlPlaceholder": "Tampal URL video YouTube di sini...",
+    "timestampTime": "Masa",
+    "timestampTitle": "Tajuk",
+    "timestampDescription": "Penerangan",
+    "timePlaceholder": "00:00",
+    "titlePlaceholder": "Tajuk bab",
+    "descriptionPlaceholder": "Penerangan pilihan",
+    "noTimestamps": "Tiada cap masa ditambah lagi",
+    "addFirstTimestamp": "Tambah cap masa pertama anda",
+    "enterVideoUrl": "Masukkan URL video",
+    "load": "Muat",
+    "addTimestampAtCurrentTime": "Tambah cap masa pada masa semasa",
+    "addSection": "Tambah bahagian",
+    "exportAsText": "Eksport sebagai teks",
+    "currentTime": "Masa semasa",
+    "enterDescription": "Masukkan penerangan",
+    "addYouTubeUrl": "Tambah URL YouTube",
+    "loadingVideo": "Memuatkan video...",
+    "errorLoadingVideo": "Ralat memuatkan video",
+    "selectFile": "Pilih fail",
+    "dragDropFile": "Seret dan lepas fail",
+    "supportedFormats": "Format yang disokong"
+  },
+  "language": {
+    "names": {
+      "ms": "Bahasa Melayu"
+    }
+  }
+}

@@ -1,3 +1,16 @@
+/* Import Google Fonts for various languages */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap');
+
+/* Import RTL styles */
+@import './styles/rtl.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,6 +22,155 @@
   
   body {
     @apply antialiased text-neutral-700 dark:text-gray-200 dark:bg-gray-900;
+    transition: font-family 0.3s ease;
+  }
+
+  /* RTL Support */
+  [dir="rtl"] {
+    direction: rtl;
+  }
+
+  [dir="rtl"] .rtl-flip {
+    transform: scaleX(-1);
+  }
+
+  /* Language-specific font families */
+  .font-arabic {
+    font-family: 'Noto Sans Arabic', 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  .font-chinese {
+    font-family: 'Noto Sans SC', 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  .font-chinese-traditional {
+    font-family: 'Noto Sans TC', 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  .font-japanese {
+    font-family: 'Noto Sans JP', 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  .font-korean {
+    font-family: 'Noto Sans KR', 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  .font-hindi {
+    font-family: 'Noto Sans Devanagari', 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  .font-thai {
+    font-family: 'Noto Sans Thai', 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  .font-vietnamese {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* RTL-specific adjustments */
+  [dir="rtl"] .text-left {
+    text-align: right;
+  }
+
+  [dir="rtl"] .text-right {
+    text-align: left;
+  }
+
+  [dir="rtl"] .float-left {
+    float: right;
+  }
+
+  [dir="rtl"] .float-right {
+    float: left;
+  }
+
+  /* Custom RTL spacing utilities */
+  [dir="rtl"] .ml-auto {
+    margin-left: unset;
+    margin-right: auto;
+  }
+
+  [dir="rtl"] .mr-auto {
+    margin-right: unset;
+    margin-left: auto;
+  }
+
+  /* Flex direction adjustments for RTL */
+  [dir="rtl"] .flex-row {
+    flex-direction: row-reverse;
+  }
+
+  [dir="rtl"] .space-x-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 1;
+  }
+
+  [dir="rtl"] .space-x-3 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 1;
+  }
+
+  [dir="rtl"] .space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 1;
+  }
+
+  /* Cultural color adaptations - CSS Custom Properties */
+  :root {
+    --color-success: #10b981;
+    --color-error: #ef4444;
+    --color-warning: #f59e0b;
+    --color-primary: #3b82f6;
+  }
+
+  /* Chinese locales - red for success (lucky color) */
+  :root[data-locale="zh-CN"], :root[data-locale="zh-TW"] {
+    --color-success: #dc2626;
+    --color-error: #374151;
+  }
+
+  /* Japanese locale - softer red for errors */
+  :root[data-locale="ja"] {
+    --color-error: #dc2626;
+  }
+
+  /* Arabic locale - enhanced green for success */
+  :root[data-locale="ar"] {
+    --color-success: #059669;
+  }
+
+  /* Apply cultural colors */
+  .text-success {
+    color: var(--color-success);
+  }
+
+  .text-error {
+    color: var(--color-error);
+  }
+
+  .text-warning {
+    color: var(--color-warning);
+  }
+
+  .bg-success {
+    background-color: var(--color-success);
+  }
+
+  .bg-error {
+    background-color: var(--color-error);
+  }
+
+  .bg-warning {
+    background-color: var(--color-warning);
+  }
+
+  .border-success {
+    border-color: var(--color-success);
+  }
+
+  .border-error {
+    border-color: var(--color-error);
+  }
+
+  .border-warning {
+    border-color: var(--color-warning);
   }
 }
 
