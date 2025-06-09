@@ -5,7 +5,7 @@
   <!-- Homepage - Main application page -->
   <url>
     <loc>https://www.easytimestamps.com</loc>
-    <lastmod>2025-06-06T18:00:00+00:00</lastmod>
+    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,6 +13,46 @@
       <image:title>Easy Timestamps - YouTube Timestamp Generator Tool</image:title>
       <image:caption>Create YouTube timestamps and video chapters instantly with Easy Timestamps free online tool</image:caption>
     </image:image>
+  </url>
+
+  <!-- Features page -->
+  <url>
+    <loc>https://www.easytimestamps.com/features</loc>
+    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- FAQ page -->
+  <url>
+    <loc>https://www.easytimestamps.com/faq</loc>
+    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Privacy page -->
+  <url>
+    <loc>https://www.easytimestamps.com/privacy</loc>
+    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Contact page -->
+  <url>
+    <loc>https://www.easytimestamps.com/contact</loc>
+    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- About page -->
+  <url>
+    <loc>https://www.easytimestamps.com/about</loc>
+    <lastmod>2025-06-10T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
 </urlset>
