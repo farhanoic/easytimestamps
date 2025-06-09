@@ -1,6 +1,6 @@
 // Google Analytics tracking utilities with robust error handling and fallbacks
 
-import { safeAnalyticsCall, withRetry } from './retryUtils'
+import { safeAnalyticsCall } from './retryUtils'
 
 declare global {
   interface Window {

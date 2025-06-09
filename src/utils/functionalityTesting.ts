@@ -197,7 +197,7 @@ export class FunctionalityTester {
   }
 
   // Execute specific test logic
-  private async executeTest(testName: string, language: string, category: string): Promise<FunctionalTestResult> {
+  private async executeTest(testName: string, language: string, _category: string): Promise<FunctionalTestResult> {
     const baseResult = {
       testName,
       language,
@@ -262,7 +262,7 @@ export class FunctionalityTester {
 
     let accessibleCount = 0
     menuItems.forEach(item => {
-      const hasText = item.textContent?.trim().length > 0
+      const hasText = (item.textContent?.trim().length || 0) > 0
       const hasAriaLabel = item.getAttribute('aria-label')
       const hasTitle = item.getAttribute('title')
       
@@ -300,7 +300,7 @@ export class FunctionalityTester {
     // Test if language switcher is functional
     const isInteractive = languageSwitcher.tagName === 'SELECT' || 
                           languageSwitcher.getAttribute('role') === 'button' ||
-                          languageSwitcher.onclick !== null
+                          languageSwitcher.hasAttribute('onclick')
 
     return {
       ...baseResult,
@@ -406,9 +406,9 @@ export class FunctionalityTester {
 
     let responsiveButtons = 0
     buttons.forEach(button => {
-      const hasClickHandler = button.onclick !== null ||
+      const hasClickHandler = button.hasAttribute('onclick') ||
                              button.getAttribute('onclick') !== null ||
-                             button.addEventListener !== undefined
+                             typeof button.addEventListener === 'function'
       
       const isDisabled = (button as HTMLButtonElement).disabled
       const hasAriaDisabled = button.getAttribute('aria-disabled') === 'true'
@@ -543,7 +543,7 @@ export class FunctionalityTester {
     let hasSubmitHandler = false
     
     // Check if form has submit handler
-    if (form.onsubmit || form.addEventListener) {
+    if (form.onsubmit || typeof form.addEventListener === 'function') {
       hasSubmitHandler = true
     }
 
@@ -574,7 +574,7 @@ export class FunctionalityTester {
     }
 
     // Test if clipboard API is available
-    const hasClipboardAPI = navigator.clipboard && navigator.clipboard.writeText
+    const hasClipboardAPI = navigator.clipboard && typeof navigator.clipboard.writeText === 'function'
 
     return {
       ...baseResult,

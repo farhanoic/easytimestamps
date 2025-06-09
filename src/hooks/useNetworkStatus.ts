@@ -87,7 +87,7 @@ export const useNetworkStatus = (): UseNetworkStatusReturn => {
     }
   }, [isOnline])
 
-  const isSlowConnection = effectiveType === 'slow-2g' || effectiveType === '2g' || (rtt && rtt > 2000) || (downlink && downlink < 0.5)
+  const isSlowConnection: boolean = effectiveType === 'slow-2g' || effectiveType === '2g' || (rtt ? rtt > 2000 : false) || (downlink ? downlink < 0.5 : false)
   const canRetry = retryCount < 3 && isOnline
 
   return {

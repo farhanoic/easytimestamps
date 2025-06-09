@@ -131,18 +131,17 @@ export class LayoutTester {
   }
 
   // Test a specific UI element
-  private async testElement(elementConfig: any, category: string) {
+  private async testElement(elementConfig: any, _category: string) {
     const elements = document.querySelectorAll(elementConfig.selector)
     
-    elements.forEach((element, index) => {
+    elements.forEach((element, _index) => {
       const htmlElement = element as HTMLElement
       
       // Store original content
-      const originalText = htmlElement.textContent || ''
       const originalHTML = htmlElement.innerHTML
       
       // Test with different text lengths for each language
-      Object.entries(SUPPORTED_LANGUAGES).forEach(([langCode, langConfig]) => {
+      Object.entries(SUPPORTED_LANGUAGES).forEach(([langCode, _langConfig]) => {
         // Test with longest text to check overflow
         this.testWithText(htmlElement, LAYOUT_TEST_TEXTS.longest[langCode as keyof typeof LAYOUT_TEST_TEXTS.longest], elementConfig, langCode, 'longest')
         
@@ -262,13 +261,12 @@ export class LayoutTester {
     }
   }
 
-  private checkAlignment(element: HTMLElement, config: any, language: string, text: string, testType: string) {
+  private checkAlignment(element: HTMLElement, config: any, language: string, text: string, _testType: string) {
     const computedStyle = window.getComputedStyle(element)
-    const textAlign = computedStyle.textAlign
     const direction = computedStyle.direction
     
     // Check RTL languages (Arabic would be added here if supported)
-    const rtlLanguages = [] // Add RTL language codes here
+    const rtlLanguages: string[] = [] // Add RTL language codes here
     
     if (rtlLanguages.includes(language) && direction !== 'rtl') {
       this.results.push({
@@ -282,7 +280,7 @@ export class LayoutTester {
     }
   }
 
-  private checkAccessibility(element: HTMLElement, config: any, language: string, text: string, testType: string) {
+  private checkAccessibility(element: HTMLElement, config: any, language: string, text: string, _testType: string) {
     // Check if text is readable (contrast, size)
     const computedStyle = window.getComputedStyle(element)
     const fontSize = parseInt(computedStyle.fontSize)
