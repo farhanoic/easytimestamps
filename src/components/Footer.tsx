@@ -22,9 +22,9 @@ const Footer: React.FC = () => {
       label: 'LinkedIn'
     },
     {
-      href: 'mailto:farhan@easytimestamps.com',
+      href: '/contact',
       icon: <Mail className="h-5 w-5" />,
-      label: 'Email'
+      label: 'Contact'
     }
   ];
 
@@ -69,8 +69,7 @@ const Footer: React.FC = () => {
                 <a
                   key={social.href}
                   href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  {...(social.href.startsWith('http') && { target: "_blank", rel: "noopener noreferrer" })}
                   className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors duration-200"
                   aria-label={social.label}
                 >

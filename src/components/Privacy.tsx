@@ -326,16 +326,6 @@ const Privacy: React.FC = () => {
               <li><strong>Mitigation Measures:</strong> Description of measures taken to address the breach</li>
             </ul>
 
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">3.9 Security Contact</h3>
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6">
-              <h4 className="text-lg font-medium text-gray-900 dark:text-white mb-4">Report Security Issues</h4>
-              <div className="space-y-2 text-gray-700 dark:text-gray-300">
-                <p><strong>Security Email:</strong> <span className="font-mono bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">security@easytimestamps.com</span></p>
-                <p><strong>Response Time:</strong> Security issues are prioritized and acknowledged within 24 hours</p>
-                <p><strong>Responsible Disclosure:</strong> We appreciate responsible disclosure of security vulnerabilities</p>
-                <p><strong>Bug Bounty:</strong> While we don't currently have a formal program, we recognize and appreciate security researchers</p>
-              </div>
-            </div>
           </section>
 
           {/* Third-Party Services */}
@@ -641,21 +631,22 @@ const Privacy: React.FC = () => {
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">5.9 Exercising Your Rights - Request Procedures</h3>
             <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 mb-6">
               <h4 className="text-lg font-medium text-gray-900 dark:text-white mb-4">How to Submit Data Subject Requests</h4>
-              <ol className="list-decimal ml-6 text-gray-700 dark:text-gray-300 space-y-2">
-                <li><strong>Email:</strong> Send requests to <span className="font-mono bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">privacy@easytimestamps.com</span></li>
-                <li><strong>Subject Line:</strong> Include "GDPR Data Subject Request - [Type of Request]"</li>
-                <li><strong>Required Information:</strong>
-                  <ul className="list-disc ml-6 mt-2 space-y-1">
-                    <li>Your specific request (access, deletion, rectification, etc.)</li>
-                    <li>Description of data concerned (if applicable)</li>
-                    <li>Approximate dates of service usage</li>
-                    <li>Preferred response method</li>
-                  </ul>
-                </li>
-                <li><strong>Identity Verification:</strong> We may request additional information to verify your identity</li>
-                <li><strong>Response Time:</strong> We will respond within 30 days (extendable to 60 days for complex requests)</li>
-                <li><strong>No Charge:</strong> Requests are processed free of charge unless manifestly unfounded or excessive</li>
-              </ol>
+              <div className="text-center">
+                <p className="text-gray-700 dark:text-gray-300 mb-4">
+                  To submit a data subject request, please use our contact form and specify the type of request you're making.
+                </p>
+                <a 
+                  href="/contact"
+                  className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-medium"
+                >
+                  <Mail className="h-5 w-5" />
+                  Submit Data Request
+                </a>
+                <div className="mt-4 text-sm text-gray-600 dark:text-gray-400">
+                  <p><strong>Response Time:</strong> We will respond within 30 days (extendable to 60 days for complex requests)</p>
+                  <p><strong>No Charge:</strong> Requests are processed free of charge unless manifestly unfounded or excessive</p>
+                </div>
+              </div>
             </div>
           </section>
 
@@ -769,76 +760,20 @@ const Privacy: React.FC = () => {
               9. Contact Information
             </h2>
             
-            <p className="text-gray-700 dark:text-gray-300 mb-6">
-              If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, 
-              please contact us:
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-6 mb-6">
-              <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Data Protection Officer</h3>
-                <div className="space-y-2 text-gray-700 dark:text-gray-300">
-                  <p><strong>Email:</strong> <span className="font-mono bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">dpo@easytimestamps.com</span></p>
-                  <p><strong>Role:</strong> GDPR Compliance & Data Protection</p>
-                  <p><strong>Response Time:</strong> Within 30 days for formal requests</p>
-                  <p><strong>Languages:</strong> English, European languages supported</p>
-                </div>
-              </div>
-              
-              <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">General Privacy Contact</h3>
-                <div className="space-y-2 text-gray-700 dark:text-gray-300">
-                  <p><strong>Email:</strong> <span className="font-mono bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">privacy@easytimestamps.com</span></p>
-                  <p><strong>Role:</strong> General privacy questions & support</p>
-                  <p><strong>Response Time:</strong> Within 48 hours for inquiries</p>
-                  <p><strong>Available:</strong> Monday-Friday, 9 AM - 5 PM CET</p>
-                </div>
-              </div>
-            </div>
-
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">9.1 Data Subject Request Processing</h3>
-            <div className="bg-blue-50 dark:bg-blue-900/20 rounded-xl p-6 mb-6">
-              <h4 className="text-lg font-medium text-gray-900 dark:text-white mb-4">Formal GDPR Request Procedure</h4>
-              <div className="space-y-4 text-gray-700 dark:text-gray-300">
-                <div>
-                  <h5 className="font-semibold mb-2">Step 1: Submit Request</h5>
-                  <p>Email us at <span className="font-mono bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">dpo@easytimestamps.com</span> with subject line "GDPR Request - [Request Type]"</p>
-                </div>
-                <div>
-                  <h5 className="font-semibold mb-2">Step 2: Identity Verification</h5>
-                  <p>We may request additional information to verify your identity to protect against fraudulent requests</p>
-                </div>
-                <div>
-                  <h5 className="font-semibold mb-2">Step 3: Processing</h5>
-                  <p>Requests processed within 30 days (may extend to 60 days for complex requests with notification)</p>
-                </div>
-                <div>
-                  <h5 className="font-semibold mb-2">Step 4: Response</h5>
-                  <p>We provide a detailed response including any requested data or confirmation of actions taken</p>
-                </div>
-              </div>
-            </div>
-
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">9.2 Supervisory Authority Information</h3>
-            <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-xl p-6 mb-6">
-              <h4 className="text-lg font-medium text-gray-900 dark:text-white mb-3">EU Data Protection Authorities</h4>
-              <p className="text-gray-700 dark:text-gray-300 mb-4">
-                If you are not satisfied with our response to your privacy concerns, you have the right to lodge a complaint 
-                with your local data protection authority:
+            <div className="bg-blue-50 dark:bg-blue-900/20 rounded-xl p-6 text-center">
+              <p className="text-gray-700 dark:text-gray-300 mb-6">
+                If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, 
+                please contact us through our contact page.
               </p>
-              <ul className="list-disc ml-6 text-gray-700 dark:text-gray-300 space-y-1">
-                <li><strong>European Data Protection Board:</strong> <a href="https://edpb.europa.eu" className="text-blue-600 dark:text-blue-400 hover:underline">edpb.europa.eu</a></li>
-                <li><strong>Find Your Local Authority:</strong> <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" className="text-blue-600 dark:text-blue-400 hover:underline">EDPB Members Directory</a></li>
-                <li><strong>Complaint Forms:</strong> Available on your local authority's website</li>
-              </ul>
+              
+              <a 
+                href="/contact"
+                className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-medium"
+              >
+                <Mail className="h-5 w-5" />
+                Contact Us
+              </a>
             </div>
-
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">9.3 Technical Support</h3>
-            <p className="text-gray-700 dark:text-gray-300 mb-6">
-              For general technical support or questions about using Easy Timestamps, 
-              please visit our <a href="/faq" className="text-blue-600 dark:text-blue-400 hover:underline">FAQ page</a> or 
-              contact us through our <a href="/contact" className="text-blue-600 dark:text-blue-400 hover:underline">contact form</a>.
-            </p>
           </section>
 
         </div>
