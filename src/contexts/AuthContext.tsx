@@ -83,7 +83,7 @@ export interface User {
   email: string;
   name: string;
   avatar?: string;
-  provider: 'google' | 'github' | 'email';
+  provider: 'google' | 'email';
   
   // Subscription information
   tier: 'free' | 'premium' | 'pro';
@@ -131,7 +131,6 @@ export interface AuthContextType extends AuthState {
   signIn: (email: string, password: string) => Promise<void>;
   signUp: (email: string, password: string, name: string) => Promise<void>;
   signInWithGoogle: () => Promise<void>;
-  signInWithGitHub: () => Promise<void>;
   signOut: () => Promise<void>;
   resetPassword: (email: string) => Promise<void>;
   updateProfile: (updates: Partial<User>) => Promise<void>;
@@ -245,23 +244,6 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     }
   };
 
-  const signInWithGitHub = async () => {
-    setIsLoading(true);
-    authAnalytics.trackAuthAttempt('github', 'started');
-    
-    try {
-      const user = await authService.signInWithGitHub();
-      setUser(user);
-      authAnalytics.trackAuthAttempt('github', 'success');
-      authAnalytics.trackAuthSuccess(user);
-      authAnalytics.trackConversion('signup', { method: 'github' });
-    } catch (error) {
-      authAnalytics.trackAuthAttempt('github', 'failed', { error: (error as Error).message });
-      throw error;
-    } finally {
-      setIsLoading(false);
-    }
-  };
 
   const signOut = async () => {
     setIsLoading(true);
@@ -334,7 +316,6 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     signIn,
     signUp,
     signInWithGoogle,
-    signInWithGitHub,
     signOut,
     resetPassword,
     updateProfile,

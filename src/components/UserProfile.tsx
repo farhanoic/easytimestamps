@@ -254,7 +254,6 @@ export const UserProfile: React.FC = () => {
           <div className="px-4 py-3 border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-700/50 rounded-b-lg">
             <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
               {user.provider === 'google' && t('user.signedInWithGoogle', 'Signed in with Google')}
-              {user.provider === 'github' && t('user.signedInWithGitHub', 'Signed in with GitHub')}
               {user.provider === 'email' && t('user.signedInWithEmail', 'Signed in with email')}
             </p>
           </div>

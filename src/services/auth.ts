@@ -9,7 +9,6 @@ import { securityService } from './securityService';
 
 // Configuration constants (replace with your actual values)
 const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID;
-const GITHUB_CLIENT_ID = 'your-github-client-id';
 const API_BASE_URL = 'http://localhost:3001/api';
 
 // Rate limiting storage
@@ -265,139 +264,6 @@ const GoogleAuth = {
   }
 };
 
-// GitHub OAuth implementation
-const GitHubAuth = {
-  /**
-   * Initiate GitHub OAuth flow
-   */
-  async signIn(): Promise<User> {
-    const state = SecurityUtils.generateToken();
-    sessionStorage.setItem('github_oauth_state', state);
-
-    const params = new URLSearchParams({
-      client_id: GITHUB_CLIENT_ID,
-      redirect_uri: `${window.location.origin}/auth/github/callback`,
-      scope: 'user:email',
-      state
-    });
-
-    // Open popup for OAuth
-    const popup = window.open(
-      `https://github.com/login/oauth/authorize?${params}`,
-      'github-oauth',
-      'width=600,height=700,scrollbars=yes,resizable=yes'
-    );
-
-    return new Promise((resolve, reject) => {
-      const messageHandler = async (event: MessageEvent) => {
-        if (event.origin !== window.location.origin) return;
-
-        if (event.data.type === 'GITHUB_OAUTH_SUCCESS') {
-          window.removeEventListener('message', messageHandler);
-          popup?.close();
-
-          try {
-            const user = await this.handleOAuthCallback(event.data.code, event.data.state);
-            resolve(user);
-          } catch (error) {
-            reject(error);
-          }
-        }
-
-        if (event.data.type === 'GITHUB_OAUTH_ERROR') {
-          window.removeEventListener('message', messageHandler);
-          popup?.close();
-          reject(new Error(event.data.error));
-        }
-      };
-
-      window.addEventListener('message', messageHandler);
-
-      // Handle popup blocked or closed
-      const checkClosed = setInterval(() => {
-        if (popup?.closed) {
-          clearInterval(checkClosed);
-          window.removeEventListener('message', messageHandler);
-          reject(new Error('GitHub sign-in was cancelled'));
-        }
-      }, 1000);
-    });
-  },
-
-  /**
-   * Handle GitHub OAuth callback
-   */
-  async handleOAuthCallback(code: string, state: string): Promise<User> {
-    const storedState = sessionStorage.getItem('github_oauth_state');
-    sessionStorage.removeItem('github_oauth_state');
-
-    if (state !== storedState) {
-      throw new Error('Invalid OAuth state parameter');
-    }
-
-    try {
-      // Exchange code for access token (this would be done on your backend)
-      const tokenResponse = await fetch(`${API_BASE_URL}/auth/github/token`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ code })
-      });
-
-      if (!tokenResponse.ok) {
-        throw new Error('Failed to exchange OAuth code');
-      }
-
-      const { access_token } = await tokenResponse.json();
-
-      // Get user info from GitHub API
-      const userResponse = await fetch('https://api.github.com/user', {
-        headers: { Authorization: `token ${access_token}` }
-      });
-
-      if (!userResponse.ok) {
-        throw new Error('Failed to fetch user information');
-      }
-
-      const githubUser = await userResponse.json();
-
-      const user: User = {
-        id: `github_${githubUser.id}`,
-        email: githubUser.email,
-        name: githubUser.name || githubUser.login,
-        avatar: githubUser.avatar_url,
-        provider: 'github',
-        tier: 'free',
-        subscriptionPlan: subscriptionService.getPlan('free')!,
-        subscriptionStatus: 'active',
-        createdAt: new Date().toISOString(),
-        lastLoginAt: new Date().toISOString(),
-        emailVerified: true,
-        accountStatus: 'active',
-        usageStatistics: subscriptionService.initializeUsageStatistics(),
-        featurePermissions: subscriptionService.generateFeaturePermissions('free'),
-        preferences: {
-          theme: 'system',
-          language: 'en',
-          emailNotifications: {
-            marketing: true,
-            productUpdates: true,
-            usageAlerts: true,
-            billingAlerts: true
-          },
-          timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
-        }
-      };
-
-      // Store session
-      const token = SecurityUtils.generateToken();
-      SessionManager.setSession(user, token);
-
-      return user;
-    } catch (error) {
-      throw new Error('Failed to complete GitHub sign-in');
-    }
-  }
-};
 
 // Main AuthService class
 export class AuthService {
@@ -529,17 +395,6 @@ export class AuthService {
     return GoogleAuth.signIn();
   }
 
-  /**
-   * Sign in with GitHub
-   */
-  async signInWithGitHub(): Promise<User> {
-    // Rate limiting
-    if (!rateLimitStorage.checkRateLimit('github_signin')) {
-      throw new Error('Too many GitHub sign-in attempts. Please try again later.');
-    }
-
-    return GitHubAuth.signIn();
-  }
 
   /**
    * Sign out
@@ -763,7 +618,6 @@ declare global {
   interface ImportMeta {
     env: {
       VITE_GOOGLE_CLIENT_ID: string;
-      VITE_GITHUB_CLIENT_ID?: string;
       VITE_API_URL?: string;
       [key: string]: any;
     };

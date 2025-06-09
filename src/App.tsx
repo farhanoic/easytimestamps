@@ -15,7 +15,6 @@ import { PrivacyCompliance } from './components/PrivacyCompliance'
 import { useTheme } from './contexts/ThemeContext'
 import { AuthProvider } from './contexts/AuthContext'
 import { AuthModal } from './components/AuthModal'
-import { GitHubCallback } from './components/GitHubCallback'
 import SEOHead from './components/SEOHead'
 import { Sun, Moon, Crown } from 'lucide-react'
 import { trackUIEvent, trackFeatureUsage } from './utils/analytics'
@@ -147,7 +146,6 @@ function App() {
                 <Settings />
               </>
             } />
-            <Route path="/auth/github/callback" element={<GitHubCallback />} />
           </Routes>
           
           {/* Footer */}
