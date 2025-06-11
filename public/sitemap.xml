@@ -4,12 +4,12 @@
   
   <!-- Homepage - Main application page -->
   <url>
-    <loc>https://www.easytimestamps.com</loc>
+    <loc>https://easytimestamps.com</loc>
     <lastmod>2025-06-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://www.easytimestamps.com/og-image.jpg</image:loc>
+      <image:loc>https://easytimestamps.com/og-image.jpg</image:loc>
       <image:title>Easy Timestamps - YouTube Timestamp Generator Tool</image:title>
       <image:caption>Create YouTube timestamps and video chapters instantly with Easy Timestamps free online tool</image:caption>
     </image:image>
@@ -17,7 +17,7 @@
 
   <!-- Features page -->
   <url>
-    <loc>https://www.easytimestamps.com/features</loc>
+    <loc>https://easytimestamps.com/features</loc>
     <lastmod>2025-06-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -25,7 +25,7 @@
 
   <!-- FAQ page -->
   <url>
-    <loc>https://www.easytimestamps.com/faq</loc>
+    <loc>https://easytimestamps.com/faq</loc>
     <lastmod>2025-06-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -33,7 +33,7 @@
 
   <!-- Privacy page -->
   <url>
-    <loc>https://www.easytimestamps.com/privacy</loc>
+    <loc>https://easytimestamps.com/privacy</loc>
     <lastmod>2025-06-10T00:00:00+00:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
@@ -41,7 +41,7 @@
 
   <!-- Contact page -->
   <url>
-    <loc>https://www.easytimestamps.com/contact</loc>
+    <loc>https://easytimestamps.com/contact</loc>
     <lastmod>2025-06-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -49,7 +49,7 @@
 
   <!-- About page -->
   <url>
-    <loc>https://www.easytimestamps.com/about</loc>
+    <loc>https://easytimestamps.com/about</loc>
     <lastmod>2025-06-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
