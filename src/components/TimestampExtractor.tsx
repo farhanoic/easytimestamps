@@ -24,11 +24,25 @@ interface LegacyTimestamp {
 }
 
 // Convert new timestamp to legacy for components that expect legacy format
-const convertToLegacy = (timestamp: Timestamp): LegacyTimestamp => ({
-  startTime: timestamp.time,
-  description: timestamp.description,
-  seconds: timestamp.seconds
-})
+const convertToLegacy = (timestamp: Timestamp): LegacyTimestamp => {
+  // Check if time is in range format (e.g., "0:00 - 0:45")
+  if (timestamp.time.includes(' - ')) {
+    const parts = timestamp.time.split(' - ')
+    return {
+      startTime: parts[0],
+      endTime: parts[1],
+      description: timestamp.description,
+      seconds: timestamp.seconds
+    }
+  }
+  
+  // Single time format
+  return {
+    startTime: timestamp.time,
+    description: timestamp.description,
+    seconds: timestamp.seconds
+  }
+}
 
 // Generate unique ID
 const generateId = () => {
@@ -49,7 +63,7 @@ function TimestampExtractor() {
   // Convert legacy timestamp to new format
   const convertLegacyTimestamp = (legacy: LegacyTimestamp): Timestamp => ({
     id: generateId(),
-    time: legacy.startTime,
+    time: legacy.endTime ? `${legacy.startTime} - ${legacy.endTime}` : legacy.startTime,
     description: legacy.description,
     seconds: legacy.seconds
   })
