@@ -11,7 +11,7 @@ export const SUPPORTED_LANGUAGES = {
     locale: 'en-US',
     dir: 'ltr',
     region: 'US',
-    domain: 'easytimestamps.com',
+    domain: 'www.easytimestamps.com',
     slugs: {
       home: '',
       features: 'features',
@@ -33,7 +33,7 @@ export const SUPPORTED_LANGUAGES = {
     locale: 'es-ES',
     dir: 'ltr',
     region: 'ES',
-    domain: 'easytimestamps.com',
+    domain: 'www.easytimestamps.com',
     slugs: {
       home: 'es',
       features: 'es/caracteristicas',
@@ -55,7 +55,7 @@ export const SUPPORTED_LANGUAGES = {
     locale: 'fr-FR',
     dir: 'ltr',
     region: 'FR',
-    domain: 'easytimestamps.com',
+    domain: 'www.easytimestamps.com',
     slugs: {
       home: 'fr',
       features: 'fr/fonctionnalites',
@@ -77,7 +77,7 @@ export const SUPPORTED_LANGUAGES = {
     locale: 'de-DE',
     dir: 'ltr',
     region: 'DE',
-    domain: 'easytimestamps.com',
+    domain: 'www.easytimestamps.com',
     slugs: {
       home: 'de',
       features: 'de/funktionen',
@@ -99,7 +99,7 @@ export const SUPPORTED_LANGUAGES = {
     locale: 'pt-BR',
     dir: 'ltr',
     region: 'BR',
-    domain: 'easytimestamps.com',
+    domain: 'www.easytimestamps.com',
     slugs: {
       home: 'pt',
       features: 'pt/recursos',
@@ -121,7 +121,7 @@ export const SUPPORTED_LANGUAGES = {
     locale: 'ja-JP',
     dir: 'ltr',
     region: 'JP',
-    domain: 'easytimestamps.com',
+    domain: 'www.easytimestamps.com',
     slugs: {
       home: 'ja',
       features: 'ja/機能',
@@ -143,7 +143,7 @@ export const SUPPORTED_LANGUAGES = {
     locale: 'ko-KR',
     dir: 'ltr',
     region: 'KR',
-    domain: 'easytimestamps.com',
+    domain: 'www.easytimestamps.com',
     slugs: {
       home: 'ko',
       features: 'ko/기능',
@@ -165,7 +165,7 @@ export const SUPPORTED_LANGUAGES = {
     locale: 'zh-CN',
     dir: 'ltr',
     region: 'CN',
-    domain: 'easytimestamps.com',
+    domain: 'www.easytimestamps.com',
     slugs: {
       home: 'zh',
       features: 'zh/功能',
