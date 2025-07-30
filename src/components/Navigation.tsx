@@ -1,12 +1,10 @@
 import { useState, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { ChevronDown, Users, HelpCircle, Shield, Mail, Zap, LogIn } from 'lucide-react'
+import { ChevronDown, Users, HelpCircle, Shield, Mail, Zap } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { trackUIEvent } from '../utils/analytics'
 import Logo from './Logo'
 import LanguageSelector from './LanguageSelector'
-import { UserProfile } from './UserProfile'
-import { useAuth } from '../contexts/AuthContext'
 
 interface DropdownItem {
   label: string
@@ -19,7 +17,6 @@ interface DropdownItem {
 
 function Navigation() {
   const { t } = useTranslation()
-  const { isAuthenticated } = useAuth()
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const timeoutRef = useRef<number | undefined>()
@@ -57,16 +54,6 @@ function Navigation() {
     setIsMobileMenuOpen(false)
   }
 
-  const handleAuthClick = (mode: 'signin' | 'signup') => {
-    // Create custom event to trigger auth modal
-    const event = new CustomEvent('openAuthModal', { detail: { mode } })
-    window.dispatchEvent(event)
-    
-    setActiveDropdown(null)
-    setIsMobileMenuOpen(false)
-    
-    trackUIEvent('auth_modal_open', { mode })
-  }
 
   // Toolkit menu component
   const ToolkitMenu = () => (
@@ -278,39 +265,11 @@ function Navigation() {
 
           {/* Desktop Right Side */}
           <div className="hidden md:flex items-center space-x-4">
-            {!isAuthenticated ? (
-              <>
-                <button
-                  onClick={() => handleAuthClick('signin')}
-                  className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
-                >
-                  {t('auth.signIn', 'Sign In')}
-                </button>
-                <button
-                  onClick={() => handleAuthClick('signup')}
-                  className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors flex items-center space-x-2"
-                >
-                  <span>{t('auth.signUp', 'Sign Up')}</span>
-                </button>
-              </>
-            ) : (
-              <UserProfile />
-            )}
             <ToolkitMenu />
           </div>
 
           {/* Mobile right side */}
           <div className="md:hidden flex items-center space-x-2">
-            {!isAuthenticated ? (
-              <button
-                onClick={() => handleAuthClick('signin')}
-                className="p-2 rounded-lg text-neutral-700 dark:text-gray-300 hover:bg-neutral-100 dark:hover:bg-gray-800 transition-colors"
-              >
-                <LogIn className="h-5 w-5" />
-              </button>
-            ) : (
-              <UserProfile />
-            )}
             <button
               className="p-2 rounded-lg text-neutral-700 dark:text-gray-300 hover:bg-neutral-100 dark:hover:bg-gray-800"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -329,24 +288,6 @@ function Navigation() {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="md:hidden border-t border-neutral-200 dark:border-gray-700 py-4 space-y-1">
-            {/* Auth buttons for mobile */}
-            {!isAuthenticated && (
-              <div className="space-y-2 pb-4 border-b border-neutral-200 dark:border-gray-700 mb-4">
-                <button
-                  onClick={() => handleAuthClick('signin')}
-                  className="w-full flex items-center gap-3 px-3 py-2 text-left text-sm text-neutral-600 dark:text-gray-400 hover:text-neutral-900 dark:hover:text-white hover:bg-neutral-50 dark:hover:bg-gray-800 rounded-lg"
-                >
-                  <LogIn className="h-4 w-4" />
-                  {t('auth.signIn', 'Sign In')}
-                </button>
-                <button
-                  onClick={() => handleAuthClick('signup')}
-                  className="w-full bg-blue-600 text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
-                >
-                  {t('auth.signUp', 'Sign Up')}
-                </button>
-              </div>
-            )}
             <Link
               to="/features"
               className="w-full flex items-center gap-3 px-3 py-2 text-left text-sm text-neutral-600 dark:text-gray-400 hover:text-neutral-900 dark:hover:text-white hover:bg-neutral-50 dark:hover:bg-gray-800 rounded-lg"

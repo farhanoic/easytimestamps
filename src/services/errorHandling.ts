@@ -3,7 +3,6 @@
  * Provides user-friendly error messages and logging
  */
 
-import { authAnalytics } from './authAnalytics';
 
 export interface ErrorDetails {
   code: string;
@@ -256,8 +255,8 @@ class ErrorHandlingService {
    * Log error details for monitoring
    */
   private logError(errorDetails: ErrorDetails): void {
-    // Log to analytics
-    authAnalytics.track('error_occurred', {
+    // Log to console for development
+    console.error('Error occurred:', {
       errorCode: errorDetails.code,
       severity: errorDetails.severity,
       category: errorDetails.category,

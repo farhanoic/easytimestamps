@@ -2,8 +2,6 @@ import { useState, useRef, useEffect } from 'react'
 import ReactPlayer from 'react-player'
 import { Upload, Youtube, Plus, Loader2, AlertCircle, RefreshCw } from 'lucide-react'
 import { trackVideoEvent, trackError, flushFallbackEvents, initializeFallbackAnalytics } from '../utils/analytics'
-import { authAnalytics } from '../services/authAnalytics'
-import { useAuth } from '../contexts/AuthContext'
 import { useNetworkStatus } from '../hooks/useNetworkStatus'
 import { withRetry, isRetryableError } from '../utils/retryUtils'
 import NetworkStatusIndicator from './NetworkStatusIndicator'
@@ -16,7 +14,6 @@ interface VideoPlayerProps {
 
 function VideoPlayer({ onTimeUpdate, onAddTimestamp }: VideoPlayerProps) {
   const { t } = useTranslation()
-  const { isAuthenticated } = useAuth()
   const networkStatus = useNetworkStatus()
   
   // State
@@ -134,11 +131,6 @@ function VideoPlayer({ onTimeUpdate, onAddTimestamp }: VideoPlayerProps) {
       retry_attempts: networkStatus.retryCount,
       connection_type: networkStatus.effectiveType
     })
-    authAnalytics.trackFeatureUsage('video_url_loaded', {
-      source: url.includes('youtube') ? 'youtube' : 'other_url',
-      isAuthenticated,
-      networkStatus: networkStatus.isOnline ? 'online' : 'offline'
-    })
   }
 
   // Retry functionality for failed operations
@@ -245,10 +237,6 @@ function VideoPlayer({ onTimeUpdate, onAddTimestamp }: VideoPlayerProps) {
       trackVideoEvent('timestamp_added_from_player', {
         timestamp_seconds: Math.round(currentTime),
         formatted_time: timeString
-      })
-      authAnalytics.trackFeatureUsage('timestamp_added_from_player', {
-        timestampSeconds: Math.round(currentTime),
-        isAuthenticated
       })
     }
   }

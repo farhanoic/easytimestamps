@@ -1,12 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import VideoPlayer from './VideoPlayer'
 import TimestampForm from './TimestampForm'
 import TimestampList from './TimestampList'
-import { SignupPrompt, useSignupPrompt } from './SignupPrompt'
 import { useStats } from '../hooks/useStats'
-import { authAnalytics } from '../services/authAnalytics'
-import { useAuth } from '../contexts/AuthContext'
 
 interface Timestamp {
   id: string
@@ -51,13 +48,10 @@ const generateId = () => {
 
 function TimestampExtractor() {
   const { t } = useTranslation()
-  const { isAuthenticated } = useAuth()
   const [timestamps, setTimestamps] = useState<Timestamp[]>([])
   const [, setCurrentVideoTime] = useState(0)
-  // const [hasShownSuccessPrompt, setHasShownSuccessPrompt] = useState(false)
   
   const { incrementTimestamps } = useStats()
-  const signupPrompt = useSignupPrompt()
   
 
   // Convert legacy timestamp to new format
@@ -75,21 +69,6 @@ function TimestampExtractor() {
     setTimestamps(prev => [...prev, timestamp].sort((a, b) => a.seconds - b.seconds))
     // Track timestamp generation for real-time stats
     incrementTimestamps(1)
-    
-    // Track feature usage for analytics
-    authAnalytics.trackFeatureUsage('timestamp_created', {
-      method: 'form',
-      timestampCount: timestamps.length + 1,
-      isAuthenticated
-    })
-    
-    // Signup prompt disabled
-    // if (!hasShownSuccessPrompt && timestamps.length === 0) {
-    //   setHasShownSuccessPrompt(true)
-    //   setTimeout(() => {
-    //     signupPrompt.showPrompt('success')
-    //   }, 2000) // Show after 2 seconds
-    // }
   }
 
   // Edit existing timestamp
@@ -101,28 +80,16 @@ function TimestampExtractor() {
       prev.map((ts, i) => i === index ? newTimestamp : ts)
         .sort((a, b) => a.seconds - b.seconds)
     )
-    
-    // Track feature usage for analytics
-    authAnalytics.trackFeatureUsage('timestamp_edited', {
-      timestampCount: timestamps.length,
-      isAuthenticated
-    })
   }
 
   // Delete timestamp
   const deleteTimestamp = (index: number) => {
     setTimestamps(prev => prev.filter((_, i) => i !== index))
-    
-    // Track feature usage for analytics
-    authAnalytics.trackFeatureUsage('timestamp_deleted', {
-      timestampCount: timestamps.length - 1,
-      isAuthenticated
-    })
   }
   
 
   // Add timestamp from video player at current time with automatic range generation
-  const addTimestampAtCurrentTime = (seconds: number, timeString: string) => {
+  const addTimestampAtCurrentTime = (_seconds: number, timeString: string) => {
     const description = prompt(t('timestamp.enterDescription', 'Enter description for this timestamp:'))
     if (description && description.trim()) {
       
@@ -160,34 +127,10 @@ function TimestampExtractor() {
         seconds: startSeconds // Use start time for sorting
       }
       
-      // Track feature usage for analytics
-      authAnalytics.trackFeatureUsage('timestamp_created', {
-        method: 'video_player_range',
-        timestampCount: timestamps.length + 1,
-        isAuthenticated,
-        rangeStart: startSeconds,
-        rangeEnd: seconds
-      })
-      
       addTimestamp(newTimestamp)
     }
   }
   
-  // Effect to trigger signup prompts based on usage patterns
-  useEffect(() => {
-    // Show storage limit prompt when user has many projects
-    if (timestamps.length > 10) {
-      signupPrompt.showPrompt('storage_limit')
-    }
-    
-    // Show multiple projects prompt after several sessions
-    const sessionCount = parseInt(localStorage.getItem('easy_timestamps_sessions') || '0') + 1
-    localStorage.setItem('easy_timestamps_sessions', sessionCount.toString())
-    
-    if (sessionCount >= 3 && timestamps.length > 0) {
-      signupPrompt.showPrompt('multiple_projects')
-    }
-  }, [timestamps.length, signupPrompt])
 
   // Handle video time updates
   const handleVideoTimeUpdate = (seconds: number) => {
@@ -226,15 +169,6 @@ function TimestampExtractor() {
         </div>
       )}
       
-      {/* Signup Prompt - DISABLED */}
-      {false && signupPrompt.shouldShow && (
-        <SignupPrompt
-          trigger={signupPrompt.trigger}
-          onClose={signupPrompt.handleClose}
-          onSignup={signupPrompt.handleSignup}
-          onRemindLater={signupPrompt.handleRemindLater}
-        />
-      )}
     </div>
   )
 }
